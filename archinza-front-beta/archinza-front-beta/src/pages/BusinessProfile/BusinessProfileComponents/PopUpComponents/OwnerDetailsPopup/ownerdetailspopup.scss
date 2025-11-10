@@ -1,0 +1,91 @@
+.OwnerDetailsPopUp {
+  .modal-content {
+    // width: 61.875em;
+    width: 60%;
+  }
+
+  .modal-body {
+    padding: 2.5em 2em;
+    border-radius: 1.25em;
+    -webkit-border-radius: 1.25em;
+    -moz-border-radius: 1.25em;
+    -ms-border-radius: 1.25em;
+    -o-border-radius: 1.25em;
+  }
+
+  .Complete_actions_popup_m_heading {
+    letter-spacing: 0.02em;
+  }
+
+  .owner_details {
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2em;
+    column-gap: 2em;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.4);
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .owner_detail_number {
+      display: grid;
+      grid-template-columns: 1.5fr 3fr;
+      gap: 1em;
+    }
+
+    .owner_detail_whatsapp {
+      display: grid;
+      grid-template-columns: 1.5fr 3fr auto;
+      gap: 1em;
+
+      .trash_icon {
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+      }
+
+      .full_width {
+        grid-column: span 3;
+        label {
+          display: flex;
+          align-items: center;
+          gap: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .OwnerDetailsPopUp {
+    .modal-content {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .OwnerDetailsPopUp {
+    .modal-content {
+      width: 100%;
+
+      .Complete_actions_popup_m_heading {
+        margin-bottom: 0.75em;
+      }
+
+      .owner_details {
+        // border: 1px solid red;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .confirmation_common_btn {
+      margin-top: 3.2em;
+    }
+  }
+}

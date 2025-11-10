@@ -1,0 +1,11 @@
+.personal_main_sec {
+  background-color: #ffffff;
+  padding: 0 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .personal_main_sec {
+    padding-top: 5rem;
+  }
+}

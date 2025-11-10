@@ -1,0 +1,112 @@
+.promote_popup_modal {
+    color: #111111;
+
+    .modal-dialog {
+        max-width: 51.125em;
+    }
+
+    .modal-content {
+        border-radius: 20px;
+        border: 0;
+    }
+
+    .modal-body {
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+    }
+
+    .promote_popup_image_wrapper {
+        display: flex;
+        justify-content: center;
+
+        .promote_popup_image {
+            width: 16em;
+            height: 15.938em;
+        }
+    }
+
+    .promote_popup__heading {
+        font-size: 2.25em;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.889em;
+        letter-spacing: 0.02em;
+    }
+
+    .promote_popup_dec {
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.167em;
+    }
+
+    .promote_popup_confirm_btn {
+        margin: 3em auto 0 auto;
+        width: fit-content;
+        font-size: 1.25em;
+        letter-spacing: 0.02em;
+        line-height: 1.08em;
+        background-color: #014FE0;
+        border-radius: 36px;
+        -webkit-border-radius: 36px;
+        -moz-border-radius: 36px;
+        -ms-border-radius: 36px;
+        -o-border-radius: 36px;
+        color: #FFFFFF;
+        padding: 1.05em 1.6em 1.1em 1.6em;
+        cursor: pointer;
+    }
+}
+
+.custom-backdrop {
+    background-color: #111111BF;
+}
+
+@media screen and (max-width: 600px) {
+    .promote_popup_modal {
+
+
+        .modal-dialog {
+            max-width: 28.1em;
+            margin: 0 auto;
+        }
+
+        .modal-content {
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+
+        .modal-body {
+            padding-top: 1em !important;
+            padding-bottom: 3.2em !important;
+        }
+
+        .promote_popup_image_wrapper {
+
+
+            .promote_popup_image {
+                height: 6.5em;
+                width: 6.5em;
+            }
+        }
+
+        .promote_popup__heading {
+            font-size: 2em;
+            margin-top: 0.2em;
+        }
+
+        .promote_popup_dec {
+            font-size: 1.4em;
+            padding: 0 1em;
+        }
+
+        .promote_popup_confirm_btn {
+            font-size: 1.2em;
+            padding: 1em 1.667em;
+            margin-top: 2em;
+        }
+    }
+}

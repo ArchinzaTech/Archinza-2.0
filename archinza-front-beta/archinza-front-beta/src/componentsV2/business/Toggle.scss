@@ -1,0 +1,112 @@
+@import "../../common.scss";
+
+.section_tg_drk{
+  background-color: rgb(0 0 0 / 10%) !important;
+    backdrop-filter: blur(8px) !important;
+}
+.section_toggle {
+  position: sticky;
+  // top: 4rem;
+  top: 9em;
+  z-index: 40;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  .toggle_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .white_text {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: colors 0.2s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #ffffff;
+
+      &:hover {
+        color: #2563eb;
+      }
+
+      &.active {
+        color: #2563eb;
+        font-weight: 600;
+      }
+    }
+
+    .toggle_button {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: colors 0.2s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #4b5563;
+
+      &:hover {
+        color: #2563eb;
+      }
+
+      &.active {
+        color: #2563eb;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Dark theme styles
+.dark {
+  .section_toggle {
+    background-color: rgba(17, 24, 39, 0.1);
+
+    .toggle_wrapper {
+      .toggle_button {
+        color: #f9fafb;
+
+        &:hover {
+          color: #60a5fa;
+        }
+
+        &.active {
+          color: #60a5fa;
+        }
+      }
+    }
+  }
+}
+
+// Responsive breakpoints
+@media (max-width: 1080px) {
+  .section_toggle {
+    top: 8em;
+  }
+}
+
+@media (min-width: 640px) {
+  .section_toggle {
+    padding: 0.75rem 1.5rem;
+
+    .toggle_wrapper {
+      .toggle_button {
+        font-size: 1rem;
+      }
+      .white_text{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .section_toggle {
+    padding: 0.75rem 2rem;
+  }
+}

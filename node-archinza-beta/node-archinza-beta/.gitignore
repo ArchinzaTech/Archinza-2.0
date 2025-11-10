@@ -1,0 +1,9 @@
+node_modules
+.vscode
+.env
+package-lock.json
+create-cloudwatch-log
+getAllLogs.js
+seedRolesAndPermissions.js
+script.js
+index.html

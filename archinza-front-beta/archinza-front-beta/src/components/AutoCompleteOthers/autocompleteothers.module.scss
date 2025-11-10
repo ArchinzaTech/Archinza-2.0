@@ -1,0 +1,63 @@
+@import "../../common.scss";
+
+.autocomplete_dropdown {
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  //   border: 1px solid $color-707070;
+  border-radius: 1em;
+  margin: 0;
+}
+
+.autocomplete_dropdown_light {
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  //   border: 1px solid $color-707070;
+  border-radius: 1em;
+  margin: 0;
+}
+
+.autocomplete_drop_arrow {
+  pointer-events: none;
+  position: absolute;
+  // max-width: 0.75em;
+  width: 1.007em;
+  height: 100%;
+  top: 0;
+  right: 1.25em;
+  bottom: 0;
+  margin: auto 0;
+}
+
+li {
+  background-size: cover;
+
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      max-width: 5em;
+    }
+
+    &:last-child {
+      padding-left: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .bedit_profile_autcomplete {
+    label {
+      font-size: 1.125em !important;
+      line-height: 1em !important;
+    }
+    input {
+      font-size: 1.125em !important;
+      line-height: 1em !important;
+      padding: 0 !important;
+    }
+  }
+}

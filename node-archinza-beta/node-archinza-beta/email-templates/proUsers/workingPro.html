@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Archinza Pro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list li {
+            margin: 10px 0;
+        }
+
+        .list li::before {
+            content: "✔ ";
+            color: #6a1b9a;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6a1b9a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        a {
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Archinza Pro!</h1>
+        </div>
+        <div class="content">
+            <p>Hey <%= name %>!</p>
+            <p>Welcome to the Archinza Pro Network! We’re thrilled to have you join our curated community of all things Design & Build.
+            You’ll soon get access to features and resources that that will enhance your experience and support your professional
+            development:
+            </p>
+            <ul class="list">
+                <li>Discover Industry-Specific Job Openings💼</li>
+                <li>Upskill with Curated AI-Matched Courses & Resources📚</li>
+                <li>Stay Updated about Design Events📅</li>
+                <li>Search Smartly for Products/ Materials & Professionals🔍
+                </li>
+                <li>Review and Rate Businesses in the Industry📝
+                </li>
+            </ul>
+            <p>Here’s what you can do now:</p>
+            <p><a href="http://localhost:3000">Click here to view your Archinza Dashboard</a></p>
+            <p><a href="http://localhost:3000">Click here to start chatting with the Archinza Bot on WhatsApp</a></p>
+            <p><a href="http://localhost:3000" class="cta-button">Sign up your business for targeted client reach 🎯</a>
+            </p>
+            <p>Let’s design better, together!</p>
+            <p>Warm Regards,<br>Team Archinza</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Archinza. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

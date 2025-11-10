@@ -1,0 +1,210 @@
+.checkout-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.checkout-modal {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e5e5;
+
+    h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #666;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color 0.2s;
+
+        &:hover:not(:disabled) {
+            background-color: #f5f5f5;
+        }
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.checkout-content {
+    padding: 24px;
+}
+
+.plan-details {
+    text-align: center;
+
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    .plan-price {
+        font-size: 24px;
+        font-weight: 700;
+        color: #F37254;
+        margin-bottom: 20px;
+    }
+
+    .plan-features {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+        text-align: left;
+
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 20px;
+
+            &:before {
+                content: "✓";
+                position: absolute;
+                left: 0;
+                color: #22c55e;
+                font-weight: bold;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.checkout-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+
+    button {
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: none;
+        min-width: 120px;
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+
+    .pay-btn {
+        background-color: #F37254;
+        color: white;
+
+        &:hover:not(:disabled) {
+            background-color: #e85a3a;
+        }
+    }
+
+    .cancel-btn {
+        background-color: #f5f5f5;
+        color: #666;
+
+        &:hover:not(:disabled) {
+            background-color: #e5e5e5;
+        }
+    }
+}
+
+.error-state {
+    text-align: center;
+
+    .error-message {
+        color: #ef4444;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .error-actions {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+
+        .retry-btn {
+            background-color: #F37254;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #e85a3a;
+            }
+        }
+
+        .cancel-btn {
+            background-color: #f5f5f5;
+            color: #666;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #e5e5e5;
+            }
+        }
+    }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+    .checkout-modal {
+        width: 95%;
+        margin: 20px;
+    }
+
+    .checkout-actions {
+        flex-direction: column;
+
+        button {
+            width: 100%;
+        }
+    }
+}

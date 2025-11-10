@@ -1,0 +1,423 @@
+.Contact_Info_col_main_warapper {
+    margin-top: 5em;
+
+    .heading_common_contact_info {
+        color: #111111;
+        font-size: 2.25em;
+        font-weight: 600;
+        letter-spacing: 0.72px;
+        line-height: 1.25;
+        margin-bottom: 0.444em;
+    }
+
+    .mb-business-conect-heading {
+        margin-bottom: 0.611em !important;
+    }
+
+    .map_gallery_wrapper {
+        display: flex;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.4);
+        padding-bottom: 2.5em;
+
+
+        .gallery_Workplace {
+            position: relative;
+            width: 25.5em;
+            height: 23.625em;
+
+            .work_place_default_image {
+                object-fit: cover;
+                width: 25.5em;
+                border-top-left-radius: 0.625em;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0.625em;
+                height: 100%;
+            }
+
+            .group_Image_Icon {
+                position: absolute;
+                right: 1em;
+                bottom: 1em;
+                width: 3.5em;
+                cursor: pointer;
+            }
+        }
+
+        .connect_map {
+            width: 100%;
+            height: 23.625em;
+
+            .map_frame_connect {
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0.625em;
+                border-bottom-right-radius: 0.625em;
+                border-bottom-left-radius: 0px;
+            }
+        }
+    }
+
+    .nw_social_links_wrapper {
+        margin-top: 2.5em;
+        padding-bottom: 1.813em;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.4);
+
+        .social_liks_connect {
+            display: flex;
+            align-items: center;
+
+            margin-bottom: 1em;
+
+            .social-icons_connect {
+                width: 2.75em;
+                margin-right: 0.75em;
+            }
+
+            .social_link {
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .nw_Business_Working_hr_wrap {
+        margin-top: 2.5em;
+        padding-bottom: 5em;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.4);
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        .button_connect_book_now {
+            color: #ffffff;
+            background-color: #014fe0;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.25em;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            line-height: 1.08;
+            width: 100%;
+            max-width: fit-content;
+            padding: 1.235em 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 0;
+            box-shadow: 0px 0px 25px 5px transparent;
+            margin-top: 1.125em;
+
+            .book_now_arr {
+                margin-left: 1em;
+                width: 1.25em;
+            }
+        }
+
+        .business_working_hr {
+            display: flex;
+            width: 28.375em;
+            justify-content: space-between;
+
+            .day_working {
+                font-size: 1.25em;
+                font-weight: 500;
+                color: hsla(0, 0%, 7%, 0.80);
+                margin-bottom: 1.1em;
+            }
+
+            .time_working {
+                font-size: 1.25em;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .nw_Business_Working_hr_wrap {
+        .row_contact_info_wrapper {
+            .MuiOutlinedInput-notchedOutline {
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+            }
+
+            .row_contact_info_col {
+                padding: 0;
+                margin-bottom: 1.375em;
+            }
+
+            .contact_info_col-1 {
+                padding-right: 1.063em;
+            }
+
+            .contact_info_col-2 {
+                padding-left: 1.063em;
+            }
+
+            .contact_info_col-3 {
+                padding-right: 1.063em;
+            }
+
+            .contact_info_col-4 {
+                padding-left: 1.063em;
+            }
+
+            .contact_info_col-5 {
+                padding-right: 1.063em;
+            }
+
+            .contact_info_col-6 {
+                padding-left: 1.063em;
+            }
+        }
+    }
+
+    .row_contact_info_col {
+        .MuiFormControl-root {
+            border-radius: 6px;
+        }
+
+        .row_contact_info_col_nested {
+            min-height: 100%;
+
+            .css-38l1n8-MuiFormControl-root-MuiTextField-root label {
+                line-height: 1.6em;
+            }
+
+            .css-naot83-MuiFormControl-root-MuiTextField-root label {
+                line-height: 1.6em;
+            }
+
+            .css-38l1n8-MuiFormControl-root-MuiTextField-root .MuiInputBase-input {
+                font-family: "Poppins";
+            }
+
+            .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                font-family: "Poppins";
+            }
+        }
+
+        .css-1jaqaak-MuiAutocomplete-root label {
+            line-height: 1.6em;
+        }
+
+        .css-sdya0h-MuiFormControl-root-MuiTextField-root label {
+            line-height: 1.7em;
+        }
+    }
+
+    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
+        font-size: 16px !important;
+        border-radius: 6px !important;
+        -webkit-border-radius: 6px !important;
+        -moz-border-radius: 6px !important;
+        -ms-border-radius: 6px !important;
+        -o-border-radius: 6px !important;
+    }
+
+    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus {
+        outline: 0;
+        font-size: 16px !important;
+        border-radius: 6px !important;
+        -webkit-border-radius: 6px !important;
+        -moz-border-radius: 6px !important;
+        -ms-border-radius: 6px !important;
+        -o-border-radius: 6px !important;
+    }
+
+    .css-1jaqaak-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input {
+        font-size: 16px !important;
+        border-radius: 6px !important;
+        -webkit-border-radius: 6px !important;
+        -moz-border-radius: 6px !important;
+        -ms-border-radius: 6px !important;
+        -o-border-radius: 6px !important;
+    }
+
+    .contact_time_picker_custom_bs {
+        padding-left: 0;
+        padding-right: 0.75em;
+        height: auto;
+    }
+
+    .contact_date_picker_custom_bs {
+        padding-left: 0.75em;
+        padding-right: 0;
+        min-height: auto;
+
+        .MuiOutlinedInput-root {
+            background-color: #fff;
+        }
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Contact_Info_col_main_warapper {
+        .nw_Business_Working_hr_wrap {
+            .business_working_hr {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Contact_Info_col_main_warapper {
+        margin-top: 0.8em;
+
+        .row_contact_info_col {
+            .row_contact_info_col_nested {
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                    font-family: "Poppins";
+                    font-size: 0.97em !important;
+                }
+            }
+        }
+
+        .heading_common_contact_info {
+            font-size: 1.6em;
+            margin-bottom: 0.75em !important;
+            letter-spacing: 0.02em;
+        }
+
+        .contact_time_picker_custom_bs {
+            height: 4.9em;
+        }
+
+        .contact_date_picker_custom_bs {
+            height: 4.9em;
+        }
+
+        // input {
+        //     font-size: 1.2em !important;
+        // }
+
+        .my_container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+
+        .nw_social_links_wrapper {
+            .social_liks_connect {
+                .social-icons_connect {
+                    width: 2.4em;
+                }
+
+                .social_link {
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .nw_Business_Working_hr_wrap {
+            .business_working_hr {
+                .day_working {
+                    font-size: 1.2em;
+                }
+
+                .time_working {
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .nw_Business_Working_hr_wrap {
+            padding-bottom: 2.3em !important;
+
+            .button_connect_book_now {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 1.4em;
+            }
+
+            .row_contact_info_wrapper {
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+
+                .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+                    font-size: 1.2em;
+                }
+
+                .row_contact_info_col {
+                    padding: 0;
+                    margin-bottom: 1.375em;
+
+                    .css-1qyxz5q-MuiFormLabel-root-MuiInputLabel-root {
+                        font-size: 1.2em;
+                    }
+
+                    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+                        padding: 13.5px 14px;
+                        font-size: 0.97em !important;
+                    }
+
+                    .MuiOutlinedInput-root .MuiAutocomplete-input {
+                        padding: 4.5px 4px 7.5px 5px;
+                        font-size: 0.97em !important;
+                    }
+                }
+
+                .contact_info_col-1 {
+                    padding-right: 0em;
+                }
+
+                .contact_info_col-2 {
+                    padding-left: 0em;
+                }
+
+                .contact_info_col-3 {
+                    padding-right: 0em;
+                }
+
+                .contact_info_col-4 {
+                    padding-left: 0em;
+                }
+
+                .contact_info_col-5 {
+                    padding-right: 0em;
+                }
+
+                .contact_info_col-6 {
+                    padding-left: 0em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Contact_Info_col_main_warapper {
+        .map_gallery_wrapper {
+
+            .gallery_Workplace {
+                width: auto;
+                height: auto;
+
+                .group_Image_Icon {
+                    width: 2.2em;
+                }
+
+                .work_place_default_image {
+                    width: 14.2em;
+                    height: 10em;
+                }
+            }
+        }
+
+        .map_gallery_wrapper {
+            .connect_map {
+                height: 10em;
+            }
+        }
+    }
+}

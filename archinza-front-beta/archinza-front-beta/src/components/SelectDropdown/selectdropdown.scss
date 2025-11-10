@@ -1,0 +1,26 @@
+@import "../../common.scss";
+
+.MuiSelect-select {
+  height: 2em !important;
+  color: $color-707070 !important;
+  line-height: 2em !important;
+}
+
+.MuiInputLabel-root {
+  color: $color-707070 !important;
+}
+
+@media screen and (max-width: 1600px) {
+  .bedit_profile_select {
+    label {
+      font-size: 1.125em !important;
+      line-height: 1em !important;
+    }
+  
+    input {
+      font-size: 1.125em !important;
+      line-height: 1em !important;
+      padding: 0 !important;
+    }
+  }
+}

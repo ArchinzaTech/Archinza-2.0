@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archinza Account Login Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list li {
+            margin: 10px 0;
+        }
+
+        .list li::before {
+            content: "• ";
+            color: #6a1b9a;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6a1b9a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        a {
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="header">
+            <h1>Archinza Account Login Notification</h1>
+        </div> -->
+        <div class="content">
+            <p>Hi,</p>
+            <p>We noticed a login to your Archinza account from a new device. If this was you, no further action is
+                needed.</p>
+            <ul class="list">
+                <li>Date: <%= loginDate %> (IST)</li>
+                <li>Browser: <%= browser %>
+                </li>
+                <li>Operating System: <%= os %>
+                </li>
+            </ul>
+            <p>If you do not recognize this activity, we recommend that you <a href="<%= resetLink %>"
+                    >reset your password</a> immediately to secure your account.</p>
+            <p>Warm Regards,<br>Team Archinza</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Archinza. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

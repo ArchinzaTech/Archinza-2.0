@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81">
+  <g id="Group_8271" data-name="Group 8271" transform="translate(-751 -445)">
+    <g id="Ellipse_268" data-name="Ellipse 268" transform="translate(751 445)" fill="none" stroke="#707070" stroke-width="1">
+      <circle cx="40.5" cy="40.5" r="40.5" stroke="none"/>
+      <circle cx="40.5" cy="40.5" r="40" fill="none"/>
+    </g>
+    <g id="Ellipse_269" data-name="Ellipse 269" transform="translate(762 456)" fill="none" stroke="#707070" stroke-width="1">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29.5" fill="none"/>
+    </g>
+    <path id="smartphone_FILL0_wght300_GRAD0_opsz24" d="M222.195-874.512a2.118,2.118,0,0,1-1.557-.637,2.118,2.118,0,0,1-.637-1.557v-21.1a2.118,2.118,0,0,1,.637-1.557,2.118,2.118,0,0,1,1.557-.637h11.39a2.118,2.118,0,0,1,1.557.637,2.118,2.118,0,0,1,.637,1.557v21.1a2.118,2.118,0,0,1-.637,1.557,2.118,2.118,0,0,1-1.557.637Zm-.373-3.338v1.144a.357.357,0,0,0,.117.257.357.357,0,0,0,.257.117h11.39a.357.357,0,0,0,.257-.117.357.357,0,0,0,.117-.257v-1.144Zm0-1.82h12.137v-15.171H221.821Zm0-16.991h12.137v-1.144a.357.357,0,0,0-.117-.257.357.357,0,0,0-.257-.117h-11.39a.357.357,0,0,0-.257.117.357.357,0,0,0-.117.257Zm0,0v0Zm0,18.812v0Z" transform="translate(563.999 1372.999)" fill="#ef7b13"/>
+  </g>
+</svg>

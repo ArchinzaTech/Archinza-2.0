@@ -1,0 +1,675 @@
+@import "../../../../common.scss";
+
+.plan_main {
+  // padding-top: 13.625em;
+  background-color: #f1f1f1;
+
+  .plan_row {
+    margin: 3.75em auto 0;
+    display: flex;
+    padding-bottom: 1.125em;
+
+    .plan_col {
+      padding: 0;
+      &:nth-child(2n + 1) {
+        padding-right: 2.5em;
+        border-right: 1px solid rgba($color: #707070, $alpha: 0.4);
+        width: 100%;
+        max-width: 29.462%;
+      }
+      &:nth-child(2n + 2) {
+        padding-left: 2.5em;
+        width: 100%;
+        max-width: 70.538%;
+      }
+
+      .set_wrapper {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1.5em;
+        margin-bottom: 2.5em;
+        border-bottom: 1px solid rgba($color: #707070, $alpha: 0.4);
+      }
+      .set_icon {
+        width: 100%;
+        max-width: 2em;
+        margin-right: 0.75em;
+      }
+      .main_title {
+        color: #111111;
+        font-size: 2.25em;
+        font-weight: 600;
+        letter-spacing: 0.72px;
+        line-height: 1.88;
+      }
+
+      .title {
+        color: #111111;
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        line-height: 1.083;
+      }
+      .edit_title {
+        padding-bottom: 1em;
+        border-bottom: 1px solid rgba($color: #707070, $alpha: 0.4);
+      }
+
+      .sub_wrapper {
+        border-bottom: 1px solid rgba($color: #707070, $alpha: 0.4);
+        padding-bottom: 1.5em;
+        margin: 1.5em 0;
+        cursor: pointer;
+        .title {
+          margin-bottom: 0.5em;
+        }
+      }
+      .drop_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .drop_arrow {
+        width: 100%;
+        max-width: 1.125em;
+        margin-left: 0.625em;
+      }
+
+      .plan_lists {
+        color: rgba($color: #111111, $alpha: 0.6);
+        font-size: 1.125em;
+        font-weight: 500;
+        letter-spacing: 0.36px;
+        line-height: 1.77;
+        cursor: pointer;
+        &:not(:last-child) {
+          margin-bottom: 0.889em;
+        }
+        &.active {
+          color: #024fe0;
+        }
+      }
+
+      .logout_cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        border-radius: 50px;
+        border: 1px solid #111111;
+        color: #111111;
+        font-size: 1.125em;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 1.2;
+        width: 100%;
+        max-width: fit-content;
+        white-space: nowrap;
+        padding: 1.016em 1.7345em;
+        margin-top: 4.445em;
+        .logout_icon {
+          width: 100%;
+          max-width: 1.1667em;
+          margin-right: 0.445em;
+        }
+      }
+
+      .planDetails_container {
+        max-width: 71.36%;
+      }
+      .plan_details {
+        margin-top: 1em;
+        background-color: #ffffff;
+        padding: 1em 1em 1.25em;
+        border-radius: 0.625em;
+      }
+      .plan_data {
+        background: url("../../../../images/general/plan_bg.png") no-repeat;
+        // background-size: 100%;
+        background-size: cover;
+        // background: linear-gradient(
+        //   126deg,
+        //   #111111,
+        //   #111111,
+        //   #111111,
+        //   #111111,
+        //   #ef7b13
+        // );
+        border-radius: 0.625em;
+        padding: 1.25em 1em 1.25em 1.25em;
+        // margin-bottom: 1.6875em;
+        .text_container {
+          display: flex;
+          justify-content: space-between;
+        }
+        .plan_text {
+          color: #ffffff;
+          font-size: 1.75em;
+          font-weight: 600;
+          letter-spacing: 0.56px;
+          //   line-height: 1.035;
+          line-height: 1.393;
+        }
+        .plan_price {
+          color: #ffffff;
+          font-size: 1.25em;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          line-height: 1.45;
+          margin-left: 0.5em;
+          span {
+            text-decoration: line-through;
+          }
+        }
+        .desc {
+          color: #ffffff;
+          font-size: 1.25em;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          //   line-height: 0.9;
+          line-height: 1.4;
+          margin-top: 0.6em;
+        }
+      }
+
+      .planChange_drop_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1.5em;
+        border-top: 1px solid rgba($color: #707070, $alpha: 0.4);
+        margin-top: 1.6875em;
+        .title {
+          font-weight: 600;
+          margin-right: 0.625em;
+          line-height: 1.375;
+        }
+        .right_arrow {
+          width: 100%;
+          max-width: 1.125em;
+          transform: rotate(-90deg);
+          -webkit-transform: rotate(-90deg);
+        }
+      }
+
+      .paymentMeth_container {
+        .desc {
+          color: #7f7f7f;
+          font-size: 1.25em;
+          font-weight: 400;
+          font-style: italic;
+          letter-spacing: 0.4px;
+          line-height: 1.4;
+          margin-top: 0.8em;
+        }
+        .sub_title {
+          color: #111111;
+          font-size: 1.25em;
+          font-weight: 600;
+          letter-spacing: 0.4px;
+          line-height: 1.4;
+          margin-top: 1.6em;
+        }
+        .update_wrapper {
+          background-color: #ffffff;
+          border: 1px solid rgba($color: #8d8d8d99, $alpha: 0.4);
+          border-radius: 0.625em;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 3.75em;
+          max-width: 40em;
+          padding: 1.15em 1.5em;
+        }
+        .img_wrapper {
+          display: flex;
+          align-items: center;
+        }
+        .update {
+          color: #014fe0;
+          font-size: 1.25em;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+          line-height: 1.08;
+          margin-left: 0.5em;
+        }
+        .method_text {
+          color: #111111;
+          font-weight: 400;
+          margin: 0;
+        }
+        .pay_logo {
+          width: 100%;
+          max-width: 3.75em;
+          margin-right: 2.5em;
+        }
+      }
+
+      .history_container {
+        max-width: 96.4%;
+        .title {
+          margin-top: 1em;
+        }
+
+        .plan_data {
+          background: #ffffff url("../../../../images/general/plan_bg.png")
+            no-repeat;
+          background-size: 100% 1.125em;
+          border-radius: 0.625em;
+          padding: 2.25em 1em 1em;
+          margin: 1.25em 0 3.75em;
+          .text_container {
+            display: flex;
+            justify-content: space-between;
+          }
+          .plan_text {
+            color: #111111;
+            font-size: 1.75em;
+            font-weight: 600;
+            letter-spacing: 0.56px;
+            line-height: 1.393;
+          }
+          .plan_price {
+            color: #111111;
+            font-size: 1.75em;
+            font-weight: 600;
+            letter-spacing: 0.56px;
+            line-height: 1.393;
+            margin-left: 0.572em;
+            span {
+              text-decoration: line-through;
+            }
+          }
+          .desc {
+            color: #7f7f7f;
+            font-size: 1.25em;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            //   line-height: 0.9;
+            line-height: 1.4;
+            margin-top: 0.6em;
+          }
+        }
+
+        .table_wrapper {
+          background-color: #ffffff;
+          border-radius: 0.625em;
+          margin-top: 1.25em;
+          padding: 1em 1em 0;
+          .pay_logo {
+            width: 100%;
+            max-width: 1.6em;
+            height: auto;
+            // width: auto;
+            // height: 1.6em;
+            object-fit: contain;
+            margin-right: 0.25em;
+          }
+        }
+        .hist_table {
+          width: 100%;
+          border: none;
+
+          tr {
+            border-bottom: 1px solid rgba($color: #707070, $alpha: 0.4);
+            th,
+            td {
+              &:nth-child(1) {
+                width: 9.5%;
+              }
+              &:nth-child(2) {
+                width: 34%;
+              }
+              &:nth-child(3) {
+                text-align: center;
+                width: 21%;
+              }
+              &:nth-child(4) {
+                text-align: center;
+                width: 13%;
+              }
+              &:nth-child(5) {
+                text-align: right;
+                width: 14%;
+              }
+            }
+          }
+          tbody {
+            tr {
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+          th {
+            color: #111111;
+            font-size: 1.5em;
+            font-weight: 500;
+            letter-spacing: 0.48px;
+            line-height: 1.0357;
+            padding-bottom: 0.8334em;
+            padding-right: 0.4167em;
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+          td {
+            color: #7f7f7f;
+            font-size: 1.25em;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            line-height: 1.45;
+            padding: 1.1em 0.5em 1.1em 0;
+            &:last-child {
+              padding-right: 0;
+            }
+            span {
+              text-decoration: line-through;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .plan_main {
+    .plan_row {
+      .plan_col {
+        .history_container {
+          max-width: 100%;
+          .table_wrapper {
+            overflow: auto;
+            // &::-webkit-scrollbar {
+            //   display: block;
+            //   height: 0.5em;
+            //   background-color: #545353;
+            //   border-radius: 50px;
+            // }
+
+            // &::-webkit-scrollbar-thumb {
+            //   background-color: rgba(255, 255, 255, 0.3);
+            //   border-radius: 50px;
+            // }
+          }
+          .hist_table {
+            width: 70em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .plan_main {
+    .plan_row {
+      .plan_col {
+        .planDetails_container {
+          max-width: 83%;
+        }
+        .plan_data {
+          background-size: cover;
+        }
+
+        .history_container {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .plan_main {
+    padding-top: 12em;
+    .plan_row {
+      flex-direction: column;
+      margin: 2.8em auto 0;
+      padding-bottom: 6em;
+      .plan_col {
+        &:nth-child(2n + 1) {
+          padding-right: 0;
+          border-right: none;
+          max-width: 100%;
+          overflow: auto;
+        }
+        &:nth-child(2n + 2) {
+          padding-left: 0;
+          max-width: 100%;
+        }
+
+        .title {
+          font-size: 1.6em;
+          letter-spacing: 0.32px;
+          line-height: 1.625;
+        }
+
+        .list_wrapper {
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 3.4em;
+        }
+        .plan_lists {
+          color: rgba($color: #111111, $alpha: 1);
+          font-size: 1.6em;
+          font-weight: 600;
+          letter-spacing: 0.32px;
+          line-height: 1.4;
+          padding-bottom: 0.125em;
+          position: relative;
+          white-space: nowrap;
+          &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 1.25em;
+          }
+          &.active {
+            color: #ef7b13;
+            &::before {
+              content: "";
+              background-color: #ef7b13;
+              width: 100%;
+              height: 1px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+          }
+        }
+
+        .plan_details {
+          margin-top: 0;
+          padding: 1em 1em 2em;
+        }
+        .plan_data {
+          padding: 1.2em 1.2em;
+          // margin-bottom: 2em;
+          .plan_text {
+            font-size: 1.6em;
+            letter-spacing: 0.32px;
+            line-height: 1.4375;
+          }
+          .plan_price {
+            font-size: 1.2em;
+            letter-spacing: 0.24px;
+            line-height: 1.4167;
+            margin-left: 0.5em;
+          }
+          .desc {
+            color: rgba($color: #ffffff, $alpha: 0.6);
+            font-size: 1.2em;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.24px;
+            line-height: 1.5;
+            margin-top: 0.834em;
+          }
+        }
+
+        .planChange_drop_wrapper {
+          margin-top: 2em;
+          padding-top: 2em;
+          .right_arrow {
+            max-width: 1.256em;
+          }
+        }
+
+        .paymentMeth_container {
+          .desc {
+            font-size: 1.2em;
+            letter-spacing: 0.24px;
+            line-height: 1.047;
+            margin-top: 0;
+            text-align: center;
+          }
+          .sub_title {
+            font-size: 1.2em;
+            letter-spacing: 0.24px;
+            line-height: 1.5;
+            margin-top: 2em;
+            text-align: center;
+          }
+          .update_wrapper {
+            margin: 2.2em auto 0;
+            padding: 1.04em 1.2em;
+          }
+          .update {
+            font-size: 1.6em;
+            letter-spacing: 0.32px;
+            line-height: 1.35;
+            margin-left: 0.5em;
+          }
+          .method_text {
+            margin: 0;
+          }
+          .pay_logo {
+            max-width: 3.8em;
+            margin-right: 2em;
+          }
+        }
+
+        .history_container {
+          max-width: 100% 10px;
+          .title {
+            margin-top: 0;
+            text-align: center;
+          }
+
+          .plan_data {
+            background-size: 100% 1.125em;
+            border-radius: 10px;
+            padding: 2.2em 1.2em 2em;
+            margin: 2em 0 4em;
+            .plan_text {
+              font-size: 1.6em;
+              letter-spacing: 0.32px;
+              line-height: 1.4375;
+            }
+            .plan_price {
+              font-size: 1.2em;
+              letter-spacing: 0.24px;
+              line-height: 1.417;
+              margin-left: 0.5em;
+            }
+            .desc {
+              font-size: 1.2em;
+              font-style: normal;
+              letter-spacing: 0.24px;
+              line-height: 1.5;
+              margin-top: 0.8334em;
+            }
+          }
+
+          .table_wrapper {
+            border-radius: 10px;
+            margin-top: 2.4em;
+            padding: 1.2em 1.2em;
+            .pay_logo {
+              max-width: 1.5em;
+              height: auto;
+              margin-right: 0.4em;
+            }
+          }
+          .hist_table {
+            width: 67em;
+            tr {
+              border-bottom: none;
+              th,
+              td {
+                &:nth-child(1) {
+                  width: 9.5%;
+                }
+                &:nth-child(2) {
+                  width: 34%;
+                }
+                &:nth-child(3) {
+                  text-align: center;
+                  width: 21%;
+                }
+                &:nth-child(4) {
+                  text-align: center;
+                  width: 13%;
+                }
+                &:nth-child(5) {
+                  text-align: right;
+                  width: 14%;
+                }
+              }
+            }
+            thead {
+              tr {
+                border-bottom: 1px solid rgba($color: #707070, $alpha: 0.4);
+              }
+            }
+            th {
+              font-size: 1.4em;
+              letter-spacing: 0.28px;
+              line-height: 1.4285;
+              padding-bottom: 0.4285em;
+              padding-right: 0.5em;
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+            td {
+              font-size: 1.2em;
+              letter-spacing: 0.24px;
+              line-height: 1.4167;
+              padding: 0.667em 0.5em 0.667em 0;
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .plan_main {
+    .plan_row {
+      .plan_col {
+        .planDetails_container {
+          max-width: 100%;
+        }
+
+        // .paymentMeth_container {
+        //   .update_wrapper {
+        //     max-width: 100%;
+        //   }
+        // }
+
+        .history_container {
+          .hist_table {
+            width: 63em;
+          }
+        }
+      }
+    }
+  }
+}

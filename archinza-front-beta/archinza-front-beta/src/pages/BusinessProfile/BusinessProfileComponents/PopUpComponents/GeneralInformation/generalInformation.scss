@@ -1,0 +1,442 @@
+@import "../../../../../common.scss";
+
+.general_info_popup {
+  .modal-dialog {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .error_text {
+    color: red;
+    font-size: 1.125em;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    line-height: 1.08;
+    left: 0;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .modal-header {
+    padding: 0;
+    border: none;
+
+    .custom-cancel-btn {
+      width: 100%;
+      max-width: 4.5em;
+      position: fixed;
+      right: 2.5em;
+      top: 2.5em;
+
+      .ctm_img_bussine_edit_about {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .modal-body {
+    background-color: #ffffff;
+    border-radius: 1.25em;
+    padding: 2.5em 2em;
+    width: 60.875em;
+    // max-width: 60.875em;
+    margin: 1em auto;
+
+    .about_modal_bussines_heading {
+      font-weight: 600;
+      color: #111111;
+      font-size: 2.25em;
+      letter-spacing: 0.72px;
+      line-height: 1.889;
+      margin-bottom: 0.778em;
+    }
+
+    .error_border_bottom {
+      width: calc(100% - 2.3em);
+      border-bottom: 1px solid rgba(112, 112, 112, 0.3) !important;
+      padding-bottom: 2em;
+    }
+
+    .general_info_fields_wrapper {
+      border-bottom: 1px solid rgba(112, 112, 112, 0.3) !important;
+    }
+
+    .ctm_mb_heading {
+      margin-top: 0.889em;
+    }
+
+    .wrapeer_ip_trash {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .add_new_location_container {
+      .loaction_wrapper {
+        // border-bottom: 0;
+      }
+
+      >div {
+        &:last-child {
+          .MuiFormControl-root {
+            border-bottom: 0px solid rgba(112, 112, 112, 0.3) !important;
+          }
+
+          .text_field_edit_location {
+            border-bottom: 0px solid rgba(112, 112, 112, 0.3) !important;
+          }
+
+          .error_border_bottom {
+            border-bottom: 0 !important;
+          }
+        }
+      }
+    }
+
+    .info_select_container {
+      .info_select_wrapper {
+        margin-bottom: 3.1875em;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+        padding-bottom: 2em;
+
+        .MuiAutocomplete-inputRoot {
+          // border: 1px solid #8d8d8d99;
+          font-size: inherit;
+          // padding: 9px 16.5px;
+        }
+
+        label {
+          font-size: 1.25em;
+          letter-spacing: 0.4px;
+          line-height: 1.8;
+        }
+      }
+    }
+
+    .popup_common_btn {
+      background-color: #014fe0;
+      border: 0;
+      border-radius: 50px;
+      box-shadow: 0 0 25px 5px transparent;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-size: 1.25em;
+      font-weight: 400;
+      justify-content: center;
+      letter-spacing: 0.4px;
+      line-height: 1.08;
+      max-width: -webkit-fit-content;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
+      padding: 1.1em 1.6em;
+      width: 100%;
+      margin: 3em auto 0;
+    }
+  }
+}
+@media screen and (min-width: 767px){
+  .general_information--modal {
+  .modal-content {
+    width: 60.875em;
+    margin: auto;
+  }
+
+  .custom-cancel-btn {
+    position: absolute !important;
+            right: 0.8em !important;
+        top: 1.7em !important;
+    z-index: 1;
+    max-width: 3.25em !important;
+  }
+}
+}
+@media (max-width: 767px) {
+  .general_info_popup {
+    .modal-dialog {
+      height: 100vh;
+    }
+
+    .modal-content {
+      background-color: #ffffff;
+      border: none;
+      padding: 7.2em 1.6em 2em;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      .custom-cancel-btn {
+        width: 100%;
+        max-width: 2.4em;
+        position: absolute;
+        right: 1.8em;
+        top: 1.9em;
+      }
+    }
+
+    .modal-body {
+      border-radius: 0;
+      padding: 0 !important;
+      max-width: 100%;
+      margin: 0 auto;
+
+      .error_border_bottom {
+        width: 100%;
+        border-bottom: 0 !important;
+        // padding-bottom: 0em;
+      }
+
+      .about_modal_bussines_heading {
+        font-size: 1.6em;
+        letter-spacing: 0.32px;
+        line-height: 1.625;
+        margin-bottom: 1.125em;
+      }
+
+      .info_select_container {
+        .info_select_wrapper {
+          margin-bottom: 2.2em;
+
+          .MuiAutocomplete-inputRoot {
+            padding: 3px 4.5px 6px;
+          }
+
+          .MuiOutlinedInput-root .MuiAutocomplete-input {
+            font-size: 1.2em !important;
+            // padding: 4px 5px;
+          }
+
+          label {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      .popup_common_btn {
+        font-size: 1.6em;
+        letter-spacing: 0.32px;
+        line-height: 1.35;
+        margin: 1.875em auto 0;
+      }
+    }
+  }
+}
+
+
+
+// edit Location .scss
+// .edit_location_popup_edp {
+//     .modal-body {
+//         width: 60.875em;
+//     }
+// }
+
+.loaction_wrapper {
+  margin-bottom: 2em;
+}
+
+.text_field_edit_location {
+  padding: 0;
+  padding-right: 1.25em;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+  padding-bottom: 2em;
+}
+
+.adress_location_wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+
+  .MuiFormControl-root {
+    border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+    padding-bottom: 2em;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  .delete_location_edit {
+    height: 1.438em;
+    width: 1.278em;
+    margin-left: 1.5em;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2em;
+  }
+}
+
+.add_new_location_container {
+
+  // .loaction_wrapper{
+  //     border-bottom: 0;
+  // }
+  >div {
+    &:last-child {
+      .MuiFormControl-root {
+        border-bottom: 0px solid rgba(112, 112, 112, 0.3);
+      }
+
+      .text_field_edit_location {
+        border-bottom: 0px solid rgba(112, 112, 112, 0.3);
+      }
+
+    }
+  }
+
+  >div {
+    &:last-child {
+      border-bottom: 0px !important;
+    }
+  }
+}
+
+.heading_add_location_edit {
+  margin-top: 0.889em;
+  margin-bottom: 1.083em;
+}
+
+.addNewLocation_icon {
+  visibility: none;
+  opacity: 0;
+  user-select: none;
+  cursor: default !important;
+  height: 0 !important;
+}
+
+.add_new_location_action_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    // border-bottom: 2px dashed #aaa;
+    margin: 0 0px;
+    height: 1px;
+    transform: translateY(0.5px);
+    background-image: repeating-linear-gradient(to right, #b2b2b2, #b2b2b2 8px, transparent 8px, transparent 14px);
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  &::before {
+    margin-right: 2em;
+  }
+
+  &::after {
+    margin-left: 2em;
+  }
+
+  .text_action_add_location {
+    color: #000000;
+    font-size: 1.25em;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .add_location_wrapper {
+    width: 2.026em;
+    cursor: pointer;
+    margin-right: 1.125em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loaction_wrapper {
+    border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+  }
+
+  .text_field_edit_location {
+    border: 0px;
+    padding-right: 2.7em;
+    padding-bottom: 2.2em;
+  }
+
+  .delete_location_edit {
+    width: 1.33em;
+    height: 1.496em;
+  }
+
+  .add_new_location_action_wrapper {
+    margin-bottom: 4em;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      // border-bottom: 2px dashed #aaa;
+      margin: 0 0px;
+      height: 1px;
+      transform: translateY(0.5px);
+      background-image: repeating-linear-gradient(to right, #b2b2b2, #b2b2b2 7px, transparent 7px, transparent 10px);
+      background-repeat: repeat-x;
+      background-position: center;
+    }
+
+    &::before {
+      margin-right: 1em;
+    }
+
+    &::after {
+      margin-left: 1em;
+    }
+
+    .text_action_add_location {
+      font-size: 1em;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+    }
+
+    .add_location_wrapper {
+      width: 1.727em;
+      margin-right: 0.4em;
+    }
+  }
+
+  .adress_location_wrapper {
+    .MuiFormControl-root {
+      padding-bottom: 2.2em;
+      border: 0;
+    }
+  }
+
+  .add_new_location_container {
+    .loaction_wrapper {
+      // border-bottom: 0;
+    }
+
+    >div {
+      &:last-child {
+        .MuiFormControl-root {
+          border-bottom: 0px solid rgba(112, 112, 112, 0.3) !important;
+        }
+
+        .text_field_edit_location {
+          border-bottom: 0px solid rgba(112, 112, 112, 0.3) !important;
+        }
+
+        .error_border_bottom {
+          border-bottom: 0 !important;
+          // background-color: red;
+        }
+      }
+    }
+  }
+}

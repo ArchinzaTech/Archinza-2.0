@@ -1,0 +1,100 @@
+.galery_workplace_empty_state {
+    background-color: #E4E4E4;
+    min-width: 25.5em;
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0.625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #1111114C;
+
+    .empty_workplace_conetnt {
+        text-align: center;
+
+        .addWorkplace_image_icon {
+            margin-bottom: 0.75em;
+            width: 3.5em;
+            height: 3.5em;
+        }
+
+        .empty_workplace_title {
+            font-size: 1.25em;
+            font-weight: 500;
+        }
+    }
+}
+
+.Contact_Info_col_main_warapper {
+    .my_container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.empty_state_location_connect {
+    width: 100% !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.625em;
+    border-bottom-right-radius: 0.625em;
+    border-bottom-left-radius: 0;
+}
+
+.edit_connect_wrapper_title {
+    font-size: 0.611em;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: #014FE0;
+    cursor: pointer;
+
+    .edit_icon_conect {
+        width: 0.799em;
+        margin-right: 0.273em;
+    }
+}
+
+.select_field_container {
+    .bedit_common_cta {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+.Business_pera_Working_hr {
+    font-size: 1.25em;
+    letter-spacing: 0.02em;
+    line-height: 1.7em;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+    .Business_pera_Working_hr {
+        font-size: 1.2em;
+        letter-spacing: 0.02em;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .galery_workplace_empty_state {
+        min-width: 14.2em;
+        height: 10em !important;
+
+        .empty_workplace_conetnt {
+
+            .addWorkplace_image_icon {
+                width: 2.2em;
+                height: 2.2em;
+                margin-bottom: 0.6em;
+            }
+
+            .empty_workplace_title {
+                font-size: 0.8em;
+            }
+        }
+    }
+}

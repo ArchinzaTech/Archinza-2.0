@@ -1,0 +1,208 @@
+@import "../../common.scss";
+
+.congrat_lt__main {
+    padding: 10em 0 0;
+    overflow: hidden;
+    background-color: #ffffff;
+
+    .blogslisting_background {
+        position: absolute;
+        // position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        // min-height: auto;
+        z-index: -1;
+        object-fit: cover;
+        // object-position: top;
+    }
+
+    .confetti_wrapper {
+        z-index: -1;
+    }
+
+    .congrat_lt_sec1 {
+        text-align: center;
+
+        .content_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: calc(100vh - 10em);
+
+            .cup {
+                width: 100%;
+                max-width: 16em;
+                margin-left: -0.7em;
+                box-shadow: none;
+            }
+
+            .title {
+                color: #000000;
+                font-size: 3.75em;
+                font-weight: 600;
+                letter-spacing: 0px;
+                line-height: 1.5;
+                margin: 0 0 0.2em;
+            }
+
+            .sub_title {
+                color: #000000;
+                font-size: 1.5em;
+                font-weight: 500;
+                letter-spacing: 0.48px;
+                line-height: 1.58334;
+            }
+
+            .desc {
+                color: #ef7b13;
+                font-size: 2.5em;
+                font-weight: 600;
+                letter-spacing: 0.8px;
+                line-height: 1.25em;
+                width: 100%;
+                max-width: 25em;
+                margin: 1.5em auto 0.6em;
+            }
+
+            .col_black {
+                color: #000000;
+            }
+
+            .cta_wrapper--Payment-Success {
+                margin-top: 2.8em !important;
+
+                .next_button {
+                    padding-left: 3em !important;
+                    padding-right: 3em !important;
+                }
+
+            }
+
+            .share--payment-success {
+                margin-top: 1.5em;
+                display: flex;
+                align-items: center;
+                font-size: 1.75em;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .cta_wrapper {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 3em;
+
+                .next_button {
+                    color: $color-FFFFFF;
+                    background-color: $color-014FE0;
+                    border-radius: 50px;
+                    border: none;
+                    font-size: 1.25em;
+                    font-weight: 400;
+                    letter-spacing: 0.4px;
+                    line-height: 1.08;
+                    width: 100%;
+                    max-width: fit-content;
+                    padding: 1.235em 2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    @include blueShadow;
+
+                    .icon {
+                        margin: 0 0 0 0.5em;
+                        object-fit: contain;
+                        max-width: 1.25em;
+                    }
+                }
+
+                .text {
+                    color: $color-FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .congrat_lt__main {
+        .congrat_lt_sec1 {
+            .content_wrapper {
+                .cta_wrapper--Payment-Success {
+                    margin-top: 2em !important;
+
+                    .next_button {
+                        font-size: 1em !important;
+                        padding-top: 1em !important;
+                        padding-left: 2em !important;
+                        padding-right: 2em !important;
+                        padding-bottom: 1em !important;
+                    }
+                }
+
+                .cta_wrapper {
+                    font-size: 1.4em;
+                }
+
+                .share--payment-success {
+                    display: block;
+                    margin-bottom: 4em;
+                    font-size: 1.4em !important;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .congrat_lt__main {
+        padding: 5em 0 0;
+
+        .congrat_lt_sec1 {
+            .content_wrapper {
+                height: calc(100vh - 5em);
+
+                .cup {
+                    max-width: 10.6em;
+                    margin-left: -0.6em;
+                }
+
+                .title {
+                    font-size: 3.2em;
+                    letter-spacing: 0.64px;
+                    line-height: 1.1875;
+                    margin: 0.5em 0 0.6875em;
+                }
+
+                .sub_title {
+                    font-size: 1.6em;
+                }
+
+                .desc {
+                    font-size: 2em;
+                    letter-spacing: 0.4px;
+                    line-height: 1.5;
+                    margin: 1.5em auto 0.6em;
+                    max-width: 100%;
+                }
+
+                .cta_wrapper {
+                    margin-top: 4.7em;
+                }
+            }
+        }
+    }
+}

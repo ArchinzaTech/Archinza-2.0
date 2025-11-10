@@ -1,0 +1,121 @@
+@import "../../common.scss";
+
+.common_footer_sec1 {
+  background: transparent;
+  // padding: 1.975em 8.75em;
+  padding: 1.975em 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  min-height: 9.05vh;
+  display: flex;
+  align-items: center;
+  .footer_wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .footer_col {
+    padding: 0;
+  }
+  .footer_copyright {
+    color: $color-FFFFFF;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .footer_social_icon {
+    text-align: center;
+  }
+  .social_icon {
+    width: 100%;
+    max-width: 2.179em;
+    height: 2.179em;
+    border-radius: 50%;
+    margin: 0 0.723em;
+  }
+  .footer_terms {
+    color: $color-FFFFFF;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+    text-align: right;
+  }
+}
+
+@media (min-width: 2500px) {
+  .common_footer_sec1 {
+    // padding: 2em 23.3em;
+    padding: 2em 0;
+  }
+}
+
+@media (max-width: 1536px) {
+  .common_footer_sec1 {
+    .footer_terms {
+      font-size: 1.2em;
+    }
+    .footer_copyright {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .common_footer_sec1 {
+    min-height: 13vh;
+  }
+}
+
+@media (max-width: 880px) {
+  .common_footer_sec1 {
+    // padding: 2em 4.75em;
+    padding: 2em 0;
+  }
+}
+
+@media (max-width: 796px) {
+  .common_footer_sec1 {
+    // padding: 2em 1.75em;
+    padding: 2em 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .common_footer_sec1 {
+    // padding: 2.3em 1.6em 1.58em 1.7em;
+    padding: 2.3em 0 1.58em;
+    .footer_copyright {
+      text-align: center;
+      font-size: 1.2em;
+      letter-spacing: 0.6px;
+      line-height: 2em;
+      margin-bottom: 0.875em;
+    }
+    .footer_terms {
+      text-align: center;
+      font-size: 1.2em;
+      letter-spacing: 0.6px;
+      line-height: 2em;
+      margin-bottom: 1.45em;
+    }
+    .social_icon {
+      max-width: 2.27em;
+      height: 2.27em;
+      margin: 0 0.739em;
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .common_footer_sec1 {
+    .footer_copyright {
+      font-size: 1.15em;
+    }
+    .footer_terms {
+      font-size: 1.15em;
+    }
+  }
+}

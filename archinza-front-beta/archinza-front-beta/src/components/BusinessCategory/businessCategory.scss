@@ -1,0 +1,106 @@
+@import "../../common.scss";
+
+.text_field_others_rsstep01 {
+    margin: 2em auto 0 auto;
+    width: 30rem;
+}
+
+.business_ctg_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.75em;
+
+    .business_ctg_card {
+        cursor: pointer;
+        position: relative;
+        padding-bottom: 1.75em;
+        box-shadow: 0px 6px 9px #00000029;
+        border: 1px solid #1111114C;
+        border-radius: 1em;
+        background-color: #FFFFFF;
+        // max-width: 29.75em;
+        width: 29.75em;
+        min-height: 23.688em;
+
+        .vericle_line_grey_ctg_business {
+            color: #1111114C;
+            font-weight: 600;
+            padding: 0 0.2em;
+        }
+
+
+        .business_ctg_img {
+            margin-top: 1.75em;
+            margin-bottom: 1.344em;
+            width: 3.721em;
+        }
+
+        .business_ctg_title {
+            font-size: 1.875em;
+            font-weight: 600;
+            line-height: 1.333em;
+            padding: 0 0.9em;
+            color: #111111;
+            margin-bottom: 0.733em;
+
+            display: flex;
+            flex-wrap: wrap;
+            /* text-align: center; */
+            justify-content: center;
+        }
+
+        .business_ctg_example {
+            font-size: 1.5em;
+            color: hsla(0, 0%, 7%, 0.50);
+            padding: 0 1.667em;
+        }
+
+        .selcetd_bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: scale(1.06);
+            -webkit-transform: scale(1.06);
+            -moz-transform: scale(1.06);
+            -ms-transform: scale(1.06);
+            -o-transform: scale(1.06);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .text_field_others_rsstep01{
+        width: 85%;
+    }
+    .business_ctg_wrapper {
+
+        .business_ctg_card {
+
+            .business_ctg_img {
+                width: 4.793em;
+            }
+
+            .business_ctg_title {
+                font-size: 2.2em;
+                padding-left: 0.591em;
+                padding-right: 0.591em;
+            }
+
+            .business_ctg_example {
+                font-size: 1.6em;
+            }
+
+            .selcetd_bg {
+                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+            }
+        }
+    }
+}

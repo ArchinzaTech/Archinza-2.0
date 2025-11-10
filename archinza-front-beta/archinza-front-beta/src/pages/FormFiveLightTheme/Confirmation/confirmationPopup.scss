@@ -1,0 +1,85 @@
+.custom-backdrop-confirmation {
+    background-color: rgb(255, 255, 255, 90%) !important; // Dark overlay
+}
+
+.confirmation_popup_modal {
+    .modal-dialog {
+        width: 57.813em;
+    }
+
+    .modal-header {
+        padding-bottom: 0 !important;
+    }
+
+    .modal-content {
+        border: 2px solid #014FE0;
+    }
+
+    .closeIcon_confm_popup {
+        width: 2em;
+    }
+
+    .confrimation_popup_desc {
+        font-size: 1.5em;
+        padding: 0 1.667em;
+        margin-top: 1.25em;
+        text-align: center;
+        line-height: 1.75em;
+    }
+
+    .popup_common_btn {
+        background-color: #014FE0;
+        border: 0;
+        border-radius: 50px;
+        box-shadow: 0 0 25px 5px transparent;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.25em;
+        font-weight: 400;
+        justify-content: center;
+        letter-spacing: 0.4px;
+        line-height: 1.08;
+        max-width: fit-content;
+        padding: 1.1em 1.6em;
+        width: 100%;
+        margin: 1.95em auto 1.6em auto;
+    }
+
+    .confrimation_svg {
+        width: 9em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .confirmation_popup_modal {
+        .modal-dialog {
+            width: 95vw;
+            height: auto !important;
+            margin: auto !important;
+
+            .modal-body {
+                padding: 0 !important;
+                border-radius: 1em;
+                -webkit-border-radius: 1em;
+                -moz-border-radius: 1em;
+                -ms-border-radius: 1em;
+                -o-border-radius: 1em;
+            }
+
+            .modal-content {
+                border-radius: 1em !important;
+                -webkit-border-radius: 1em !important;
+                -moz-border-radius: 1em !important;
+                -ms-border-radius: 1em !important;
+                -o-border-radius: 1em !important;
+            }
+        }
+
+        .confrimation_popup_desc {
+            font-size: 1.4em;
+            padding: 0 1.5em;
+        }
+    }
+}

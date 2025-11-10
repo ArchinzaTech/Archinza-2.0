@@ -1,0 +1,126 @@
+// toggle.scss
+.section_tg_drk{
+  background-color: rgb(0 0 0 / 10%) !important;
+    backdrop-filter: blur(8px) !important;
+    
+  .white_text {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: colors 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+
+    &:hover {
+      color: #2563eb;
+    }
+
+    // &.active {
+    //   color: #2563eb;
+    //   font-weight: 600;
+    // }
+  }
+}
+.section-toggle {
+  position: sticky;
+  // top: 4rem;
+  top: 9em;
+  z-index: 40;
+  background-color: rgb(255 255 255 / 0.1); // bg-white/10
+  backdrop-filter: blur(12px);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0 0.75rem 0.75rem; // rounded-b-xl
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); // shadow-sm
+
+
+  .white_text {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: colors 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+
+    &:hover {
+      color: #2563eb;
+    }
+
+    // &.active {
+    //   color: #2563eb;
+    //   font-weight: 600;
+    // }
+  }
+
+  @media (min-width: 640px) {
+    padding: 0.75rem 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0.75rem 2rem;
+  }
+
+  .dark & {
+    background-color: rgb(17 24 39 / 0.1); // dark:bg-gray-900/10
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem; // text-sm
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    @media (min-width: 640px) {
+      font-size: 1rem; // sm:text-base
+    }
+
+    &--active {
+      color: rgb(37 99 235) !important; // text-blue-600
+      font-weight: 600;
+
+      .dark & {
+        color: rgb(96 165 250); // dark:text-blue-400
+      }
+    }
+
+    &--inactive {
+      color: rgb(75 85 99); // text-gray-600
+
+      .dark & {
+        color: rgb(243 244 246); // dark:text-gray-100
+      }
+
+      &:hover {
+        color: rgb(37 99 235); // hover:text-blue-600
+
+        .dark & {
+          color: rgb(96 165 250); // dark:hover:text-blue-400
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1080px) {
+    top: 8em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .section-toggle {
+    .white_text {
+      font-size: 0.88rem;
+    }
+  }
+}

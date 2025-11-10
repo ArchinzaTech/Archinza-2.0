@@ -1,0 +1,139 @@
+import React, { useEffect, useState } from "react";
+import style from "../Form/formfive.module.scss";
+import LogoutText from "../../../components/LogoutText/LogoutText";
+import FullWidthTextField from "../../../components/TextField/FullWidthTextField";
+import { countries } from "../../../db/dataTypesData";
+import AutoCompleteField from "../../../components/AutoCompleteField/AutoCompleteField";
+import { deleteicon, plusicon, rightarrowwhite } from "../../../images";
+
+const FDStep03 = ({
+  previousStep,
+  nextStep,
+  currentStep,
+  totalSteps,
+  progressStatus,
+}) => {
+  const [secondRow, setSecondRow] = useState(false);
+
+  useEffect(() => {
+    progressStatus((currentStep / totalSteps) * 100);
+  }, [currentStep, progressStatus, totalSteps]);
+
+  return (
+    <>
+      <div className={style.text_container}>
+        <h1 className={style.title}>Business/Firm Location</h1>
+        <p className={style.description}></p>
+      </div>
+      <div className={`${style.steps} ${style.fastep02}`}>
+        <div className={`row ${style.location_row}`}>
+          <div className={`col-md-6 ${style.location_column}`}>
+            <div className={style.field_wrapper}>
+              <AutoCompleteField textLabel="Country" data={countries} />
+              <p className={style.error}></p>
+            </div>
+          </div>
+          <div className={`col-md-6 ${style.location_column}`}>
+            <div className={style.field_wrapper}>
+              <AutoCompleteField textLabel="State" data={countries} />
+            </div>
+          </div>
+          <div className={`col-md-6 ${style.location_column}`}>
+            <div className={style.field_wrapper}>
+              <AutoCompleteField textLabel="City" data={countries} />
+            </div>
+          </div>
+          <div className={`col-md-6 ${style.location_column}`}>
+            <div className={style.field_wrapper}>
+              <FullWidthTextField type="number" label="Enter Pin Code" />
+            </div>
+          </div>
+          <div className={style.add_delete_icon_row}>
+            <img
+              src={plusicon}
+              alt="icon"
+              className={style.plusicon}
+              loading="lazy"
+              onClick={() => setSecondRow(true)}
+            />
+          </div>
+        </div>
+        {/* Row two demonstration */}
+        {/* Row two demonstration */}
+        {/* Row two demonstration */}
+        {secondRow === true && (
+          <div className={`row ${style.location_row}`}>
+            <div className={`col-md-6 ${style.location_column}`}>
+              <div className={style.field_wrapper}>
+                <AutoCompleteField textLabel="Country" data={countries} />
+                <p className={style.error}></p>
+              </div>
+            </div>
+            <div className={`col-md-6 ${style.location_column}`}>
+              <div className={style.field_wrapper}>
+                <AutoCompleteField textLabel="State" data={countries} />
+              </div>
+            </div>
+            <div className={`col-md-6 ${style.location_column}`}>
+              <div className={style.field_wrapper}>
+                <AutoCompleteField textLabel="City" data={countries} />
+              </div>
+            </div>
+            <div className={`col-md-6 ${style.location_column}`}>
+              <div className={style.field_wrapper}>
+                <FullWidthTextField type="number" label="Enter Pin Code" />
+              </div>
+              <div className={style.add_delete_icon}>
+                <img
+                  src={plusicon}
+                  alt="icon"
+                  className={style.plusicon}
+                  loading="lazy"
+                />
+                <img
+                  src={deleteicon}
+                  alt="icon"
+                  className={style.deleteicon}
+                  loading="lazy"
+                  onClick={() => setSecondRow(false)}
+                />
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className={style.next_logout}>
+        <div className={style.cta_wrapper}>
+          <div
+            className={style.next_button}
+            onClick={() => {
+              nextStep(3);
+              window.scrollTo(0, 0);
+            }}
+          >
+            <div className={style.text}>Next</div>
+            <img
+              src={rightarrowwhite}
+              alt="icon"
+              className={style.icon}
+              loading="lazy"
+            />
+          </div>
+          <div
+            className={style.back_button}
+            onClick={() => {
+              previousStep(1);
+              window.scrollTo(0, 0);
+            }}
+          >
+            Back
+          </div>
+        </div>
+        <LogoutText />
+      </div>
+    </>
+  );
+};
+
+export default FDStep03;

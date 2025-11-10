@@ -1,0 +1,153 @@
+.BusinessHoursPopup {
+    .modal-content {
+        width: 61.875em;
+    }
+
+    .modal-body {
+        padding: 2.5em 2em;
+        border-radius: 1.25em;
+        -webkit-border-radius: 1.25em;
+        -moz-border-radius: 1.25em;
+        -ms-border-radius: 1.25em;
+        -o-border-radius: 1.25em;
+}
+
+    .Complete_actions_popup_m_heading {
+        letter-spacing: 0.02em;
+    }
+
+    .Custom_checks_pils_wrapper {
+        border-bottom: 1px solid rgba(112, 112, 112, 0.4);
+        padding-bottom: 0.5em;
+
+        .checkboxbutton_checkbox_wrapper {
+            margin-left: 0;
+            margin-right: 2em;
+
+            .checkboxbutton_checkbox_label {
+                margin-bottom: 1.333em;
+            }
+        }
+    }
+
+    .hours_select_ip_wrapper_left {
+        padding-left: 0;
+        padding-right: 1.25em;
+    }
+
+    .hours_select_ip_wrapper_right {
+        padding-right: 0;
+        padding-left: 1.25em;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .BusinessHoursPopup {
+        .modal-content {
+            width: 100%;
+
+            .Complete_actions_popup_m_heading {
+                margin-bottom: 0.75em;
+            }
+        }
+
+
+
+        .Custom_checks_pils_wrapper {
+            padding-bottom: 1em;
+
+            .checkboxbutton_checkbox_wrapper {
+                margin-right: 1.2em;
+
+                .checkboxbutton_checkbox_label {
+                    padding: 1em 1.6em;
+                    font-size: 1em !important;
+                    letter-spacing: 0.02em;
+                }
+            }
+        }
+
+        .hours_select_ip_wrapper_left {
+            padding: 0;
+        }
+
+        .hours_select_ip_wrapper_right {
+            padding: 0;
+        }
+
+        .checkboxbutton_checkbox_wrapper .checkboxbutton_checkbox_input:checked~.checkboxbutton_checkbox_label {
+            border: 1px solid #EF7B13;
+            padding: 1em 3.2em 1em 1.6em !important;
+        }
+
+        .form_autocomplete_b_edit_wrapper_popUp {
+            .autocomplete_coustom_wrapper {
+                .MuiOutlinedInput-root {
+                    border-radius: 5px !important;
+                    -webkit-border-radius: 5px !important;
+                    -moz-border-radius: 5px !important;
+                    -ms-border-radius: 5px !important;
+                    -o-border-radius: 5px !important;
+                }
+            }
+        }
+
+        .field_wrapper {
+            max-width: 100% !important;
+            margin-top: 2.4em;
+            // margin-bottom: -0.9em;
+        }
+
+        .form_autocomplete_b_edit_wrapper_popUp {
+
+
+            .autocomplete_coustom_wrapper label {
+                font-size: 1.2em;
+                overflow: visible !important;
+                line-height: 0.3em !important;
+            }
+
+            .autocomplete_coustom_wrapper {
+                .MuiOutlinedInput-root {
+                    border-radius: 5px !important;
+                    -webkit-border-radius: 5px !important;
+                    -moz-border-radius: 5px !important;
+                    -ms-border-radius: 5px !important;
+                    -o-border-radius: 5px !important;
+                }
+            }
+
+            .autocomplete_coustom_wrapper {
+                .fieldset {
+                    border-radius: 5px !important;
+                    -webkit-border-radius: 5px !important;
+                    -moz-border-radius: 5px !important;
+                    -ms-border-radius: 5px !important;
+                    -o-border-radius: 5px !important;
+                }
+            }
+
+            .autocomplete_coustom_wrapper {
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 5px !important;
+                    -webkit-border-radius: 5px !important;
+                    -moz-border-radius: 5px !important;
+                    -ms-border-radius: 5px !important;
+                    -o-border-radius: 5px !important;
+                }
+            }
+
+            .autocomplete_coustom_wrapper {
+                .MuiOutlinedInput-root .MuiAutocomplete-input {
+                    font-size: 0.923em !important;
+                }
+            }
+        }
+
+        .confirmation_common_btn {
+            margin-top: 3.2em;
+        }
+    }
+}

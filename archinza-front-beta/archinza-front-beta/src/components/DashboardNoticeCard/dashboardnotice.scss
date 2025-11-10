@@ -1,0 +1,29 @@
+@import "../../common.scss";
+.notice_card {
+  height: 100%;
+  cursor: pointer;
+  .desc {
+    color: $color-F6F6F6;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    line-height: 1.583;
+    margin-top: 0.6666666666666667em;
+  }
+}
+
+@media (max-width: 992px) {
+  .notice_card {
+    .desc {
+      font-size: 1.6em;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .notice_card {
+    .desc {
+      margin: 1.375em 0 0;
+    }
+  }
+}

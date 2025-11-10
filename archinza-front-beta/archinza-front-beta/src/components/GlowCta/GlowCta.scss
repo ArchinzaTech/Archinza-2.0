@@ -1,0 +1,62 @@
+@import "../../common.scss";
+
+.glowcta_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .cta_link {
+    background-color: $color-014FE0;
+    border-radius: 2.25em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.5em 2em;
+    width: 100%;
+    max-width: fit-content;
+
+    .arrow_img {
+      width: 100%;
+      max-width: 1.75em;
+      margin: 0 0 0 0.75em;
+    }
+    .cta_text {
+      @include textStyles(1.364em, 1.08em, 0.4px);
+      color: $color-FFFFFF;
+      border-radius: 50px;
+      border: 0;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-right: 0.6em;
+      text-align: center;
+      margin: 0 auto;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .glowcta_wrapper {
+    flex-direction: column;
+    .cta_link {
+      border-radius: 5em;
+      display: block;
+      padding: 1.47em 2em;
+      .cta_text {
+        font-size: 1.4em;
+        letter-spacing: 0.28px;
+        line-height: 1.715;
+        margin-right: 0;
+        br {
+          display: block;
+        }
+      }
+      .arrow_img {
+        max-width: 1.75em;
+      }
+    }
+  }
+}

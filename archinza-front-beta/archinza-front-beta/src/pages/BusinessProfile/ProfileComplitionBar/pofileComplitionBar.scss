@@ -1,0 +1,46 @@
+.profile-completion-container {
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+    font-size: 1.25em;
+
+    .label {
+        font-weight: 500;
+    }
+
+    .progress-bar {
+        flex: 1;
+        height: 8px;
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        border: 0.5px solid #1111114C;
+        border-radius: 16px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background-color: #00BC4B;
+        transition: width 0.3s ease;
+        border-radius: 16px;
+    }
+
+    .percentage {
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile-completion-container {
+        gap: 0.4em;
+
+        .label {
+            font-weight: 500;
+        }
+
+        .progress-bar {
+            height: 4px;
+        }
+
+    }
+}

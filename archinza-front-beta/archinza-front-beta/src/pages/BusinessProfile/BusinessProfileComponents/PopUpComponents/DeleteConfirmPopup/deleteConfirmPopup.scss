@@ -1,0 +1,76 @@
+.delet_confirmation_box_conatiner {
+    display: flex;
+    justify-content: center;
+
+    .delet_confirmation_box {
+        border: 1px dashed #8D8D8D99;
+        border-radius: 5px;
+        width: 32.563em;
+        text-align: center;
+        padding: 1.375em 1.875em;
+
+        .delete_confirmation_img {
+            width: 4.761em;
+            height: 3.313em;
+            margin-bottom: 0.75em;
+        }
+
+        .desc_delete_confirmation_msg {
+            color: #000000;
+            opacity: 60%;
+            font-size: 1.125em;
+            font-weight: 500;
+        }
+    }
+}
+
+.delete_confirmation_actions_btn_group {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.75em;
+
+    .cmn_styling_delete_confm_btn {
+        .closeIcon_delete_confm {
+            height: 1.375em;
+            width: 1.375em;
+            margin-right: 0.5em;
+        }
+
+        .deleteIcon_delete_confm {
+            height: 1.375em;
+            width: 1.375em;
+            margin-right: 0.5em;
+        }
+    }
+
+    .cancel_delet_btn {
+        border: 0.5px solid #1111114C;
+        border-radius: 90px;
+        -webkit-border-radius: 90px;
+        -moz-border-radius: 90px;
+        -ms-border-radius: 90px;
+        -o-border-radius: 90px;
+        padding: 0.583em 1.333em;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        margin-right: 20px;
+    }
+
+    .delet_btn {
+        background-color: #014FE0;
+        color: #fff;
+        border-radius: 90px;
+        -webkit-border-radius: 90px;
+        -moz-border-radius: 90px;
+        -ms-border-radius: 90px;
+        -o-border-radius: 90px;
+        padding: 0.583em 1.333em;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+}

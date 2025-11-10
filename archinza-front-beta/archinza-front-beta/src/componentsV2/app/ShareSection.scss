@@ -1,0 +1,195 @@
+.share-section {
+  padding: 3rem 1.5rem; // px-6 py-12
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; // font-sans
+  background-color: white;
+  color: black;
+
+  @media (min-width: 768px) {
+    // md breakpoint
+    padding-top: 4rem; // md:py-16
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    // lg breakpoint
+    padding-top: 5rem; // lg:py-20
+    padding-bottom: 5rem;
+  }
+
+  // Dark mode styles
+  &.dark {
+    background-color: black; // dark:bg-black
+    color: white; // dark:text-white
+  }
+}
+
+.share-container {
+  max-width: 56rem; // max-w-4xl
+  margin: 0 auto; // mx-auto
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem; // space-y-10
+}
+
+.did-you-know-card {
+  border-radius: 0.5rem; // rounded-lg
+  border: 1px solid #f97316; // border-orange-500
+  background-color: #f3f4f6; // bg-gray-100
+  padding: 1.5rem; // px-6 py-6
+
+  @media (min-width: 768px) {
+    // md breakpoint
+    padding: 2.5rem 2rem; // md:px-10 md:py-8
+  }
+
+  // Dark mode
+  .share-section.dark & {
+    background-color: #171717; // dark:bg-neutral-900
+  }
+
+  .card-title {
+    font-size: 1.5rem; // text-2xl
+    font-weight: 700; // font-bold
+    margin-bottom: 0.75rem; // mb-3
+  }
+
+  .card-description {
+    color: #374151; // text-gray-700
+    font-size: 1rem; // text-base
+
+    @media (min-width: 768px) {
+      // md breakpoint
+      font-size: 1.125rem; // md:text-lg
+    }
+
+    // Dark mode
+    .share-section.dark & {
+      color: #d1d5db; // dark:text-gray-300
+    }
+  }
+}
+
+.share-content {
+  .share-title {
+    font-size: 1.5rem; // text-2xl
+    font-weight: 700; // font-bold
+
+    @media (min-width: 768px) {
+      // md breakpoint
+      font-size: 1.875rem; // md:text-3xl
+    }
+
+    .orange-text {
+      color: #f97316; // text-orange-500
+    }
+  }
+
+  .share-description {
+    margin-top: 0.75rem; // mt-3
+    color: #374151; // text-gray-700
+    max-width: 42rem; // max-w-2xl
+    font-size: 1rem;
+
+    // Dark mode
+    .share-section.dark & {
+      color: #d1d5db; // dark:text-gray-300
+    }
+  }
+
+  .share-cta {
+    margin-top: 0.5rem; // mt-2
+    font-weight: 700; // font-bold
+    font-size: 1rem;
+
+    .orange-text {
+      color: #f97316; // text-orange-500
+    }
+  }
+}
+
+.share-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; // gap-6
+  margin-top: 1.25rem; // mt-5
+
+  .share-icon {
+    font-size: 2.25rem; // text-4xl
+    transition: transform 0.15s ease-in-out; // transition
+
+    &:hover {
+      transform: scale(1.1); // hover:scale-110
+    }
+
+    &.whatsapp {
+      color: #22c55e; // text-green-500
+    }
+
+    &.linkedin {
+      color: #2563eb; // text-blue-600
+    }
+
+    &.link {
+      color: #ea580c; // text-orange-600
+    }
+  }
+}
+
+.get-started-content {
+  .get-started-title {
+    font-size: 1.5rem; // text-2xl
+    font-weight: 700; // font-bold
+
+    @media (min-width: 768px) {
+      // md breakpoint
+      font-size: 1.875rem; // md:text-3xl
+    }
+  }
+
+  .get-started-description {
+    margin-top: 0.75rem; // mt-3
+    color: #374151; // text-gray-700
+    max-width: 42rem; // max-w-2xl
+    font-size: 1rem;
+
+    // Dark mode
+    .share-section.dark & {
+      color: #d1d5db; // dark:text-gray-300
+    }
+  }
+
+  .get-started-cta {
+    margin-top: 0.5rem; // mt-2
+    font-weight: 700; // font-bold
+    font-size: 1rem;
+
+    .orange-text {
+      color: #f97316; // text-orange-500
+    }
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.25rem; // mt-5
+  padding: 0.75rem 1.5rem; // px-6 py-3
+  background-color: #2563eb; // bg-blue-600
+  color: white;
+  font-weight: 600; // font-semibold
+  border-radius: 9999px; // rounded-full
+  text-decoration: none;
+  transition: background-color 0.15s ease-in-out; // transition
+  font-size: 1rem;
+
+  &:hover {
+    background-color: #1d4ed8; // hover:bg-blue-700
+    color: white;
+  }
+
+  .strikethrough {
+    text-decoration: line-through; // line-through
+  }
+}

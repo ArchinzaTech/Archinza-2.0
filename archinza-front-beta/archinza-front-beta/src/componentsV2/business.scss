@@ -1,0 +1,11 @@
+.business_main_sec {
+  background-color: #ffffff;
+  padding: 0 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 1023px) {
+  .business_main_sec {
+    padding: 5rem 1rem 0;
+  }
+}

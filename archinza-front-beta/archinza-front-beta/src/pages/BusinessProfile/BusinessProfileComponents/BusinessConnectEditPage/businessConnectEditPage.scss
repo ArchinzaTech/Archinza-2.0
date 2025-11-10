@@ -1,0 +1,265 @@
+.galery_workplace_empty_state {
+  background-color: #e4e4e4;
+  min-width: 25.5em;
+  border-top-left-radius: 0.625em;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0.625em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #1111114c;
+
+  .empty_workplace_conetnt {
+    text-align: center;
+
+    .addWorkplace_image_icon {
+      margin-bottom: 0.75em;
+      width: 3.5em;
+      height: 3.5em;
+    }
+
+    .empty_workplace_title {
+      font-size: 1.25em;
+      font-weight: 500;
+    }
+  }
+}
+
+.Contact_Info_col_main_warapper {
+  .my_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .owner_details {
+    // border: 1px solid red;
+    margin-top: 2em;
+
+    .owner_cards {
+      display: flex;
+      gap: 1em;
+      overflow-y: scroll;
+
+      .owner_card {
+        box-shadow: 0px 6px 9px #00000029;
+        border: 1px solid #1111114c;
+        border-radius: 1em;
+        background-color: #ffffff;
+        padding: 1.667em;
+        flex-shrink: 0;
+        width: 18.75em;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+          color: #111;
+          // font-size: 1.875em;
+          font-size: 1.6em;
+          font-weight: 600;
+          line-height: 1.333em;
+          margin-bottom: 0.733em;
+          text-align: left;
+          flex-grow: 1;
+        }
+
+        .email,
+        .number,
+        .whatsappnumber {
+          color: hsla(0, 0%, 7%, 0.5);
+          font-size: 1.5em;
+          margin-top: 0.5em;
+        }
+
+        .email {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .enquiry_prefrence_details_wrapper {
+    margin-top: 2em;
+
+    .enquiry_prefrence_details {
+      // border: 1px solid red;
+
+      .enquiry {
+        // border: 1px solid red;
+        margin-top: 2em;
+
+        .title {
+          color: #111;
+          font-size: 1.6em;
+          font-weight: 600;
+          line-height: 1.333em;
+          // margin-bottom: 0.733em;
+          text-align: left;
+          flex-grow: 1;
+
+          .detail {
+            opacity: 0.5;
+          }
+        }
+
+        .contact_details {
+          margin-top: 0.5em;
+          display: flex;
+          gap: 1em;
+
+          span {
+            color: #111111;
+            font-size: 1em;
+            font-weight: 500;
+            line-height: 1.08;
+            opacity: 0.8;
+            white-space: nowrap;
+
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+
+            img {
+              width: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.empty_state_location_connect {
+  width: 100% !important;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.625em;
+  border-bottom-right-radius: 0.625em;
+  border-bottom-left-radius: 0;
+}
+
+.edit_connect_wrapper_title {
+  font-size: 0.611em;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #014fe0;
+  cursor: pointer;
+
+  .edit_icon_conect {
+    width: 0.799em;
+    margin-right: 0.273em;
+  }
+}
+
+.social_liks_connect {
+  .lock_icon_wrapper {
+    // border: 1px solid red;
+    margin-left: 1em;
+    position: relative;
+
+    .link_lock {
+      width: 1em;
+    }
+
+    .custom_tooltip {
+      background-color: black;
+      color: white;
+      padding: 0.5em 1em;
+      font-size: 1em;
+      border-radius: 0.5em;
+      position: absolute;
+      top: 50%;
+      left: 150%;
+      white-space: nowrap;
+      display: none;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      .custom_tooltip {
+        display: block;
+      }
+    }
+  }
+}
+
+.select_field_container {
+  .bedit_common_cta {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+.Business_pera_Working_hr {
+  font-size: 1.25em;
+  letter-spacing: 0.02em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .Business_pera_Working_hr {
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+  }
+
+  .Contact_Info_col_main_warapper {
+    .owner_details {
+      margin-top: 2em;
+
+      .owner_cards {
+        .owner_card {
+          .name {
+            font-size: 1.4em;
+            font-weight: 600;
+            line-height: 1.333em;
+          }
+
+          .email,
+          .number,
+          .whatsappnumber {
+            color: hsla(0, 0%, 7%, 0.5);
+            font-size: 1.2em;
+            margin-top: 0.5em;
+          }
+
+          .email {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    .enquiry_prefrence_details_wrapper {
+      .enquiry_prefrence_details {
+        .enquiry {
+          .title {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .galery_workplace_empty_state {
+    min-width: 14.2em;
+    height: 10em !important;
+
+    .empty_workplace_conetnt {
+      .addWorkplace_image_icon {
+        width: 2.2em;
+        height: 2.2em;
+        margin-bottom: 0.6em;
+      }
+
+      .empty_workplace_title {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

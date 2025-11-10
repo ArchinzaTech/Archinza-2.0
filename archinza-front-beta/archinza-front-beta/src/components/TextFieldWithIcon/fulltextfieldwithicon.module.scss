@@ -1,0 +1,33 @@
+@import "../../common.scss";
+
+.fullwidth_input {
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1.5px solid $color-707070;
+  border-radius: 1em;
+  //   label {
+  //     @include textStyles(1.5em, normal, 0);
+  //   }
+}
+
+.textfield_wrapper {
+  position: relative;
+}
+
+.img_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2em;
+  pointer-events: none;
+  .input_icon {
+    object-fit: contain;
+    width: 100%;
+    max-width: 1.875em;
+  }
+}

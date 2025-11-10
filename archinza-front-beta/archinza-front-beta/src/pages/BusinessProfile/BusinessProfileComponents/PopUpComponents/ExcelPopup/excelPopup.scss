@@ -1,0 +1,514 @@
+@import "../../../../../common.scss";
+
+.excel_popup {
+  .modal-dialog {
+    // max-width: 56.15%;
+    max-width: 100%;
+    min-height: 100%;
+    // min-height: calc(100vh - 4.9375em);
+    margin: 0 auto;
+    // overflow-y: auto;
+  }
+
+  .modal-content {
+    // background-color: #ffffff;
+    background-color: transparent;
+    border: none;
+    // border-radius: 1.25em;
+    border-radius: 0;
+    // padding: 2.5em 2em;
+    padding: 0;
+  }
+
+  .modal-header {
+    padding: 0;
+    border: none;
+
+    .custom-cancel-btn {
+      width: 100%;
+      max-width: 4.5em;
+      position: fixed;
+      right: 2.5em;
+      top: 2.5em;
+
+      // top: -1.4375em;
+      .ctm_img_bussine_edit_about {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .modal-body {
+    background-color: #ffffff;
+    border-radius: 1.25em;
+    // padding: 0;
+    padding: 2.5em 2em;
+    width: 100%;
+    max-width: 56.15%;
+    margin: 3.9375em auto 1em;
+
+    .about_modal_bussines_heading {
+      color: #111111;
+      font-size: 2.25em;
+      letter-spacing: 0.72px;
+      line-height: 1.889;
+      margin-bottom: 0.778em;
+    }
+
+    .spacing_btm_project_scope {
+      margin-top: 3.188em;
+    }
+
+    .excel_select_container {
+      .excel_select_wrapper {
+        // margin: 0 auto;
+        margin-bottom: 3.1875em;
+        // max-width: 62.53%;
+        width: 100%;
+
+        .MuiAutocomplete-inputRoot {
+          // border: 1px solid #8d8d8d99;
+          font-size: inherit;
+          // padding: 9px 16.5px;
+        }
+
+        label {
+          font-size: 1.25em;
+          letter-spacing: 0.4px;
+          line-height: 1.5;
+        }
+      }
+
+      .excel_select2field_wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        // max-width: 62.53%;
+        // margin: 0 auto;
+
+        .excel_select_wrapper {
+          &:nth-child(1) {
+            width: 100%;
+            max-width: 69.395%;
+            padding-right: 0.625em;
+          }
+
+          &:nth-child(2) {
+            width: 100%;
+            max-width: 30.605%;
+            padding-left: 0.625em;
+          }
+        }
+      }
+    }
+
+    .excel_select_search_wrapper {
+      // margin: 0 auto;
+
+      .field_wrapper {
+        max-width: 100%;
+        margin: 0;
+      }
+
+      .search_select_wrapper {
+        width: 100%;
+        // max-width: 62.53%;
+
+        .MuiAutocomplete-inputRoot {
+          // border: 1px solid #8d8d8d99;
+          font-size: inherit;
+          // padding: 9px 16px;
+        }
+
+        // .MuiOutlinedInput-root .MuiAutocomplete-input {
+        //   padding: 5px;
+        // }
+        label {
+          font-size: 1.25em;
+          letter-spacing: 0.4px;
+          line-height: 1.5;
+          // top: 50%;
+          // left: 1.5em;
+          // transform: translate(0, -50%);
+        }
+      }
+
+      .chips_b_edit_autoComplete {
+        margin: 1.75em 0 1.9375em;
+        display: flex;
+        flex-wrap: wrap;
+
+        &:nth-last-child(2) {
+          margin-bottom: 0;
+        }
+
+        .checkboxbutton_checkbox_wrapper {
+          margin: 0;
+        }
+
+        .black_border_chips_custom {
+          border: 1px solid #111111;
+          background: #ffffff;
+          color: #111111;
+          font-size: 1.125em;
+          font-weight: 500;
+          line-height: 1.2;
+          padding: 1.013em 2.98em 1.013em 1.334em;
+          border-radius: 90px;
+          margin: 0 1.112em 1.112em 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          position: relative;
+          cursor: pointer;
+
+          .close_icon {
+            position: absolute;
+            right: 1.334em;
+            top: 1.112em;
+            width: 100%;
+            max-width: 0.978em;
+            margin-left: 0.667em;
+          }
+        }
+
+        .checkboxbutton_checkbox_wrapper
+          .checkboxbutton_checkbox_input:checked
+          + .checkboxbutton_checkbox_label {
+          border: 1px solid #ef7b13;
+          background: #ffffff;
+          border-radius: 90px;
+          color: #111111;
+          font-size: 1.125em;
+          font-weight: 500;
+          line-height: 1.2;
+          padding: 1.013em 2.98em 1.013em 1.334em;
+          margin: 0 1.112em 1.112em 0;
+          position: relative;
+
+          &::before {
+            content: "";
+            background: transparent
+              url("../../../../../images/general/black_close.svg") no-repeat;
+            background-size: contain;
+            position: absolute;
+            right: 1.334em;
+            top: 1.112em;
+            width: 0.978em;
+            height: 0.978em;
+          }
+        }
+
+        .checkboxbutton_checkbox_wrapper
+          .checkboxbutton_checkbox_input:checked
+          + .checkboxbutton_checkbox_label
+          .checkboxbutton_close:before,
+        .checkboxbutton_checkbox_wrapper
+          .checkboxbutton_checkbox_input:checked
+          + .checkboxbutton_checkbox_label
+          .checkboxbutton_close:after {
+          display: none;
+        }
+      }
+    }
+
+    .popup_common_btn {
+      background-color: #014fe0;
+      border: 0;
+      border-radius: 50px;
+      box-shadow: 0 0 25px 5px transparent;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-size: 1.25em;
+      font-weight: 400;
+      justify-content: center;
+      letter-spacing: 0.4px;
+      line-height: 1.08;
+      max-width: -webkit-fit-content;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
+      padding: 1.1em 1.6em;
+      width: 100%;
+      margin: 2em auto 0;
+    }
+  }
+}
+
+.where_we_excel--modal {
+  .modal-content {
+    position: relative;
+  }
+}
+
+.modal_autocomplete--excel-popup {
+  .MuiAutocomplete-listbox {
+    height: 5.5em !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .where_we_excel--modal {
+    .modal-content {
+      max-width: 67.375em !important;
+      margin: 0 auto;
+
+      .modal-body {
+        max-width: 67.375em !important;
+      }
+
+      .custom-cancel-btn {
+        max-width: 3.25em !important;
+        position: absolute !important;
+        right: 1em !important;
+        top: 4.5em !important;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 1200px) and (min-width: 767px) {
+//   .where_we_excel--modal {
+//     .modal-header {
+//       top: 7%;
+//     position: absolute;
+//     height: 0%;
+//     width: 100%;
+//       .custom-cancel-btn {
+//         max-width: 3.25em !important;
+//         position: absolute !important;
+//         right: 15.9% !important;
+//         top: 0% !important;
+//         z-index: 1;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 991px) and (min-width: 767px) {
+//   .where_we_excel--modal {
+//     .modal-header {
+//       top: 7%;
+//     position: absolute;
+//     height: 0%;
+//     width: 100%;
+//       .custom-cancel-btn {
+//         max-width: 3.25em !important;
+//         position: absolute !important;
+//         right: 11.2% !important;
+//         top: 0% !important;
+//         z-index: 1;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1800px) {
+//   .excel_popup {
+//     .modal-body {
+//       .excel_select_search_wrapper {
+//         .search_select_wrapper {
+//           .MuiOutlinedInput-root .MuiAutocomplete-input {
+//             padding: 0px 4px 0px 5px;
+//           }
+//           label {
+//             line-height: 1em !important;
+//             height: 100%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 1200px) {
+  .excel_popup {
+    .modal-body {
+      max-width: 70%;
+
+      .excel_select_container {
+        .excel_select_wrapper {
+          max-width: 80%;
+        }
+
+        .excel_select2field_wrapper {
+          max-width: 80%;
+        }
+      }
+
+      .excel_select_search_wrapper {
+        .search_select_wrapper {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .excel_popup {
+    .modal-body {
+      max-width: 80%;
+
+      .excel_select_container {
+        .excel_select_wrapper {
+          max-width: 100%;
+        }
+
+        .excel_select2field_wrapper {
+          max-width: 100%;
+        }
+      }
+
+      .excel_select_search_wrapper {
+        .search_select_wrapper {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .excel_popup {
+    .modal-dialog {
+      height: 100vh;
+    }
+
+    .modal-content {
+      background-color: #ffffff;
+      border: none;
+      padding: 7.2em 1.6em 2em;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      .custom-cancel-btn {
+        width: 100%;
+        max-width: 2.4em;
+        position: absolute;
+        right: 1.8em;
+        top: 1.9em;
+      }
+    }
+
+    .spacing_btm_project_scope {
+      margin-top: 2.2em !important;
+    }
+
+    .modal-body {
+      border-radius: 0;
+      padding: 0 !important;
+      max-width: 100%;
+      margin: 0 auto;
+
+      .about_modal_bussines_heading {
+        font-size: 1.6em;
+        letter-spacing: 0.32px;
+        line-height: 1.625;
+        margin-bottom: 1.125em;
+      }
+
+      .excel_select_container {
+        .excel_select_wrapper {
+          max-width: 100%;
+          margin-bottom: 2.2em;
+
+          .MuiAutocomplete-inputRoot {
+            padding: 3px 4.5px 6px;
+          }
+
+          .MuiOutlinedInput-root .MuiAutocomplete-input {
+            font-size: 1.2em !important;
+            // padding: 4px 5px;
+          }
+
+          label {
+            font-size: 1.2em;
+          }
+        }
+
+        .excel_select2field_wrapper {
+          max-width: 100%;
+
+          .excel_select_wrapper {
+            &:nth-child(1) {
+              max-width: 71.15%;
+              padding-right: 0.5em;
+            }
+
+            &:nth-child(2) {
+              max-width: 28.85%;
+              padding-left: 0.5em;
+            }
+          }
+        }
+      }
+
+      .excel_select_search_wrapper {
+        .search_select_wrapper {
+          max-width: 100%;
+
+          .MuiAutocomplete-inputRoot {
+            padding: 3px 4.5px 6px;
+          }
+
+          .MuiOutlinedInput-root .MuiAutocomplete-input {
+            font-size: 1.2em !important;
+            // padding: 4px 5px;
+          }
+
+          label {
+            font-size: 1.2em;
+          }
+        }
+
+        .chips_b_edit_autoComplete {
+          margin: 1.2em 0 1em;
+
+          .black_border_chips_custom {
+            font-size: 1em;
+            letter-spacing: 0.2px;
+            line-height: 2.16;
+            margin: 0 1.2em 1.2em 0;
+            padding: 0.8em 3.759em 0.8em 1.6em;
+
+            .close_icon {
+              max-width: 1.359em;
+              top: 1.2em;
+              right: 1.6em;
+            }
+          }
+
+          .checkboxbutton_checkbox_wrapper
+            .checkboxbutton_checkbox_input:checked
+            + .checkboxbutton_checkbox_label {
+            font-size: 1em;
+            letter-spacing: 0.2px;
+            line-height: 2.16;
+            margin: 0 1.2em 1.2em 0;
+            padding: 0.8em 3.759em 0.8em 1.6em;
+
+            &::before {
+              top: 1.2em;
+              right: 1.6em;
+              width: 1.359em;
+              height: 1.359em;
+            }
+          }
+        }
+      }
+
+      .popup_common_btn {
+        font-size: 1.6em;
+        letter-spacing: 0.32px;
+        line-height: 1.35;
+        margin: 1.375em auto 0;
+      }
+    }
+  }
+}

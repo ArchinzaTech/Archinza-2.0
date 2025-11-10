@@ -1,0 +1,39 @@
+@import "../../common.scss";
+
+.ant-upload-wrapper {
+  font-family: "Poppins" !important;
+
+  .ant-upload.ant-upload-btn {
+    background: $color-FFFFFF;
+
+    .anticon-inbox {
+      font-size: 5em;
+    }
+  }
+
+  .ant-upload-list {
+    max-height: 40vh;
+    overflow: auto;
+    padding: 0 1em 0 0;
+    margin: 1em 0 0;
+    @include textStyles(1.5em, 1.5em, 0px);
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      background: rgba($color: $color-111111, $alpha: 0.15);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba($color: $color-111111, $alpha: 1);
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .customSizedUpload {
+    .ant-upload-list {
+      max-width: 100%;
+    }
+  }
+}

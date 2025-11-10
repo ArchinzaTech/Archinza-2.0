@@ -1,0 +1,146 @@
+// benefits.scss
+
+.benefits {
+  padding: 1rem 1rem 3rem 1rem;
+
+  @media (min-width: 640px) {
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+  &__header {
+    text-align: center;
+    background-color: rgb(219 234 254); // bg-blue-100
+    margin-bottom: 1.5rem;
+    padding: 4rem 0;
+    border-radius: 0.5rem;
+
+    .dark & {
+      background-color: rgb(17 24 39); // dark:bg-gray-900
+    }
+  }
+
+  &__title {
+    font-size: 1.875rem; // text-3xl
+    font-weight: 700;
+    color: rgb(37 99 235); // text-blue-600
+
+    @media (min-width: 640px) {
+      font-size: 2.25rem; // sm:text-4xl
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 3rem; // lg:text-5xl
+    }
+
+    .dark & {
+      color: rgb(96 165 250); // dark:text-blue-400
+    }
+  }
+
+  &__container {
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  &__scroll-container {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    padding: 0 2rem 1.5rem 2rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 0.5rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-50%) scale(1.05);
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+
+  &__card {
+    min-width: 80%;
+    max-width: 80%;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+    scroll-snap-align: start;
+
+    @media (min-width: 1024px) {
+      min-width: 45%;
+      max-width: 45%;
+    }
+
+    .dark & {
+      background-color: rgb(31 41 55); // dark:bg-gray-800
+    }
+  }
+
+  &__card-content {
+    margin-bottom: 1rem;
+  }
+
+  &__card-image {
+    width: 100%;
+    height: 20rem;
+    object-fit: contain;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  &__card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(31 41 55); // text-gray-800
+
+    .dark & {
+      color: white;
+    }
+  }
+
+  &__card-description {
+    color: rgb(75 85 99); // text-gray-600
+    margin-top: 0.5rem;
+    font-size: 1rem;
+
+    .dark & {
+      color: rgb(209 213 219); // dark:text-gray-300
+    }
+  }
+}

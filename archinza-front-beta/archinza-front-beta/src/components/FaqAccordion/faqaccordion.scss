@@ -1,0 +1,102 @@
+@import "../../common.scss";
+
+.faqaccordion-wrapper {
+  padding: 0;
+  transition: all 0.35s ease-in;
+  margin: 0 0 3em;
+}
+
+.faqborder-accordion {
+  border-left: 0.313em solid $color-6D6E70;
+  padding: 0 0 0 2em;
+  transition: all 0.35s ease-in;
+  margin: 0 0 3.75em;
+}
+
+.faqborder-accordion.active {
+  border-left: 0.313em solid $color-FFFFFF;
+}
+
+.faqaccordion-item {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.faqaccordion-item.active {
+  transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  max-height: 9999px;
+}
+
+.faqaccordion-title {
+  @include textStyles(2em, 1.4, 0.64px);
+  color: $color-EF7B13;
+  font-weight: 400;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq_button_icon {
+    width: 100%;
+    max-width: 0.7025em;
+}
+
+.faqaccordion-content {
+  @include textStyles(1.375em, 1.4545, 0.44px);
+  padding-top: 1.4432em;
+  color: $color-FFFFFF;
+  font-weight: 400;
+  opacity: 0.8;
+  padding-right: 4em;
+  ul {
+    // padding: 0 0 0 1em;
+    padding: 0;
+    li {
+    //   list-style-type: disc;
+      list-style-type: none;
+    //   &::marker {
+    //     font-size: 0.75em;
+    //   }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .faqborder-accordion {
+    margin: 0 0 3.2em;
+  }
+  .faqaccordion-content {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 600px) {
+    .faqaccordion-wrapper {
+        margin-bottom: 3.2em;
+    }
+  .faqaccordion-title {
+    font-size: 1.6em;
+    letter-spacing: 0.8px;
+    line-height: normal;
+    
+  }
+  .faqaccordion-content {
+    font-size: 1.4em;
+    letter-spacing: 0.28px;
+    line-height: 1.572;
+    padding-top: 1.4285em;
+    padding-right: 1em;
+    // ul li {
+    //   &::marker {
+    //     font-size: 1em;
+    //   }
+    // }
+  }
+  .faq_button_icon {
+    max-width: 0.7025em;
+}
+}

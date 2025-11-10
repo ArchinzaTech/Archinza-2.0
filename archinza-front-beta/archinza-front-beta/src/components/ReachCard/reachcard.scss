@@ -1,0 +1,98 @@
+@import "../../common.scss";
+
+.reach_card {
+  background-color: rgba($color: $color-FFFFFF, $alpha: 0.1);
+  color: $color-FFFFFF;
+  padding: 2em 2em 3.438em;
+  margin-right: 1.9375em;
+  position: relative;
+  height: 100%;
+  border: 1px solid $color-EF7B13;
+  @include orangeShadow;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  .reach_clients {
+    @include textStyles(2.813em, 1.333em, 0.9px);
+    color: $color-FFFFFF;
+    font-weight: 600;
+    .orange_text {
+      color: $color-EF7B13;
+    }
+  }
+  .button_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    .cta_wrapper {
+      width: 100%;
+      max-width: fit-content;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2.25em;
+      margin: 0;
+      padding: 1.5em 2em;
+      @include blueShadow;
+      .cta_text {
+        width: 100%;
+        color: #ffffff;
+        font-size: 1.25em;
+        font-weight: 500;
+        letter-spacing: 0.44px;
+        line-height: 0.982em;
+        text-align: center;
+        min-width: fit-content;
+      }
+      .arrow_img {
+        width: 100%;
+        max-width: 1.75em;
+        margin: 0 0 0 0.75em;
+      }
+    }
+    .notice {
+      @include textStyles(1.125em, 1.333em, 0.36px);
+      margin: 1.375em auto 0;
+      font-weight: 300;
+      font-style: italic;
+      text-align: center;
+      max-width: 85%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .reach_card {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .reach_card {
+    margin: 0;
+    background: transparent;
+    text-align: center;
+    padding: 2.2em 0 2em;
+    .reach_clients {
+      font-size: 2.4em;
+      max-width: 85%;
+      margin: 0 auto 0.917em;
+    }
+
+    .button_container {
+      .cta_wrapper {
+        .cta_text {
+          font-size: 1.4em;
+        }
+      }
+      .notice {
+        font-size: 1em;
+        margin: 1.2em 0 0;
+      }
+    }
+  }
+}

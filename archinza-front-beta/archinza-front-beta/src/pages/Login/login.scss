@@ -1,0 +1,454 @@
+@import "../../common.scss";
+
+.user_login_container {
+  font-family: "Poppins";
+  position: relative;
+  padding: 10em 0 0;
+  overflow: hidden;
+}
+
+.login_sec1 {
+  margin: 7.5em 0 0;
+  padding: 0 0 7.5em;
+  color: $color-FFFFFF;
+
+  .text_container {
+    text-align: center;
+    margin: 0 0 5em;
+
+    .sub_title {
+      @include textStyles(1.25em, 1.75em, 0.4px);
+      font-weight: 500;
+      color: $color-EF7B13;
+      margin: 0 0 1.1em;
+    }
+
+    .title {
+      @include textStyles(2.5em, 1.25em, 0.8px);
+      font-weight: 600;
+    }
+  }
+
+  .cateogories_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.625em;
+
+    // border-bottom: 1px solid #707070;
+    .cateogory_box {
+      margin: 0 2.65625em;
+
+      .radio_conatiner_lightMode {
+        input[type="radio"]:checked+.text-black--dark-theme {
+          color: #fff; // active label color
+        }
+
+        .text-black--dark-theme {
+          color: rgb(0, 0, 0); // default label color
+        }
+      }
+
+    }
+  }
+
+  .contact_wrapper {
+    padding: 4.375em 0 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: #707070;
+      width: 100%;
+      max-width: 85%;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    .field_row {
+      width: 100%;
+      max-width: 40.4375em;
+      margin: 0 auto;
+    }
+
+    .field_col {
+      padding: 0;
+
+      &:last-child {
+        .field_wrapper {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .reset_notice {
+      display: block;
+      @include textStyles(1.125em, 1.2em, 0.36px);
+      text-align: center;
+      color: rgba($color: $color-FFFFFF, $alpha: 0.8);
+      font-style: italic;
+      margin: 2.44em 0 1.112em;
+
+      cursor: pointer;
+    }
+
+    .field_wrapper {
+      margin-bottom: 2.75em;
+    }
+
+    .field_wrapper_light_mode {
+      .MuiInputBase-root {
+        color: #000 !important;
+
+        input {
+
+          // ✅ Fix autofill/suggestion text color
+          &:-webkit-autofill {
+            -webkit-text-fill-color: #000 !important;
+            transition: background-color 9999s ease-in-out 0s !important;
+            -webkit-transition: background-color 9999s ease-in-out 0s !important;
+            -moz-transition: background-color 9999s ease-in-out 0s !important;
+            -ms-transition: background-color 9999s ease-in-out 0s !important;
+            -o-transition: background-color 9999s ease-in-out 0s !important;
+}
+        }
+      }
+    }
+
+    .terms_text {
+      color: #ffffff;
+      font-size: 1.125em;
+      font-weight: 400;
+      letter-spacing: 0.36px;
+      line-height: 1.556;
+      text-align: center;
+      margin: 3.334em 0 2.2778em;
+
+      .link {
+        text-decoration: underline;
+      }
+    }
+
+    .clr_orange {
+      color: #ef7b13;
+    }
+
+    .cta_wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+
+      .btn_wrapper {
+        display: flex;
+        justify-content: flex-start;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        width: 100%;
+
+        .form_btn {
+          background: $color-014FE0;
+          // border: 1px solid #014fe0;
+          border-radius: 50px;
+          // box-shadow: 0 0 25px 5px #014fe0;
+          color: #fff;
+          display: flex;
+          font-size: 1.25em;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          line-height: 1.08;
+          min-width: -webkit-fit-content;
+          min-width: -moz-fit-content;
+          min-width: fit-content;
+          padding: 1.235em 2em;
+          width: 100%;
+
+          .icon {
+            margin: 0 0 0 0.5em;
+            max-width: 1.25em;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reset_wrapper {
+  padding: 4.375em 0 0;
+  color: $color-FFFFFF;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #707070;
+    width: 100%;
+    max-width: 85%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .text_container {
+    text-align: center;
+    padding: 0 0 0.688em;
+
+    .title {
+      @include textStyles(2.5em, 1.25em, 0.8px);
+      font-weight: 600;
+    }
+  }
+
+  .assistance_field_wrapper {
+    max-width: 40.625em;
+    margin: 0 auto;
+
+    .field_wrapper {
+      margin: 2.5em auto 0;
+
+      .assist_notice {
+        @include textStyles(1.125em, 1.5em, 0.36px);
+        text-align: center;
+        color: rgba($color: $color-FFFFFF, $alpha: 0.8);
+        font-style: italic;
+        padding: 0.889em 0 0;
+        margin: 0 auto;
+        max-width: 70%;
+      }
+    }
+  }
+
+  .cta_wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 3.75em 0 0;
+
+    .btn_wrapper {
+      width: 100%;
+      max-width: fit-content;
+      display: flex;
+      justify-content: flex-start;
+
+      .form_btn {
+        width: 100%;
+        min-width: fit-content;
+        background: $color-014FE0;
+        display: flex;
+        color: $color-FFFFFF;
+        border-radius: 50px;
+        border: none;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 1.08;
+        padding: 1.235em 2em;
+
+        // @include blueShadow;
+        .icon {
+          margin: 0 0 0 0.5em;
+          object-fit: contain;
+          max-width: 1.25em;
+        }
+      }
+    }
+  }
+}
+
+.otp_toast {
+  background: transparent !important;
+  min-width: 25em;
+  width: max-content;
+
+  .otp_box {
+    width: max-content;
+    background: $color-014FE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.875em 3.313em;
+    border-radius: 1.25em;
+
+    .otp_resend_icon {
+      max-width: 2.438em;
+      max-height: 2.438em;
+      margin: 0 1.281em 0 0;
+    }
+
+    .title {
+      width: 100%;
+      @include textStyles(1.5em, 0.771em, 0);
+      color: $color-FFFFFF;
+      font-weight: bold;
+    }
+  }
+}
+
+.mail_toast {
+  background: transparent !important;
+  min-width: 25em;
+  width: max-content;
+
+  .otp_box {
+    width: max-content;
+    background: $color-014FE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875em 2.125em;
+    border-radius: 1.25em;
+
+    .otp_resend_icon {
+      max-width: 2.438em;
+      max-height: 2.438em;
+      margin: 0 1.281em 0 0;
+    }
+
+    .title {
+      width: 100%;
+      @include textStyles(1.25em, 1.75em, 0);
+      color: $color-FFFFFF;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .Toastify__toast-container--top-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reset_wrapper {
+
+    // padding: 4.4em 0 0;
+    .text_container {
+      .sub_title {
+        font-size: 1.6em;
+      }
+
+      .title {
+        font-size: 2.8em;
+        font-weight: 500;
+
+        br {
+          display: none;
+        }
+      }
+
+      .description {
+        font-size: 1.6em;
+      }
+    }
+
+    .user_accounts_wrapper {
+      padding: 2.5em 0 0;
+    }
+
+    .cta_wrapper {
+      .btn_wrapper {
+        .form_btn {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .user_login_container {
+    background-size: 100vh;
+    background-position: right;
+  }
+
+  .login_sec1 {
+    margin: 0 0 6em;
+    padding: 0;
+
+    .text_container {
+      margin: 0 0 4em;
+
+      .sub_title {
+        font-size: 1.4em;
+        margin: 0 0 0.857em;
+      }
+
+      .title {
+        font-size: 2em;
+        font-weight: 500;
+      }
+    }
+
+    .cateogories_wrapper {
+      flex-direction: column;
+      padding-bottom: 1.2em;
+
+      .cateogory_box {
+        margin: 0;
+        text-align: center;
+
+        .login_label {
+          font-size: 1.4em;
+          margin: 0 0 2em;
+        }
+      }
+    }
+
+    .contact_wrapper {
+      max-width: 100%;
+      padding: 4em 0 0;
+
+      &::before {
+        max-width: 100%;
+      }
+
+      .field_wrapper {
+        margin-bottom: 3.2em;
+      }
+
+      .reset_notice {
+        font-size: 1.4em;
+        padding: 2.857em 0 0;
+      }
+
+      .terms_text {
+        font-size: 1em;
+        margin: 6em auto 2.5em;
+      }
+
+      .cta_wrapper {
+        .btn_wrapper {
+          .form_btn {
+            font-size: 1.4em;
+            max-width: fit-content;
+          }
+        }
+      }
+    }
+  }
+
+  .reset_wrapper {
+    padding: 4.375em 0 0;
+
+    .text_container {
+      .sub_title {
+        font-size: 1.4em;
+      }
+
+      .title {
+        font-size: 2em;
+      }
+    }
+
+    .cta_wrapper {
+      .btn_wrapper {
+        .form_btn {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}

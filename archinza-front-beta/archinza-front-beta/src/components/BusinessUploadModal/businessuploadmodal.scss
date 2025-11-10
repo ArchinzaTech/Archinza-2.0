@@ -1,0 +1,124 @@
+@import "../../common.scss";
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+.BE_upload_modal {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .modal-dialog {
+    max-width: 80em;
+  }
+
+  .modal-content {
+    background: transparent;
+    // min-height: 60vh;
+
+    .modal-body {
+      background: rgba($color: $color-FFFFFF, $alpha: 0.15);
+      border: 1px solid #014fe0;
+      border-radius: 22px;
+      opacity: 1;
+      backdrop-filter: blur(11px);
+      -webkit-backdrop-filter: blur(11px);
+      padding: 2.5em;
+
+      .customSizedUpload {
+        // min-height: 60vh;
+
+        .anticon-inbox {
+          font-size: 5em;
+        }
+
+        .ant-upload-list {
+          max-width: 75%;
+          margin: 0 auto;
+          max-height: 40vh;
+          overflow: auto;
+          padding: 0 1em 0 0;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+            background: rgba($color: $color-111111, $alpha: 0.15);
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: rgba($color: $color-111111, $alpha: 1);
+          }
+        }
+      }
+
+      .save_cancel_cta {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include textStyles(1.125em, 1.2em, 0);
+        font-weight: 600;
+        padding: 1.333em 0 0;
+
+        &.no_space {
+          padding: 0;
+
+        }
+
+        .save_cta {
+          color: $color-014FE0;
+          margin: 0 1em 0 0;
+        }
+
+        .cancel_cta {
+          margin: 0 0 0 1em;
+          color: rgba($color: $color-111111, $alpha: 0.8);
+        }
+      }
+    }
+  }
+}
+
+.white_theme {
+  background: rgba($color: $color-FFFFFF, $alpha: 0.15);
+
+  .modal-content {
+    background: transparent;
+
+    .modal-body {
+      background: rgba($color: $color-FFFFFF, $alpha: 1);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .BE_upload_modal {
+    .modal-content {
+      .modal-body {
+        .save_cancel_cta {
+          font-size: 1.4em
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .BE_upload_modal {
+    .modal-content {
+      .modal-body {
+        padding: 2.5em 1.5em;
+
+        .customSizedUpload {
+          .ant-upload-list {
+            max-width: 100%;
+          }
+        }
+
+        .save_cancel_cta {
+          font-size: 1.3em
+        }
+      }
+    }
+  }
+}

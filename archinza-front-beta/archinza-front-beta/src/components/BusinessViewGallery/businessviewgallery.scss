@@ -1,0 +1,100 @@
+@import "../../common.scss";
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+.gallery_modal {
+  .modal-dialog {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgba($color: $color-111111, $alpha: 1.0);
+  }
+
+  .modal-content {
+    background: transparent;
+
+    .modal-body {
+      width: 100%;
+      height: 100%;
+      min-width: 100vw;
+      max-width: 100vw;
+      max-height: 100vh;
+      background: transparent;
+      padding: 0;
+      margin: auto;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+
+      .gallery_swiper {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+
+        .swiper-wrapper {
+          height: 100%;
+          max-height: 100vh;
+          align-items: center;
+        }
+
+        .gallery_img {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          opacity: 0.5;
+        }
+
+        .swiper-slide-active {
+          .gallery_img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .navigation_wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        padding: 0 15em;
+
+        .nav_arrow {
+          max-width: 8em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery_modal {
+    .modal-content {
+      .modal-body {
+        .navigation_wrapper {
+          padding: 0 1.5em;
+          .nav_arrow {
+            max-width: 5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery_modal {
+    .modal-content {
+      .modal-body {}
+    }
+  }
+}

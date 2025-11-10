@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>User Verification Request</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        b {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>User Verification Request</h2>
+
+        <p><b>Business Name:</b>
+            <%= name %>
+        </p>
+        <p><b>Phone Number:</b>
+            <%= phone %>
+        </p>
+        <p><b>Email:</b>
+            <%= email %>
+        </p>
+        <p><b>Country:</b>
+            <%= country %>
+        </p>
+        <p><b>City:</b>
+            <%= city || "--" %>
+        </p>
+    </div>
+
+</body>
+
+</html>

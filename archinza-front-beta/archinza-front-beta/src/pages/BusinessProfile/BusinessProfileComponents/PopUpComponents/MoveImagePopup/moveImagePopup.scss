@@ -1,0 +1,93 @@
+.Modal_move_img {
+    .modal-body {
+        max-width: 55.25em;
+    }
+
+    .about_modal_bussines_heading {
+        line-height: 0.02em;
+        line-height: unset !important;
+        text-align: left !important;
+        margin-bottom: 0.667em !important;
+    }
+}
+
+.move_submit_btn {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #fff;
+    background-color: #014FE0;
+    border-radius: 36px;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    -ms-border-radius: 36px;
+    -o-border-radius: 36px;
+    padding: 1.05em 1.6em 1.1em 1.6em;
+    cursor: pointer;
+}
+
+.move_instruction {
+    font-style: italic;
+    font-weight: 500;
+    color: #FF002A;
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.muted_title_move {
+    font-size: 1.5em;
+    color: rgba(17, 17, 17, 0.60);
+    font-style: italic;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.40);
+    padding-bottom: 1.667em;
+}
+
+.folder_loation_selceton_conatiner {
+    margin-top: 2.5em;
+}
+
+.folder_loation_selceton_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2em;
+    font-weight: 500;
+
+    margin-bottom: 1.438em;
+
+    .folder_icon_move {
+        width: 1.677em;
+        height: 1.332em;
+        margin-right: 0.438em;
+    }
+}
+
+.check_box_move {
+    border: 2px solid #1111114C;
+    position: unset;
+    width: 1.375em;
+    height: 1.375em;
+
+    input[type=radio] {
+        width: auto;
+        height: auto;
+        display: none;
+    }
+}
+
+
+.check_box_move_checked {
+    position: unset;
+    width: 1.375em;
+    height: 1.375em;
+    background-color: #ef7b13 !important;
+
+    input[type=radio] {
+        width: auto;
+        height: auto;
+        display: none;
+    }
+
+}
+

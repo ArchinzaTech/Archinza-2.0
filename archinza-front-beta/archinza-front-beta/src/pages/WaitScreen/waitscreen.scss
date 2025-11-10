@@ -1,0 +1,51 @@
+.waitScreen_popup_modal {
+    .modal-content {
+        background-color: rgba(255, 255, 255, 0.82);
+    }
+
+    .waitScreen_popup_modal_heading {
+        color: #EF7B13;
+        font-size: 3.75em;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .waitScreen_popup_desc {
+        color: #111111;
+        font-size: 2.75em;
+        font-weight: 600;
+        line-height: 1.364em;
+        margin-top: 0.727em;
+        text-align: center;
+    }
+
+    .modal_wrapper_waitscreen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.custom-modal-backdrop-wait-screen {
+    background-color: rgb(255 255 255 / 82%) !important;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .waitScreen_popup_modal {
+        .waitScreen_popup_modal_heading{
+            font-size: 3.2em;
+        }
+        .confrimation_svg{
+            width: 14em;
+        }
+        .waitScreen_popup_desc {
+          font-size: 2.4em;
+        }
+        br{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.type_wrapper {
+  display: inline-block;
+  overflow: hidden;
+  .typing_text {
+    border-right: 2px solid #ef7b13;
+    color: #ef7b13;
+    // display: inline-block;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: normal;
+    // margin-left: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+  .type_wrapper {
+    display: block;
+    .typing_text {
+      margin-left: 0;
+    }
+  }
+}

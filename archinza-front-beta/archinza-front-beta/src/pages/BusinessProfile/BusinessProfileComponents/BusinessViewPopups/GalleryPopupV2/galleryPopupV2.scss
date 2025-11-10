@@ -1,0 +1,158 @@
+.Gallery_popup_modal {
+    .modal-header {
+        border-bottom: 0;
+    }
+
+    .custom-cancel-btn {
+        margin-left: auto;
+
+        .ctm_img_bussine_edit_about {
+            max-width: 3.25em;
+            width: 3.25em;
+
+        }
+    }
+
+
+    // previous row layout
+    .masonry-gallery-demo {
+        display: flex;
+        gap: 15px;
+        padding: 0 8.375em;
+
+        .masonry-column-demo {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; // Spacing between images
+
+
+        }
+
+        .masonry-item-demo {
+               height: 18.563em;
+            // &:nth-child(odd){
+          
+            //     height: 24.063em;
+            // }
+            // &:nth-child(even){
+            //     height: 18.563em;
+            // }
+            img {
+                width: 100%;
+                display: block;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                height: 100%;
+             
+            }
+        }
+
+
+    }
+
+    // new css
+    // .masonry-gallery-two {
+    //     padding: 0 8.75em;
+    //     column-count: 4; // 4 columns for desktop
+    //     column-gap: 15px;
+        
+    //     .masonry-item {
+    //         display: inline-block;
+    //         width: 100%;
+    //         margin-bottom: 15px;
+            
+    //         img {
+    //             width: 100%;
+    //             border-radius: 8px;
+    //             display: block;
+    //             break-inside: avoid; // Prevents breaking inside columns
+    //         }
+    //     }
+    
+    //     // 🔹 Responsive Design 🔹
+    //     @media (max-width: 1024px) {
+    //         column-count: 3;
+    //         padding: 0 4em;
+    //     }
+    
+    //     @media (max-width: 768px) {
+    //         column-count: 2;
+    //         padding: 0 2em;
+    //     }
+    
+    //     @media (max-width: 480px) {
+    //         column-count: 1;
+    //         padding: 0 1em;
+    //     }
+    // }
+    
+
+    .Gallery_popup_heading {
+        font-size: 2.25em;
+        padding: 0 3.778em;
+        font-weight: 600;
+        margin-bottom: 0.889em;
+        letter-spacing: 0.02em;
+        padding-top: 0.889em;
+    }
+
+}
+
+// 🔹 Responsive Design 🔹
+@media (max-width: 1024px) {
+    .Gallery_popup_modal {
+        .masonry-gallery-demo {
+            padding: 0 4em;
+        }
+
+        .Gallery_popup_heading {
+            padding: 0 1.778em;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .Gallery_popup_modal {
+        .modal-body {
+            padding: 0 0 3em 0 !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Gallery_popup_modal {
+        .Gallery_popup_heading{
+            font-size: 1.6em;
+            padding-top: 1em !important;
+            padding-left: 2.5em;
+        }
+        .custom-cancel-btn {
+            margin-left: auto;
+    
+            .ctm_img_bussine_edit_about {
+                max-width: 2.4em;
+                width: 2.4em;
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .Gallery_popup_modal {
+        .Gallery_popup_heading{
+            padding: 0 0 0 1em;
+        }
+        .masonry-gallery-demo {
+            gap: 11px;
+            padding: 0 1.6em;
+            .masonry-column-demo{
+                gap: 11px;
+            }
+        }
+    }
+}

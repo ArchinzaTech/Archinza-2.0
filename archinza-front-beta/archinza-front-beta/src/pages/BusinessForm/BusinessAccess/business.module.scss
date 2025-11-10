@@ -1,0 +1,198 @@
+@import "../../../common.scss";
+
+.business_sec1 {
+  position: relative;
+  overflow: hidden;
+  padding: 5em 0 0;
+  .business_form_wrap {
+    padding: 12.438em 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .progress_wrapper {
+      max-width: 50%;
+      margin: 0 auto 4.313em;
+    }
+    .text_container {
+      z-index: 1;
+      color: $color-FFFFFF;
+      text-align: center;
+      .title {
+        @include textStyles(2.5em, 1.7em, 0.8px);
+        font-weight: 500;
+        .coloured_text {
+          color: $color-F77B00;
+        }
+      }
+      .description {
+        @include textStyles(1.75em, 1.607em, 0.56px);
+        font-weight: 300;
+        opacity: 0.8;
+        font-style: italic;
+        max-width: 82.5%;
+        margin: 0.643em auto 1.893em;
+      }
+    }
+    .next_logout {
+      color: $color-FFFFFF;
+      text-align: center;
+      margin: 3.75em 0 0;
+      .notice {
+        @include textStyles(1.125em, 1.607em, 0.56px);
+        font-weight: 400;
+        margin: 1em auto 0;
+        span {
+          color: $color-F77B00;
+          font-style: italic;
+          text-decoration: underline;
+        }
+      }
+      .cta_wrapper {
+        width: 100%;
+        margin: 0 auto 2.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .next_button {
+          color: $color-FFFFFF;
+          background-color: $color-014FE0;
+          border-radius: 50px;
+          border: none;
+          font-size: 1.25em;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          line-height: 1.08;
+          width: 100%;
+          max-width: 100%;
+          padding: 1.235em 2em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          // max-width: 14.313em;
+          max-width: fit-content;
+          .icon {
+            margin: 0 0 0 0.5em;
+            object-fit: contain;
+            max-width: 1.25em;
+          }
+        }
+        .back_button {
+          font-size: 1.25em;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          line-height: 1.08;
+          padding: 1.05em 0 1.1em 2em;
+          cursor: pointer;
+          // text-decoration: underline;
+          font-weight: 300;
+          margin: 0 0 0 0.5em;
+        }
+      }
+    }
+  }
+
+  .add_more_wrap {
+    width: 100%;
+    .cta_wrap {
+      display: flex;
+      justify-content: space-between;
+      max-width: 29.875em;
+      margin: 2.688em auto 0;
+      border-bottom: 1px solid $color-DFDFDF;
+      cursor: pointer;
+
+      .addmore_input {
+        @include textStyles(1.5em, 0.9em, 0);
+        color: $color-F6F6F6;
+        // opacity: 0.6;
+        padding: 1.165em 2em 1.165em 0;
+      }
+      .icon {
+        width: 100%;
+        max-width: 1.688em;
+      }
+    }
+  }
+
+  // Steps styling start from here
+  // Steps styling start from here
+  // Steps styling start from here
+  // Steps styling start from here
+  // Steps styling start from here
+  .steps {
+    .field_wrapper {
+      width: 100%;
+      max-width: 40.438em;
+      margin: 2.5em auto 0;
+    }
+    .title_list {
+      color: $color-FFFFFF;
+    }
+    .categoryTab {
+      position: relative;
+      cursor: pointer;
+    }
+    .categoryTab.active {
+      box-shadow: none;
+      color: $color-F77B00;
+    }
+    .title_wrap {
+      padding: 1.464em 0;
+      border-bottom: 1px solid $color-DFDFDF;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        @include textStyles(1.75em, 0.786em, 0);
+      }
+      .icon {
+        font-size: 2em;
+        font-weight: 600;
+        color: $color-1DFED5;
+      }
+    }
+    .tab_content {
+      width: 100%;
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      width: fit-content;
+      color: $color-FFFFFF;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .tab_content.active {
+      width: 100%;
+      height: auto;
+      padding: 3.75em 0 2.5em;
+      // transform: scaleY(1);
+    }
+  }
+
+  .step01 {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .step02,
+  .step03 {
+    text-align: center;
+  }
+  .step03_ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .business_sec1 {
+    padding: 0;
+    .step01 {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.wraper_userInput {
+    .user_input_div {
+        .user_input_ul {
+            display: flex;
+            margin-top: 2.5em;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .prev_added_pills {
+                // margin: 0 0 1.167em;
+
+                .prev_added_pills_div {
+                    display: inline-block;
+                    margin: 0 0.9375em;
+                    margin-bottom: 1.167em;
+                    border-radius: 10em;
+                    -webkit-border-radius: 10em;
+                    -moz-border-radius: 10em;
+                    -ms-border-radius: 10em;
+                    -o-border-radius: 10em;
+                    border: 1px solid #8D8D8D;
+                    padding: 0.9em 2em;
+                    font-size: 1.5em;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .user_input_field_container {
+        max-width: 40.438em;
+        margin: 0 auto;
+        margin-top: 2.625em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wraper_userInput {
+        .prev_added_pills {
+            .prev_added_pills_div {
+                padding: 0.9em 1.3em !important;
+                font-size: 1.3em !important;
+            }
+        }
+    }
+}

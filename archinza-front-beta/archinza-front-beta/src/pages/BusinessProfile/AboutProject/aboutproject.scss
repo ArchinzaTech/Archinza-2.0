@@ -1,0 +1,176 @@
+@import "../../../common.scss";
+
+.project_container {
+  .title_edit {
+    display: flex;
+    justify-content: space-between;
+    // padding: 0 0 2.5em;
+    .section_title {
+      @include textStyles(2.5em, normal, 0);
+      color: $color-EF7B13;
+      font-weight: 600;
+    }
+    .edit_save {
+      display: flex;
+      .edit_icon {
+        width: 100%;
+        max-width: 1.85em;
+      }
+      .book_icon {
+        width: 100%;
+        max-width: 1.85em;
+        margin: 0 0 0 1.75em;
+      }
+    }
+  }
+
+  .brand_subsec {
+    padding: 2.5em 0;
+    border-bottom: 1px solid rgba($color: $color-111111, $alpha: 0.2);
+    &.with_checkboxes {
+      padding: 2.5em 0 0.75em;
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    .title {
+      @include textStyles(1.75em, 1.5em, 0.56px);
+      color: $color-111111;
+      font-weight: 600;
+      padding: 0 0 0.857em;
+    }
+
+    .desc_box {
+      border: 1px solid $color-EF7B13;
+      border-radius: 20px;
+      opacity: 1;
+      backdrop-filter: blur(11px);
+      -webkit-backdrop-filter: blur(11px);
+      padding: 1.5em 2.5em 5em;
+      // margin: 1.5em 0 0;
+      .desc {
+        @include textStyles(1.125em, 1.55em, 0.36px);
+        color: rgba($color: $color-111111, $alpha: 0.8);
+      }
+    }
+
+    .checkboxes {
+      .business_edit_checkbox {
+        margin: 0 1.25em 0 0;
+      }
+    }
+
+    .service_dropdown {
+      max-width: 30.938em;
+    }
+
+    .field_wrapper {
+      display: flex;
+      align-items: center;
+      .field_icon {
+        width: 100%;
+        height: 100%;
+        max-width: 2.875em;
+        margin: 0 0.75em 0 0;
+      }
+    }
+    .social_wrapper {
+      padding: 0 0 2em;
+    }
+    .title_currency {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0 1.5em;
+      .title {
+        padding: 0;
+      }
+      .currency_dropdown {
+        width: 100%;
+        min-width: 10em;
+        max-width: fit-content;
+        .MuiInputBase-root {
+          padding: 0 1em 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .project_container {
+    .brand_subsec {
+      .title {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .project_container {
+    .title_edit {
+      justify-content: center;
+      .section_title {
+        font-size: 1.6em;
+      }
+      .edit_save {
+        display: none;
+      }
+    }
+    .brand_subsec {
+      padding: 3.2em 0;
+      &.with_checkboxes {
+        padding: 3.2em 0 1.7em;
+      }
+      &:first-child {
+        padding: 2.2em 0 3.2em;
+      }
+
+      .title {
+        font-size: 1.6em;
+        letter-spacing: 0.36px;
+        padding: 0 0 0.75em;
+      }
+      .desc_box {
+        padding: 2em 2em 4em;
+        .desc {
+          @include textStyles(1.4em, 1.55em, 0.28px);
+        }
+      }
+      .title_currency {
+        display: block;
+        .currency_dropdown {
+          padding: 1.25em 0 0;
+        }
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+    .social_list {
+      li {
+        max-width: 100%;
+        padding: 0;
+        .social_wrapper {
+          padding: 0 0 1.7em;
+        }
+        &:nth-child(odd) {
+          padding: 0;
+        }
+        &:nth-child(even) {
+          padding: 0;
+        }
+        &:last-child {
+          .social_wrapper {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,371 @@
+@import "../../common.scss";
+
+.edit_container-business {
+  font-family: "Poppins";
+  position: relative;
+  padding: 10em 0 0;
+  background-color: #fff;
+
+  .edit_sec1 {
+    margin: 5em 0 0;
+    padding: 0 0 13.063em;
+    color: $color-FFFFFF;
+
+    .title {
+      @include textStyles(2em, 1.313em, 0);
+      color: $light-color-111111;
+    }
+
+    .account_list {
+      margin: 3.125em 0 0;
+      .list-item {
+        @include textStyles(1.5em, 1.75em, 0);
+        font-weight: 700;
+        color: $color-014FE0;
+        margin: 0 0 1em;
+      }
+    }
+
+    .role_wrap {
+      display: flex;
+      align-items: center;
+      .role_title {
+        @include textStyles(1.75em, 1.5em, 0);
+        color: $color-EF7B13;
+        margin: 0 1em 0 0;
+      }
+      .user_role {
+        @include textStyles(1em, 1.35em, 0);
+        width: fit-content;
+        background: $color-FFFFFF;
+        border-radius: 1.438em;
+        padding: 0.313em 1.75em;
+        font-weight: 600;
+      }
+    }
+
+    .profile_form_container {
+      margin: 0.625em 0 0;
+      .field_wrapper {
+        position: relative;
+        width: 100%;
+        margin: 2.5em auto 0;
+        padding-left: 0 !important;
+        .pass_notice {
+          // color: $color-FFFFFF;
+          color: $light-color-111111;
+          font-size: 1.125em;
+          font-style: italic;
+          letter-spacing: 0.36px;
+          line-height: 1.2;
+          opacity: 0.8;
+          padding: 0.611em 0 0;
+        }
+        .error {
+          color: red;
+          // position: absolute;
+          // bottom: -1.5em;
+          // left: 1.5em;
+        }
+        .checkbox_wrapper {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin: 1em 0 0;
+          position: relative;
+          .check_box {
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            margin: 0;
+            width: 1.2625em;
+            height: 1.2625em;
+            border: 2px solid #ef7b13;
+            transform: translateY(-0.075em);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            cursor: pointer;
+            position: absolute;
+            top: 0em;
+            left: 0;
+          }
+
+          .check_box::before {
+            content: "";
+            width: 0.4em;
+            height: 0.75em;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            border: 1.5px solid #ef7b13;
+            border-width: 0 2px 2px 0;
+          }
+
+          .check_box:checked::before {
+            transform: scale(1);
+            transform: rotate(45deg);
+          }
+
+          .checkbox_label {
+            cursor: pointer;
+            color: $light-color-111111;
+            font-size: 1.125em;
+            font-style: italic;
+            letter-spacing: 0.36px;
+            line-height: 1.2;
+            opacity: 0.8;
+            margin: 0;
+            margin-left: 1.777777777777778em;
+          }
+        }
+
+        .reset_fields {
+          padding: 1.875em 0 0;
+        }
+
+        .mobile_stack {
+          padding-top: 2.875em;
+        }
+      }
+      .disabled_field {
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .padding_right {
+        padding: 0 1.563em 0 0;
+      }
+
+      .padding_left {
+        padding: 0 0 0 1.563em;
+      }
+
+      .btn_wrapper {
+        width: 100%;
+        max-width: fit-content;
+        margin: 2em 0 1em;
+        display: flex;
+        justify-content: flex-start;
+        .form_btn {
+          width: 100%;
+          min-width: fit-content;
+          background: transparent;
+          display: flex;
+          // color: $color-FFFFFF;
+          color: $light-color-111111;
+          border-radius: 50px;
+          border: none;
+          font-size: 1.25em;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          line-height: 1.08;
+          padding: 1.235em 2em;
+          @include blueShadow;
+          .icon {
+            margin: 0 0 0 0.5em;
+            object-fit: contain;
+            max-width: 1.25em;
+            filter: grayscale(1) invert(1);
+          }
+        }
+        .submit_button {
+          display: flex;
+          width: 100%;
+          min-width: fit-content;
+          background: transparent;
+          outline: none;
+          border: 0;
+          color: $color-EF7B13;
+          font-size: 1.25em;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          line-height: 1.08;
+          padding: 0;
+          cursor: pointer;
+          text-decoration: underline;
+          font-weight: 300;
+          margin: 0 0 0 0.5em;
+        }
+        .back_button {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          min-width: fit-content;
+          background: transparent;
+          outline: none;
+          border: 0;
+          // color: $color-FFFFFF;
+          color: $light-color-111111;
+          font-size: 1.25em;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          line-height: 1.08;
+          padding: 0 0 0 2em;
+          cursor: pointer;
+          text-decoration: underline;
+          font-weight: 300;
+          margin: 0 0 0 0.5em;
+        }
+      }
+      .otp_wrapper {
+        margin: 2.188em 0;
+        .otp_title {
+          @include textStyles(1.125em, 1.2em, 0.36px);
+        }
+        .otp_box_wrapper {
+          margin: 1.5em 0;
+          .otp_input_wrapper {
+            input {
+              outline: 0 !important;
+            }
+          }
+          .otp_input {
+            background-color: transparent;
+            background-color: rgba($color-FFFFFF, 0.05);
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+            border: 1.5px solid rgba($color: $color-707070, $alpha: 0.25);
+            border-radius: 0.444em;
+            font-size: 2em;
+            font-weight: bolder;
+            font-family: "Poppins";
+            color: $color-FFFFFF;
+            width: 2.5em !important;
+            height: 2.5em;
+            display: inline-block;
+            margin: 0 0.75em 0 0;
+            outline: "none";
+            &:focus {
+              outline: 0px dotted;
+              outline: 0px auto -webkit-focus-ring-color;
+            }
+          }
+          .otp_focused {
+            border: 2.5px solid $color-FFFFFF;
+          }
+        }
+      }
+
+      .update_wrap {
+        display: flex;
+        justify-content: center;
+      }
+      .location_cta {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .country_form {
+        padding: 0;
+      }
+    }
+
+    .hr_line {
+      height: 1px;
+      background-color: rgba(112, 112, 112, 0.4);
+      margin: 6em 0;
+    }
+
+    .hr_line_owner_details {
+      height: 1px;
+      background-color: rgba(112, 112, 112, 0.4);
+      margin: 4em 0 2em 0;
+    }
+
+    .role_title.owner_details {
+      color: #000;
+    }
+
+    .trash_icon_holder {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .edit_sec1 {
+      .profile_form_container {
+        .padding_right {
+          padding: 0;
+        }
+
+        .padding_left {
+          padding: 0;
+        }
+
+        .btn_wrapper {
+          .form_btn {
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      .hr_line_owner_details {
+        height: 1px;
+        background-color: rgba(112, 112, 112, 0.4);
+        margin: 5em 0 0em 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .edit_sec1 {
+      padding: 0 0 6.3em;
+      .role_wrap {
+        .role_title {
+          font-size: 2em;
+          margin: 0 1.1em 0 0;
+        }
+        .user_role {
+          font-size: 1.2em;
+          padding: 0.34em 1.84em;
+        }
+      }
+      .profile_form_container {
+        margin: 1em 0 0;
+
+        .field_wrapper {
+          margin: 4em 0 0;
+
+          .reset_fields {
+            padding: 2em 0 0;
+          }
+
+          .pass_notice {
+            font-size: 1em;
+          }
+        }
+
+        .btn_wrapper {
+          .submit_button {
+            font-size: 1.4em;
+          }
+        }
+
+        .update_wrap {
+          margin-top: 4.6em;
+        }
+
+        .otp_wrapper {
+          .otp_box_wrapper {
+            .otp_input {
+              width: 2em !important;
+              height: 2em;
+            }
+          }
+        }
+
+        .mobile_center {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

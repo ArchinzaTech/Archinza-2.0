@@ -1,0 +1,65 @@
+@import "../../common.scss";
+
+.benefits_section {
+  padding: 3rem 1rem;
+
+  .benefits_wrapper {
+    .benefits_header {
+      text-align: center;
+      background-color: #dbeafe;
+      margin-bottom: 1.5rem;
+      padding: 4rem 0;
+
+      .benefits_title {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: #2563eb;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Dark theme styles
+.dark {
+  .benefits_section {
+    .benefits_wrapper {
+      .benefits_header {
+        background-color: #111827;
+
+        .benefits_title {
+          color: #60a5fa;
+        }
+      }
+    }
+  }
+}
+
+// Responsive breakpoints
+@media (min-width: 640px) {
+  .benefits_section {
+    padding: 3rem 1.5rem;
+
+    .benefits_wrapper {
+      .benefits_header {
+        .benefits_title {
+          font-size: 2.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits_section {
+    padding: 3rem 2rem;
+
+    .benefits_wrapper {
+      .benefits_header {
+        .benefits_title {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

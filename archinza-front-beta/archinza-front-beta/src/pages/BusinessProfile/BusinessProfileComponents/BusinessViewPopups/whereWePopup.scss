@@ -1,0 +1,211 @@
+.Where_We_excel_popup {
+    .modal-dialog {
+        max-width: 100vw;
+        margin: 0 auto;
+        height: 100vh;
+
+        .modal-content {
+            width: 58em;
+            margin: 0 auto;
+            border-radius: 20px;
+            border: none;
+
+            .modal-header {
+                padding: 0;
+                border: 0;
+
+                .custom-cancel-btn {
+                    position: fixed;
+                    top: 40px;
+                    right: 40px;
+
+                    .ctm_img_Where_We_excel_popup {
+
+                        max-width: 4.5em;
+                    }
+                }
+
+            }
+
+            .modal-body {
+                padding: 2.5em 2em;
+                padding-right: 0;
+
+                .Where_We_excel_popup_heading {
+                    font-size: 2.25em;
+                    margin-bottom: 0.778em;
+                    font-weight: 600;
+                    letter-spacing: 0.02em;
+                    color: #111111;
+                }
+
+                .common_ul_popups {
+
+                    .common_li_popup {
+                        display: flex;
+                        position: relative;
+                        padding-left: 0.5em;
+                        margin-left: 0.5em;
+                        font-size: 1.375em;
+                        color: #676767;
+                        margin-bottom: 1.091em;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: -0.5em;
+                            top: 50%;
+                            transform: translateY(-50%);
+
+                            width: 0.5em;
+                            height: 0.5em;
+                            background-color: #EF7B13;
+                            border-radius: 50%;
+                        }
+
+                        .bold_common_li_popup {
+                            padding: 0;
+                            color: #111111;
+                            font-weight: 600;
+                            margin-left: 0.5em;
+                            max-width: fit-content;
+                        }
+                    }
+
+                    .common_multi_line_list {
+                        display: block !important;
+                        margin-bottom: 0 !important;
+
+                        &::before {
+                            top: 6% !important;
+                            transform: translateY(0%) !important;
+                            -webkit-transform: translateY(0%) !important;
+                            -moz-transform: translateY(0%) !important;
+                            -ms-transform: translateY(0%) !important;
+                            -o-transform: translateY(0%) !important;
+                        }
+
+                        .pills_common_li_popup {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-top: 0.727em;
+
+                            .pill_span_li {
+                                margin-right: 1.25em;
+                                margin-bottom: 1.25em;
+                                border: 1px solid #8D8D8D99 !important;
+                                border-radius: 10em;
+                                -webkit-border-radius: 10em;
+                                -moz-border-radius: 10em;
+                                -ms-border-radius: 10em;
+                                -o-border-radius: 10em;
+                                font-size: 0.818em;
+                                padding: 1em 1.333em;
+                                color: #111111;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Where_We_excel_popup {
+        .modal-dialog {
+            margin-bottom: 0;
+            height: 100vh;
+        }
+
+        .modal-content {
+            position: absolute;
+            bottom: 0;
+            width: 100vw !important;
+            border-bottom-right-radius: 0px !important;
+            border-bottom-left-radius: 0px !important;
+
+            .modal-header {
+                padding: 0;
+                border: 0;
+                position: absolute;
+                width: 100vw;
+                top: -50px;
+
+                .custom-cancel-btn {
+                    position: unset !important;
+                    margin: auto;
+
+                    .ctm_img_Where_We_excel_popup {
+                        max-width: 3.8em !important;
+                    }
+                }
+            }
+        }
+
+        // Apply animation when modal is opening
+        &.opening .modal-dialog {
+            animation: slideInBottomToTop 0.4s ease-out forwards;
+        }
+
+        // Apply animation when modal is closing
+        &.closing .modal-dialog {
+            animation: slideOutTopToBottom 0.4s ease-out forwards;
+        }
+    }
+
+    // Keyframes for modal opening (bottom to top)
+    @keyframes slideInBottomToTop {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+
+    // Keyframes for modal closing (top to bottom)
+    @keyframes slideOutTopToBottom {
+        from {
+            transform: translateY(0%);
+        }
+
+        to {
+            transform: translateY(100%);
+        }
+    }
+
+    .modal-body {
+        padding-top: 4em !important;
+        padding-left: 1.6em !important;
+        padding-bottom: 2.8em !important;
+
+        .Where_We_excel_popup_heading {
+            font-size: 1.6em !important;
+            margin-bottom: 0.875em !important;
+        }
+
+        .common_ul_popups {
+            .common_li_popup {
+                font-size: 1.2em !important;
+                // margin-bottom: 1.667em !important;
+            }
+
+            .extra_mb {
+                margin-top: 0.5em;
+            }
+        }
+
+        .pills_common_li_popup {
+
+            .pill_span_li {
+                font-size: 0.833em !important;
+                font-weight: 600 !important;
+                padding: 0.667em 1.333em !important;
+                margin-right: 1em !important;
+            }
+        }
+    }
+}

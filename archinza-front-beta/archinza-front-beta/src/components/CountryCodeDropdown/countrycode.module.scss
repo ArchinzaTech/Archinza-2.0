@@ -1,0 +1,52 @@
+@import "../../common.scss";
+
+.autocomplete_dropdown {
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  //   border: 1px solid $color-707070;
+  border-radius: 1em;
+  margin: 0;
+}
+
+.custom_auto_drop_icon_uniq {
+  width: 0.5em;
+  //  margin-right: 0.5em;
+}
+
+:global {
+  .country-code-wrapper .MuiAutocomplete-endAdornment {
+    right: 16px !important;
+  }
+}
+
+
+
+.autocomplete_dropdown_lt {
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 1em;
+  margin: 0;
+}
+
+.option_list {
+  background: transparent url("../../images/general/form-bg.jpg") no-repeat bottom;
+  background-size: cover;
+  margin: 0;
+  padding: 2em;
+
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      max-width: 5em;
+    }
+
+    &:last-child {
+      padding-left: 30%;
+    }
+  }
+}

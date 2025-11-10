@@ -1,0 +1,222 @@
+@import "../../common.scss";
+
+.profile_card {
+  border-radius: 2.188em;
+  background-color: $color-EF7B13;
+  color: $color-FFFFFF;
+  padding: 1.4375em 5em 2.063em 2.813em;
+  margin-right: 1.9375em;
+  position: relative;
+  height: 100%;
+  box-shadow: 0 0 0.25em rgba(255, 255, 255, 1),
+    0 0 0.25em 0.1em rgba(255, 255, 255, 0.1);
+
+  .profile-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .profile-row {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+
+    .greeting {
+      font-size: 2.25em;
+      letter-spacing: 0.72px;
+      line-height: normal;
+    }
+
+    .name {
+      font-size: 2.8125em;
+      letter-spacing: 0.9px;
+      line-height: normal;
+    }
+
+    .change_link {
+      display: block;
+      width: 100%;
+      font-size: 1.125em;
+      text-decoration: underline;
+    }
+
+    .dashboard_btn {
+      border: none;
+      border-radius: 3.125em;
+      background-color: $color-FFFFFF;
+      color: $color-014FE0;
+      font-size: 1.375em;
+      font-weight: 600;
+      letter-spacing: 0.44px;
+      line-height: 1.4em;
+      padding: 0.4em 1.3em 0.3em 1.4em;
+      margin: 0.727em 0 1.409em;
+      cursor: default;
+      .edit_link {
+        margin: 0 0 0 1.25em;
+        .edit_img {
+          max-width: 1.125em;
+        }
+      }
+    }
+
+    .detail_wrapper {
+      float: right;
+      padding-top: 0.313em;
+    }
+
+    .detail_col {
+      padding: 0;
+    }
+
+    .details {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      margin-bottom: 2.125em;
+      .contact_img {
+        // position: absolute;
+        // left: 0;
+        width: 100%;
+        max-width: 0.98625em;
+        object-fit: contain;
+        &:nth-child(2) {
+          max-width: 2em;
+        }
+      }
+      .contact {
+        font-size: 1.375em;
+        font-weight: 500;
+        letter-spacing: 0.44px;
+        line-height: normal;
+        padding-left: 1em;
+      }
+      &:nth-child(2) .contact_img {
+        max-width: 1.40125em;
+      }
+      &:nth-child(3) .contact_img {
+        max-width: 1.21375em;
+      }
+    }
+
+    .edit_wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      text-decoration: underline;
+      //   position: relative;
+      .edit_img {
+        // position: absolute;
+        // left: 0;
+        width: 100%;
+        max-width: 1.170625em;
+        object-fit: contain;
+      }
+      .edit {
+        font-size: 1.125em;
+        letter-spacing: 0.36px;
+        line-height: normal;
+        margin: 0 0.25em 0 0.7372222222222222em;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .profile_card {
+    margin: 0;
+    .profile-row {
+      .dashboard_btn,
+      .change_link,
+      .contact {
+        font-size: 1.4em;
+      }
+      .edit_wrapper {
+        .edit {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .profile_card {
+    margin: 0;
+    background: transparent;
+    text-align: center;
+    padding: 2em;
+    background: $color-EF7B13;
+    border-radius: 1.5em;
+    box-shadow: 0 0 0.25em rgba(255, 255, 255, 1),
+      0 0 0.25em 0.1em rgba(255, 255, 255, 0.1);
+
+    .profile-row {
+      .detail_wrapper {
+        float: none;
+      }
+      .detail_col {
+        padding: 0 0 3.2em;
+      }
+
+      .detail_col:last-child {
+        padding: 0;
+      }
+
+      .greeting {
+        font-size: 1.6em;
+      }
+
+      .name {
+        font-size: 2.8em;
+      }
+
+      .change_link {
+        font-size: 1.2em;
+        opacity: 0.8;
+      }
+
+      .dashboard_btn {
+        font-size: 1.6em;
+        margin: 1.25em 0 0.75em;
+      }
+
+      .details {
+        justify-content: center;
+        margin: 0 0 1.2em;
+
+        .contact {
+          font-size: 1.6em;
+        }
+
+        .contact_img {
+          max-width: 1.2em;
+        }
+
+        &:nth-child(2) .contact_img {
+          max-width: 1.6em;
+        }
+
+        &:nth-child(3) .contact_img {
+          max-width: 1.5em;
+        }
+      }
+      .edit_wrapper {
+        justify-content: center;
+        padding: 0.4em 0 0;
+        .edit {
+          font-size: 1.2em;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

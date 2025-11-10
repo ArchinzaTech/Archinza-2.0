@@ -1,0 +1,133 @@
+@import "../../common.scss";
+
+.checkbox_wrapper {
+  display: inline-block;
+  margin: 0 0.9375em;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
+  .checkbox_input {
+    position: absolute;
+    visibility: hidden;
+    left: -1000px;
+    margin: 0;
+  }
+
+  .checkbox_label {
+    @include textStyles(1.5em, 0.9em, 0);
+    position: relative;
+    cursor: pointer;
+    // padding: 1.165em 2em;
+    padding: 0.958em 1.333em;
+    border-radius: 10em;
+    margin: 0 0 1.167em;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .checkbox_input:checked+.checkbox_label {
+    padding-right: 4em;
+
+    .close {
+      position: relative;
+      display: inline;
+    }
+
+    .close:before,
+    .close:after {
+      position: absolute;
+      left: 1.5em;
+      content: " ";
+      top: 1%;
+      height: 1.3em;
+      width: 0.126em;
+    }
+
+    .close:before {
+      transform: rotate(45deg);
+    }
+
+    .close:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.checkbox_wrapper_light {
+  .checkbox_label {
+    background-color: rgba($color-FFFFFF, 1);
+    border: 1.5px solid #8D8D8D;
+    color: $color-111111;
+    font-weight: 500;
+  }
+
+  .close:before,
+  .close:after {
+    // background-color: $color-FFFFFF;
+    background-color: rgba(17, 17, 17, 0.8);
+  }
+
+  .checkbox_input:checked+.checkbox_label {
+    // border: 1.5px solid $color-F77B00;
+    // background: $color-F77B00;
+    // color: rgba($color-FFFFFF, 1);
+    background-color: #fff;
+    color: #111111;
+    border: 2px solid #EF7B13;
+    padding-right: 3.25em;
+  }
+}
+
+.checkbox_wrapper_dark {
+  .checkbox_label {
+    background-color: rgba($color-FFFFFF, 0.05);
+    border: 1.5px solid $color-707070;
+  }
+
+  .close:before,
+  .close:after {
+    background-color: $color-FFFFFF;
+  }
+
+  .checkbox_input:checked+.checkbox_label {
+    border: 1.5px solid $color-F77B00;
+    outline: none;
+  }
+}
+
+.business_edit_checkbox {
+  margin: 0 0.9375em 0 0;
+
+  .checkbox_label {
+    @include textStyles(1.125em, 0.9em, 0);
+  }
+}
+
+@media (max-width: 992px) {
+  .business_edit_checkbox {
+    .checkbox_label {
+      @include textStyles(1.6em, 0.9em, 0);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .checkbox_wrapper {
+    margin: 0 0.6em;
+
+    .checkbox_label {
+      font-size: 1.3em;
+      padding: 1.077em 1.538em;
+    }
+  }
+
+  .business_edit_checkbox {
+    .checkbox_label {
+      font-size: 1.3em;
+    }
+  }
+}
+

@@ -1,0 +1,173 @@
+@import "../../../../../common.scss";
+
+.our_focus_popup {
+  .modal-dialog {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .modal-header {
+    padding: 0;
+    border: none;
+
+    .custom-cancel-btn {
+      width: 100%;
+      max-width: 4.5em;
+      position: fixed;
+      right: 2.5em;
+      top: 2.5em;
+
+      .ctm_img_bussine_edit_about {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .modal-body {
+    background-color: #ffffff;
+    border-radius: 1.25em;
+    padding: 2.5em 2em;
+    width: 100%;
+    max-width: 47.815%;
+    margin: 1em auto;
+
+    .about_modal_bussines_heading {
+      color: #111111;
+      font-size: 2.25em;
+      letter-spacing: 0.72px;
+      line-height: 1.889;
+      margin-bottom: 0.778em;
+    }
+
+    .our_focus_select_container {
+      .our_focus_select_wrapper {
+        margin-bottom: 3.1875em;
+      }
+
+      .our_focus_query {
+        max-width: 100%;
+      }
+
+      .wraper_userInput {
+        .user_input_div {
+          .user_input_ul {
+            justify-content: flex-start;
+          }
+        }
+      }
+
+      .wraper_userInput {
+        .user_input_field_container {
+          max-width: 39.625em;
+          margin-top: 2em;
+        }
+      }
+    }
+
+    .popup_common_btn {
+      background-color: #014fe0;
+      border: 0;
+      border-radius: 50px;
+      box-shadow: 0 0 25px 5px transparent;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-size: 1.25em;
+      font-weight: 400;
+      justify-content: center;
+      letter-spacing: 0.4px;
+      line-height: 1.08;
+      max-width: -webkit-fit-content;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
+      padding: 1.1em 1.6em;
+      width: 100%;
+      margin: 3em auto 0;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .our_focus--modal {
+    .modal-content {
+      width: 47.815%;
+      margin: auto;
+         min-width: 60em; 
+    }
+
+    .modal-body {
+      max-width: 100% !important;
+   
+    }
+
+    .custom-cancel-btn {
+      position: absolute !important;
+      right: 1em !important;
+      top: 1.8em !important;
+      z-index: 1;
+      max-width: 3.25em !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .our_focus_popup {
+    .modal-dialog {
+      height: 100vh;
+    }
+
+    .modal-content {
+      background-color: #ffffff;
+      border: none;
+      padding: 7.2em 1.6em 2em;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      .custom-cancel-btn {
+        width: 100%;
+        max-width: 2.4em;
+        position: absolute;
+        right: 1.8em;
+        top: 1.9em;
+      }
+    }
+
+    .modal-body {
+      border-radius: 0;
+      padding: 0 !important;
+      max-width: 100%;
+      margin: 0 auto;
+
+      .about_modal_bussines_heading {
+        font-size: 1.6em;
+        letter-spacing: 0.32px;
+        line-height: 1.625;
+        margin-bottom: 1.125em;
+      }
+
+      .our_focus_select_container {
+        .our_focus_select_wrapper {
+          margin-bottom: 2.2em;
+        }
+      }
+
+      .popup_common_btn {
+        font-size: 1.6em;
+        letter-spacing: 0.32px;
+        line-height: 1.35;
+        margin: 1.875em auto 0;
+      }
+    }
+  }
+}

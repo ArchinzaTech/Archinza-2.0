@@ -1,0 +1,463 @@
+// @import "../../common.scss";
+@import "../../common.scss";
+
+.reg_main {
+  font-family: "Poppins";
+  position: relative;
+  padding: 7.5em 0 0;
+}
+
+.reg_sec1 {
+  //   background: transparent url("../../images/registrationform/registration-background.jpg") 0%
+  //     0% no-repeat padding-box;
+  //   background-size: cover;
+  //   width: 100%;
+  //   height: 100%;
+  //   min-height: 100vh;
+  padding: 10em 0 7.5em;
+
+  .text_container {
+    text-align: center;
+    padding: 0 8.75em;
+
+    .head_text {
+      color: $color-EF7B13;
+      font-size: 1.25em;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      line-height: 0.981em;
+      font-weight: 500;
+      margin: 0 0 1.1em;
+    }
+
+    .heading {
+      color: $color-F6F6F6;
+      font-size: 3.75em;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      line-height: 1.225;
+      margin: 0 0 1em;
+    }
+
+    .sub_heading {
+      color: $color-F6F6F6;
+      font-size: 2.5em;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      line-height: 1.7em;
+
+      br {
+        display: none;
+      }
+    }
+
+    .choose_text {
+      color: $color-FFFFFF;
+      font-size: 1.5em;
+      letter-spacing: 0.48px;
+      line-height: 0.9em;
+      opacity: 0.8;
+      font-style: italic;
+      font-weight: 300;
+      margin: 2.5em 0 0;
+    }
+
+    .top_error {
+      font-size: 1.5em;
+    }
+
+    .design_wrapper {
+      width: 100%;
+
+      .cta_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .radio_container {
+    color: $color-FFFFFF;
+    margin: 3.75em auto 2em;
+    text-align: center;
+
+    li label {
+      padding: 1.165em 2em;
+      margin: 0 0 0.5em;
+    }
+
+    // padding: 0 8.75em;
+    // .radio_wrapper {
+    //   .radio_label {
+    li {
+      margin: 0 1.125em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    // label {
+    //   min-width: 18.75em;
+    // }
+    // }
+  }
+
+  .form_container {
+    padding: 0 8.75em;
+
+    .form_row {
+      margin: 0 auto;
+      //   .form_col {
+      //     padding: 0;
+      //   }
+    }
+
+    .error {
+      color: red;
+      // bottom: -1.5em;
+      // left: 0;
+    }
+
+    .form_col {
+      &:nth-child(2n + 1) .field_wrapper {
+        padding-right: 2.21875em;
+      }
+
+      &:nth-child(2n + 2) .field_wrapper {
+        padding-left: 2.21875em;
+      }
+
+      &:nth-child(1) .field_wrapper_1 {
+        padding-right: 1.485em;
+      }
+
+      &:nth-child(2) .field_wrapper_1 {
+        padding-left: 1.4em;
+      }
+
+      .mobile_stack {
+        padding-top: 2.875em;
+      }
+    }
+
+    .field_wrapper {
+      position: relative;
+      padding-top: 2.875em;
+    }
+
+    .pass_help {
+      color: $color-FFFFFF;
+      font-size: 1.125em;
+      font-style: italic;
+      letter-spacing: 0.36px;
+      line-height: 1.2;
+      opacity: 0.8;
+      padding: 0.611em 0 0;
+    }
+
+    .checkbox_wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      // margin: 0.6875em 0 0;
+      margin: 1.5em 0 0;
+      position: relative;
+      cursor: pointer;
+
+      &.error {
+        margin: 0.5em 0 0;
+      }
+    }
+
+    .check_box {
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: transparent;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 1.2625em;
+      max-height: 1.2625em;
+      border: 2px solid #ef7b13;
+      transform: translateY(-0.075em);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      cursor: pointer;
+      position: absolute;
+      top: 0em;
+      left: 0;
+    }
+
+    .check_box::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      max-width: 0.4em;
+      max-height: 0.75em;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      border: 1.5px solid #ef7b13;
+      border-width: 0 2px 2px 0;
+    }
+
+    .check_box:checked::before {
+      transform: scale(1);
+      transform: rotate(45deg);
+    }
+
+    .checkbox_label {
+      cursor: pointer;
+      color: $color-FFFFFF;
+      font-size: 1.125em;
+      font-style: italic;
+      letter-spacing: 0.36px;
+      line-height: 1.2;
+      opacity: 0.8;
+      margin: 0;
+      margin-left: 1.777777777777778em;
+    }
+
+    .privacy_checbox {
+      width: 100%;
+      display: inline-block;
+      margin: 4.444em 0 1.8125em;
+      font-size: 1.125em;
+      line-height: 1.556em;
+      letter-spacing: 0.36px;
+      font-weight: 300;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+
+      .policy_link {
+        color: $color-EF7B13;
+      }
+    }
+
+    .btn_wrapper {
+      width: 100%;
+      max-width: fit-content;
+      margin: 0 auto;
+
+      .form_btn {
+        // background: transparent;
+        display: flex;
+        color: $color-FFFFFF;
+        border-radius: 50px;
+        border: none;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 1.08;
+        width: 100%;
+        max-width: 100%;
+        padding: 1.235em 2em;
+        // @include blueShadow;
+        background: $color-014FE0;
+
+        .icon {
+          margin: 0 0 0 0.5em;
+          object-fit: contain;
+          max-width: 1.25em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .reg_sec1 {
+    .form_container {
+      .form_col {
+        &:nth-child(2n + 1) .field_wrapper {
+          padding-right: 0;
+        }
+
+        &:nth-child(2n + 2) .field_wrapper {
+          padding-left: 0;
+        }
+
+        &:nth-child(1) .field_wrapper_1 {
+          padding-right: 0;
+        }
+
+        &:nth-child(2) .field_wrapper_1 {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .reg_sec1 {
+    .form_container {
+      padding: 0;
+
+      .pass_help,
+      .checkbox_label,
+      .privacy_checbox {
+        font-size: 1.2em;
+      }
+
+      .btn_wrapper {
+        .form_btn {
+          font-size: 1.4em;
+        }
+      }
+
+      .form_col:nth-child(2n + 1) {
+        .field_wrapper {
+          padding-right: 0;
+        }
+      }
+
+      .form_col:nth-child(2n + 2) {
+        .field_wrapper {
+          padding-left: 0;
+        }
+      }
+
+      .form_col:nth-child(1) {
+        .field_wrapper_1 {
+          padding-right: 0;
+          padding-bottom: 2.875em;
+        }
+      }
+
+      .form_col:nth-child(2) {
+        .field_wrapper_1 {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .text_container {
+      .head_text {
+        font-size: 1.6em;
+      }
+
+      .heading {
+        font-size: 3.5em;
+      }
+
+      .sub_heading {
+        font-size: 2.8em;
+
+        br {
+          display: block;
+        }
+      }
+
+      .choose_text {
+        font-size: 1.4em;
+      }
+    }
+
+    .radio_container {
+      margin: 3.75em auto 0;
+
+      li {
+        label {
+          font-size: 1.4em;
+          margin: 0 0 2.4em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .reg_main {
+    padding: 12em 0 0;
+  }
+
+  .reg_sec1 {
+    padding: 0 0 6em;
+
+    .text_container {
+      padding: 0;
+
+      .head_text {
+        font-size: 1.4em;
+        letter-spacing: 0.28pt;
+        margin: 0 0 0.857em;
+      }
+
+      .heading {
+        font-size: 2em;
+        font-weight: 500;
+        letter-spacing: 0.4pt;
+        padding: 0;
+        margin: 0 0 1.4em;
+      }
+
+      .sub_heading {
+        font-size: 1.6em;
+        letter-spacing: 0.8pt;
+      }
+
+      .choose_text {
+        margin: 1.571em 0 0;
+      }
+
+      .top_error {
+        margin: 1.571em 0 0;
+      }
+    }
+
+    .radio_container {
+      margin: 2.1em auto 3em;
+
+      li {
+        margin: 0 0.75em;
+
+        &:last-child {
+          margin: 0 0.75em;
+        }
+
+        label {
+          padding: 1.165em 1.429em;
+          margin: 0 0 1.429em;
+        }
+      }
+    }
+
+    .form_container {
+      .field_wrapper {
+        padding: 3.2em 0 0;
+
+        &.field_wrapper_mobile {
+          padding: 0;
+        }
+      }
+
+      .privacy_checbox {
+        margin: 0;
+        font-size: 1em;
+        letter-spacing: 0.2pt;
+        padding: 4em 0 2.5em;
+
+        br {
+          display: block;
+        }
+      }
+
+      .pass_help {
+        font-size: 1em;
+        letter-spacing: 0.2pt;
+        padding: 1em 0 0;
+      }
+
+      .checkbox_wrapper {
+        margin: 1.2em 0 0;
+      }
+    }
+  }
+}

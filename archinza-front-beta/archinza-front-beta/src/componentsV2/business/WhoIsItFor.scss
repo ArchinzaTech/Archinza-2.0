@@ -1,0 +1,217 @@
+@import "../../common.scss";
+
+.whoisitfor_section {
+  flex: 1;
+
+  .section_header {
+    text-align: center;
+    background-color: #dbeafe;
+    margin-bottom: 1.5rem;
+    padding: 4rem 0;
+
+    .header_title {
+      font-size: 1.875rem;
+      // font-family: sans-serif;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-weight: 700;
+      color: #2563eb;
+      margin-bottom: 1rem;
+    }
+
+    .header_description {
+      // font-family: sans-serif;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      color: #374151;
+      font-size: 1rem;
+    }
+  }
+
+  .sections_container {
+    max-width: 80rem;
+    margin: 0 auto;
+
+    .section_item {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      height: auto;
+      margin-bottom: 4rem;
+
+      &.reverse {
+        flex-direction: column-reverse;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .text_section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+
+        .section_heading {
+          font-size: 1.875rem;
+          font-weight: 700;
+          color: #111827;
+          line-height: 1.25;
+        }
+
+        .section_description {
+          font-size: 1rem;
+          color: #4b5563;
+          line-height: 1.625;
+          max-width: 32rem;
+          margin: 0 auto;
+        }
+
+        .tags_wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          justify-content: center;
+
+          .tag {
+            padding: 0.5rem 1rem;
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .image_section {
+        width: 100%;
+        position: relative;
+        aspect-ratio: 16 / 9;
+        border-radius: 1rem;
+        overflow: visible;
+
+        .section_image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
+
+// Dark theme styles
+.dark {
+  .whoisitfor_section {
+    .section_header {
+      background-color: #111827;
+
+      .header_title {
+        color: #60a5fa;
+      }
+
+      .header_description {
+        color: #e5e7eb;
+      }
+    }
+
+    .sections_container {
+      .section_item {
+        .text_section {
+          .section_heading {
+            color: #ffffff;
+          }
+
+          .section_description {
+            color: #d1d5db;
+          }
+
+          .tags_wrapper {
+            .tag {
+              background-color: rgba(59, 130, 246, 0.3);
+              color: #93c5fd;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive breakpoints
+@media (min-width: 640px) {
+  .whoisitfor_section {
+    .section_header {
+      .header_title {
+        font-size: 2.25rem;
+      }
+    }
+
+    .sections_container {
+      .section_item {
+        .text_section {
+          .section_heading {
+            font-size: 2.25rem;
+          }
+
+          .section_description {
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .whoisitfor_section {
+    .section_header {
+      margin-bottom: 1.5rem;
+
+      .header_title {
+        font-size: 3rem;
+      }
+    }
+
+    .sections_container {
+      .section_item {
+        flex-direction: row;
+        gap: 3rem;
+        height: 70vh;
+        margin-bottom: 0;
+
+        &.reverse {
+          flex-direction: row-reverse;
+        }
+
+        .text_section {
+          width: 50%;
+          gap: 1rem;
+          text-align: left;
+
+          .section_heading {
+            font-size: 1.875rem;
+          }
+
+          .section_description {
+            font-size: 1.25rem;
+            max-width: none;
+            margin: 0;
+          }
+
+          .tags_wrapper {
+            justify-content: flex-start;
+          }
+        }
+
+        .image_section {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

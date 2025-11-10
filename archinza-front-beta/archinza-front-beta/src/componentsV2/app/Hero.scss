@@ -1,0 +1,158 @@
+.hero-section {
+  flex: 1;
+  background: #f3f4f6; // gray-100
+  // padding: 2rem 1rem 0;
+  padding: 1rem 1rem 0;
+
+  &.dark {
+    background: #1f2937; // gray-800
+  }
+
+  .hero-container {
+    max-width: 80rem;
+    // margin: 4rem auto 0;
+    margin: 0 auto;
+    text-align: center;
+    // font-family: sans-serif;
+    font-family: Poppins;
+
+    .hero-header {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.25rem;
+
+        @media (min-width: 640px) {
+          font-size: 1.5rem;
+        }
+        @media (min-width: 1024px) {
+          font-size: 2.25rem;
+        }
+
+        .highlight {
+          color: #2563eb;
+          font-weight: 700;
+        }
+
+        .and-text {
+          margin: 0 0.5rem;
+          color: #000;
+        }
+
+        .subtitle {
+          display: block;
+          color: #000;      margin-bottom: 0.75rem;
+        }
+      }
+
+      .description {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        max-width: 56rem;
+        margin: 0 auto;
+        color: #4b5563;
+      }
+    }
+  }
+
+  .hero-grid {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    height: 90vh;
+    overflow: hidden;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 20%;
+
+      &.col-1,
+      &.col-5 {
+        margin-top: 14rem;
+      }
+
+      &.col-3 {
+        margin-top: 6rem;
+      }
+    }
+  }
+}
+
+/* ===== Image card with stacked layers (grid stacking preserves natural height) ===== */
+.image-card {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: grid;
+  /* grid stacking so children share same "cell" and maintain intrinsic height */
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.card-layer {
+  grid-area: 1 / 1 / 2 / 2;
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  will-change: opacity;
+  pointer-events: none;
+  position: relative; /* so label absolute inside this layer */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-layer.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* the actual image keeps natural height (height:auto) so layout isn't forced */
+.card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* placeholder in case image missing */
+.card-image.placeholder {
+  background: #e5e7eb;
+  min-height: 120px;
+}
+
+/* Label: animate top/left + opacity so it glides */
+.image-label {
+  position: absolute;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  pointer-events: none;
+
+  transition:
+    top 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    left 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+
+  will-change: top, left, opacity;
+}
+
+.label-icon {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+}
+
+.label-text {
+  white-space: nowrap;
+}

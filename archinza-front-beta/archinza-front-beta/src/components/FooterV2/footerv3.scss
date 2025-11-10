@@ -1,0 +1,303 @@
+@import "../../common.scss";
+
+.footerv3_sec1 {
+  background-color: transparent;
+  padding: 5.25em 0 5em;
+  z-index: 1;
+  position: relative;
+
+  // border-top: 1px solid #707070;
+  .footer_row {
+    // margin: 0 auto;
+    .footer_col {
+      // padding: 0;
+
+      .social_wrapper {
+        margin-top: 2em;
+      }
+
+      .social_icon {
+        width: 100%;
+        max-width: 2.232em;
+        margin-right: 1.4375em;
+      }
+    }
+
+    .middle_links_wrapper {
+      .middle_links {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        color: $color-111111;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 1.5;
+        text-align: center;
+      }
+    }
+
+    .logo_wrapper {
+      .footer_logo {
+        width: 100%;
+        max-width: 26.23625em;
+      }
+
+      .logo_desc {
+        color: $color-111111;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 1.48;
+        margin-top: 1.668em;
+        width: 100%;
+        max-width: 87%;
+      }
+    }
+
+    .input_wrapper {
+      width: 100%;
+      max-width: 85%;
+
+      .input_desc {
+        color: #ef7b13;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        margin-bottom: 1.2285em;
+        text-align: center;
+      }
+
+      .input_field_wrapper {
+        position: relative;
+        width: 100%;
+        // max-width: 84.1%;
+        max-width: 100%;
+      }
+
+      .input_details {
+        color: #575757;
+        background: $color-FFFFFF;
+        border: 1.5px solid #ef7b13;
+        border-radius: 50px;
+        font-size: 1.125em;
+        font-weight: 400;
+        letter-spacing: 0.36px;
+        line-height: 1.2;
+        padding: 1.328em 1.78em 1.328em 1.75em;
+        width: 100%;
+        max-width: 100%;
+        // background: url("../../images/general/right-arrow-orange.svg") no-repeat;
+        // background-position: calc(100% - 1.78em) center;
+      }
+
+      .submit_btn {
+        width: 100%;
+        max-width: 1.78em;
+        position: absolute;
+        right: 1.78em;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .arrow_img {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .error {
+        color: red;
+        font-size: 1em;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+    }
+
+    .contact_wrapper {
+      float: right;
+
+      .details_wrapper {
+        margin-bottom: 2.35063em;
+        // &:last-child {
+        //   margin-bottom: 0;
+        // }
+      }
+
+      .detail_title {
+        color: #ef7b13;
+        font-size: 1.375em;
+        font-weight: 400;
+        letter-spacing: 1.1px;
+        line-height: 1.2;
+        margin-bottom: 0.2255em;
+      }
+
+      .detail_desc {
+        color: $color-111111;
+        font-size: 1.375em;
+        font-weight: 400;
+        letter-spacing: 1.1px;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .copy_right_wrapper {
+    margin-top: 2.82em;
+
+    .copy_right {
+      color: $color-111111;
+      font-size: 1.25em;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 2559px) {
+  .footerv3_sec1 {
+    .footer_row {
+      .input_wrapper {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .footerv3_sec1 {
+    .footer_row {
+      .input_wrapper {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1194px) {
+  .footerv3_sec1 {
+    .footer_row {
+      .input_wrapper {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footerv3_sec1 {
+    padding: 0 0 2.773em;
+
+    .footer_wrapper {
+      padding-top: 3em;
+      //   border-top: 1px solid #ffffff;
+      // border-top: 1px solid #a9a9a9;
+    }
+
+    .footer_row {
+      .logo_wrapper {
+        .footer_logo {
+          max-width: 13.567em;
+        }
+
+        .logo_desc {
+          font-size: 1.2em;
+          letter-spacing: 0.24px;
+          line-height: 1.334;
+          margin-top: 1em;
+        }
+
+        .social_wrapper {
+          margin: 2.8em 0 2.843em;
+        }
+
+        .social_icon {
+          width: 100%;
+          max-width: 2.6em;
+          margin-right: 1.2em;
+        }
+      }
+
+      .input_wrapper {
+        max-width: 100%;
+
+        .input_field_wrapper {
+          max-width: 100%;
+        }
+
+        .input_desc {
+          font-size: 1.4em;
+          letter-spacing: 0.28px;
+          line-height: 1.285;
+          margin-bottom: 1.6072em;
+          padding-right: 4.2em;
+          text-align: left;
+        }
+
+        .input_details {
+          color: #9e9e9e;
+          font-size: 1.2em;
+          letter-spacing: 0.24px;
+          line-height: 0.9167;
+          padding: 0.929em 1.653em 0.929em 1.709em;
+        }
+
+        .submit_btn {
+          max-width: 1.915em;
+        }
+      }
+
+      .contact_wrapper {
+        float: initial;
+
+        .details_wrapper {
+          margin-bottom: 2.2em;
+        }
+
+        .detail_title {
+          font-size: 1.4em;
+          letter-spacing: 0.28px;
+          line-height: 1.285;
+          margin-bottom: 0;
+        }
+
+        .detail_desc {
+          font-size: 1.4em;
+          letter-spacing: 0.28px;
+          line-height: 1.285;
+        }
+      }
+
+      .middle_links_wrapper {
+        margin-bottom: 2em;
+
+        .middle_links {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+
+    .copy_right_wrapper {
+      .copy_right {
+        font-size: 1.2em;
+        letter-spacing: 0.24px;
+        line-height: 1.34;
+        padding-right: 3em;
+        padding-left: 12px;
+        text-align: left;
+      }
+    }
+  }
+}

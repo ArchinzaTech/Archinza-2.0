@@ -1,0 +1,63 @@
+@import "../../common.scss";
+
+.breadcrumb_wrapper {
+  padding: 5em 0 3.75em;
+  border-bottom: 1px solid #a9a9a9;
+  text-align: center;
+  .breadcrumb_link {
+    color: #ef7b13;
+    font-size: 1.25em;
+    font-weight: 500;
+    font-family: "Poppins";
+    letter-spacing: 0.4px;
+    line-height: 3.95;
+    line-height: normal;
+  }
+  .breadcrumb_link.disabled {
+    pointer-events: none;
+  }
+  .title {
+    color: #ffffff;
+    font-size: 3.75em;
+    font-weight: 500;
+    font-family: "Poppins";
+    letter-spacing: 1.2px;
+    line-height: normal;
+    // margin: 0.3667em 0 0.667em;
+    margin-top: 0.3667em;
+  }
+  .social_media_wrapper {
+    margin-top: 2.5em;
+    .socila_media_icon {
+      width: 100%;
+      max-width: 2.945em;
+      object-fit: contain;
+      margin: 0 0.9775em;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .breadcrumb_wrapper {
+    padding: 5em 0 3.75em;
+    .breadcrumb_link {
+      font-size: 1.4em;
+      letter-spacing: 0.28px;
+      line-height: normal;
+    }
+    .title {
+      font-size: 2.6em;
+      letter-spacing: 0.52px;
+      line-height: 1.3462;
+      // margin: 0.2em 0 0.5em;
+      margin-top: 0.4616em;
+    }
+    .social_media_wrapper {
+      margin-top: 1.6em;
+      .socila_media_icon {
+        max-width: 2.614em;
+        margin: 0 0.8675em;
+      }
+    }
+  }
+}

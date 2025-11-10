@@ -1,0 +1,46 @@
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 2.375em;
+    margin-top: 1.5em;
+    // margin-bottom: 5em;
+    &__input {
+      display: none; // Hide the default checkbox
+    }
+  
+    &__box {
+        width: 1.263em;
+        height: 1.263em;
+        border: 2px solid #000000;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.488em;
+        position: relative;
+        background-color: #fff;
+     
+  
+      .custom-checkbox__icon {
+        width: .8em;
+        height: .8em;
+        display: none;
+      }
+    }
+  
+    &__input:checked + .custom-checkbox__box {
+      border-color: #000000;
+      background-color: #ffffff;
+  
+      .custom-checkbox__icon {
+        display: block;
+      }
+    }
+  
+    &__label {
+      font-size: 14px;
+      color: #333;
+    }
+  }
+  

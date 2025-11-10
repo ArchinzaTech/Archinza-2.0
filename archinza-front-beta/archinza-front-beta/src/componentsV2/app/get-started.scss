@@ -1,0 +1,117 @@
+// get-started.scss
+
+.get-started {
+  flex: 1;
+  height: fit-content;
+  padding: 2rem 1rem;
+
+  @media (min-width: 640px) {
+    padding: 2rem 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 4rem 2rem;
+  }
+
+  .dark & {
+    background-color: black;
+  }
+
+  &__container {
+    height: fit-content;
+    background-color: white;
+    padding: 2rem 0;
+
+    .dark & {
+      background-color: black;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  &__title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-weight: 500;
+    color: rgb(17 24 39); // text-gray-900
+    gap: 1rem;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+
+    .dark & {
+      color: white;
+    }
+  }
+
+  &__title-text {
+    font-size: 1.5rem; // text-2xl
+
+    @media (min-width: 640px) {
+      font-size: 1.875rem; // sm:text-3xl
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 2.25rem; // lg:text-4xl
+    }
+  }
+
+  &__toggle-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgb(243 244 246); // bg-gray-100
+    border-radius: 9999px;
+    padding: 0.25rem;
+
+    .dark & {
+      background-color: rgb(31 41 55); // equivalent dark gray
+    }
+  }
+
+  &__toggle-button {
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 1rem; // text-base
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: 640px) {
+      font-size: 1.125rem; // sm:text-lg
+    }
+
+    &--active {
+      background-color: rgb(37 99 235); // bg-blue-600
+      color: white;
+    }
+
+    &--inactive {
+      color: rgb(55 65 81); // text-gray-700
+      background: transparent;
+
+      &:hover {
+        background-color: white;
+      }
+
+      .dark & {
+        color: rgb(209 213 219); // dark gray text
+
+        &:hover {
+          background-color: rgb(55 65 81);
+        }
+      }
+    }
+  }
+}

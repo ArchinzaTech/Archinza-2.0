@@ -1,0 +1,462 @@
+@import "../../../../../common.scss";
+
+
+.custom-backdrop {
+    background-color: #11111199;
+}
+
+.error_text {
+    color: red;
+    font-size: 1.125em;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    line-height: 1.08;
+    left: 0;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.bussinessEdit_about_Modal_v2 {
+
+    .modal-dialog {
+
+
+        .modal-content {
+            border-radius: 1.25em;
+            -webkit-border-radius: 1.25em;
+            -moz-border-radius: 1.25em;
+            -ms-border-radius: 1.25em;
+            -o-border-radius: 1.25em;
+            width: 85.188em !important;
+        }
+
+        // .modal-header {
+        //     justify-content: end;
+        //     // padding: 1.25em;
+        //     border-bottom: 0;
+
+        //     .ctm_img_bussine_edit_about {
+        //         max-width: 3.25em;
+        //     }
+        // }
+
+        .modal-body {
+
+
+            .about_modal_bussines_heading {
+                font-weight: 600;
+                font-size: 2.25em;
+                color: #111111;
+                letter-spacing: 0.02em;
+            }
+
+            .about_desc_bissunes_edit_modal {
+                border: 0.5px solid #9F9F9F;
+                border-radius: 5px;
+                margin-top: 1em;
+                padding: 1.5em;
+                font-size: 1.25em;
+                font-weight: 500;
+                line-height: 1.7em;
+                letter-spacing: 0.02em;
+                color: #000000;
+                opacity: .8;
+            }
+
+            .form_autocomplete_b_edit_wrapper_popUp {
+
+                .automplete_b_edit_heading {
+                    font-size: 1.75em;
+                    letter-spacing: 0.02em;
+                    color: #111111;
+                    font-weight: 600;
+                    margin-top: 1.429em;
+                }
+
+                // .formfivelighttheme_field_wrapper__bQXak {
+
+                .field_wrapper {
+                    margin-left: 0;
+                    margin-top: 1em;
+                    max-width: 100%;
+
+                    // .css-vnsye8-MuiAutocomplete-root {
+                    //     max-width: 40em;
+                    // }
+                    .autocomplete_coustom_wrapper {
+                        max-width: 40em;
+                    }
+
+
+                    #cutom_drop_arrow {
+                        content: url("../../../../../images/general/dropdown_icon.svg") !important;
+                        max-width: 1.038em;
+                        width: 1.038em;
+                        height: 0.558em;
+                    }
+
+                    // .css-vnsye8-MuiAutocomplete-root label {
+                    //     line-height: 1.5em;
+                    //     font-size: 1.25em;
+                    // }
+                    .autocomplete_coustom_wrapper label {
+                        line-height: 1.5em;
+                        font-size: 1.25em;
+                    }
+
+
+                }
+
+                .chips_b_edit_autoComplete {
+                    margin-top: 1.75em;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    // .checkboxbutton_checkbox_wrapper__0YDdz {
+                    //     margin-left: 0;
+                    // }
+                    .checkboxbutton_checkbox_wrapper {
+                        margin-left: 0;
+                    }
+
+                    .black_border_chips_custom {
+                        border: 1px solid #8D8D8D99;
+                        background: #ffffff;
+                        color: rgb(0, 0, 0);
+                        font-size: 1.125em;
+                        line-height: 0.9em;
+                        padding: 1em 1.333em 1em 1.333em;
+                        border-radius: 10em;
+                        margin-bottom: 1.167em;
+                        margin-right: 0.9375em;
+
+                        .cl_ic_cs_black {
+                            width: 0.978em;
+                            margin-left: 0.556em;
+                        }
+                    }
+                }
+
+                // .checkboxbutton_checkbox_wrapper_light__RZjTA .checkboxbutton_checkbox_input__RrqrE:checked+.checkboxbutton_checkbox_label__h6wo2 {
+                //     border: 1px solid #EF7B13;
+                //     background: #ffffff;
+                //     color: rgb(0, 0, 0);
+                //     font-size: 1.125em;
+                //     padding: 1em 2.889em 1em 1.333em;
+                // }
+
+                .checkboxbutton_checkbox_wrapper .checkboxbutton_checkbox_input:checked+.checkboxbutton_checkbox_label {
+                    border: 1px solid #EF7B13;
+                    background: #ffffff;
+                    color: rgb(0, 0, 0);
+                    font-size: 1.125em;
+                    padding: 1em 2.889em 1em 1.333em;
+                }
+
+
+                .chips_b_edit_autoComplete {
+
+                    .checkboxbutton_checkbox_wrapper .checkboxbutton_checkbox_input:checked+.checkboxbutton_checkbox_label .checkboxbutton_close:before,
+                    .checkboxbutton_checkbox_wrapper .checkboxbutton_checkbox_input:checked+.checkboxbutton_checkbox_label .checkboxbutton_close:after {
+                        position: absolute;
+                        left: 1.2em;
+                        content: " ";
+                        top: 0.1em;
+                        height: 1.2em;
+                        width: 0.07em;
+                    }
+
+
+                    .checkboxbutton_checkbox_wrapper .checkboxbutton_close:after {
+                        background-color: #000000;
+                    }
+
+
+                    .checkboxbutton_checkbox_wrapper .checkboxbutton_checkbox_input:checked+.checkboxbutton_checkbox_label .checkboxbutton_close:before {
+                        background-color: #000000;
+                    }
+                }
+
+                .popup_common_btn {
+                    background-color: #014FE0;
+                    border: 0;
+                    border-radius: 50px;
+                    box-shadow: 0 0 25px 5px transparent;
+                    color: #fff;
+                    cursor: pointer;
+                    display: flex;
+                    font-size: 1.25em;
+                    font-weight: 400;
+                    justify-content: center;
+                    letter-spacing: .4px;
+                    line-height: 1.08;
+                    max-width: -webkit-fit-content;
+                    max-width: -moz-fit-content;
+                    max-width: fit-content;
+                    padding: 1.1em 1.6em;
+                    width: 100%;
+                    margin: 1.95em auto 4.6em auto;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+
+    .text_input_complete_actions {
+        border-radius: 10px;
+        border: 0.5px solid #707070;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding: 0.8em 1.2em;
+        width: 31.7em;
+        margin-top: 1.2em;
+        font-size: 1.25em;
+        font-weight: 500;
+    }
+
+    .text_area_complete_action {
+        overflow: hidden;
+        resize: none;
+        box-sizing: border-box;
+        width: 100%;
+        border: 0.5px solid #9F9F9F;
+        border-radius: 5px;
+        padding: 1em;
+        opacity: 80%;
+        letter-spacing: 0.02em;
+
+        &.limit-reached {
+            border-color: red;
+        }
+    }
+
+    .about_text_area {
+        margin-top: 0.5em;
+    }
+
+    .sm_heading_complete_actions {
+        font-size: 0.444em !important;
+        opacity: 60% !important;
+        font-weight: 400 !important;
+    }
+
+    .Complete_actions_popup_cancel_btn {
+        position: fixed;
+        top: 40px;
+        right: 40px;
+    }
+
+    .Complete_actions_popup_cancel_btn_img {
+        max-width: 4.5em;
+    }
+
+    .inside_cancel_btn--about {
+        position: absolute !important;
+        right: 1em !important;
+        top: 1em !important;
+        z-index: 1;
+
+       
+.Complete_actions_popup_cancel_btn_img {
+            max-width: 3.25em !important;
+        }
+    }
+     .modal-body {
+            padding-top: 5.5em ;
+        } 
+}
+
+
+
+@media screen and (max-width: 1800px) {
+    .form_autocomplete_b_edit_wrapper_popUp {
+        .field_wrapper {
+
+            // .css-vnsye8-MuiAutocomplete-root label {
+            //     line-height: 1em !important;
+            //     height: 100%;
+            // }
+            .autocomplete_coustom_wrapper label {
+                line-height: 1em !important;
+                height: 1.2em;
+            }
+
+            .autocomplete_coustom_wrapper .MuiOutlinedInput-root .MuiAutocomplete-input {
+                padding: 0px 4px 0px 5px;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .bussinessEdit_about_Modal_v2 {
+        .modal-dialog {
+            .modal-content {
+                width: 75% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bussinessEdit_about_Modal_v2 {
+
+        .modal-dialog {
+            max-width: 95%;
+            // margin: 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bussinessEdit_about_Modal_v2 {
+        .sm_heading_complete_actions {
+            font-size: 0.5em !important;
+        }
+
+        .modal-dialog {
+            .modal-body {
+                .form_autocomplete_b_edit_wrapper_popUp {
+                    .automplete_b_edit_heading {
+                        font-size: 1.6em;
+                    }
+                }
+            }
+        }
+
+        .Complete_actions_popup_cancel_btn {
+            position: unset !important;
+            margin-top: 1.6em;
+            margin-right: 1.6em;
+            margin-left: auto;
+        }
+
+        .Complete_actions_popup_cancel_btn_img {
+            width: 2.4em;
+            height: 2.4em;
+        }
+
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0;
+            height: 100vh;
+
+            .modal-content {
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .modal-header {
+                .ctm_img_bussine_edit_about {
+                    max-width: 1.916em;
+                }
+            }
+
+            .modal-body {
+                background-color: #fff;
+                padding-top: 2em !important;
+
+                .form_autocomplete_b_edit_wrapper_popUp .checkboxbutton_checkbox_wrapper .checkboxbutton_checkbox_input:checked+.checkboxbutton_checkbox_label {
+                    font-size: 1em;
+                }
+
+                .black_border_chips_custom {
+                    font-size: 1em !important;
+                }
+
+                .form_autocomplete_b_edit_wrapper_popUp {
+                    .field_wrapper {
+                        margin-top: 1.2em !important;
+                    }
+                }
+
+                .about_modal_bussines_heading {
+                    font-size: 1.6em;
+                }
+
+                .about_desc_bissunes_edit_modal {
+                    padding: 1em;
+                    font-size: 1.2em;
+                    line-height: 1.8em;
+                }
+
+                .form_autocomplete_b_edit_wrapper_popUp {
+
+                    // .css-aebaef-MuiAutocomplete-root label {
+                    //     font-size: 1.2em;
+                    // }
+                    .autocomplete_coustom_wrapper label {
+                        font-size: 1.2em;
+                        overflow: visible !important;
+                        line-height: 0.5em !important;
+                    }
+
+                    .autocomplete_coustom_wrapper {
+                        .MuiOutlinedInput-root {
+                            border-radius: 5px !important;
+                            -webkit-border-radius: 5px !important;
+                            -moz-border-radius: 5px !important;
+                            -ms-border-radius: 5px !important;
+                            -o-border-radius: 5px !important;
+                        }
+                    }
+
+                    .autocomplete_coustom_wrapper {
+                        .fieldset {
+                            border-radius: 5px !important;
+                            -webkit-border-radius: 5px !important;
+                            -moz-border-radius: 5px !important;
+                            -ms-border-radius: 5px !important;
+                            -o-border-radius: 5px !important;
+                        }
+                    }
+
+                    .autocomplete_coustom_wrapper {
+                        .MuiOutlinedInput-notchedOutline {
+                            border-radius: 5px !important;
+                            -webkit-border-radius: 5px !important;
+                            -moz-border-radius: 5px !important;
+                            -ms-border-radius: 5px !important;
+                            -o-border-radius: 5px !important;
+                        }
+                    }
+
+                    // .css-aebaef-MuiAutocomplete-root {
+                    //     .MuiOutlinedInput-root .MuiAutocomplete-input {
+                    //         // padding: 7.5px 4px 7.5px 5px;
+                    //         font-size: 0.923em !important;
+                    //     }
+                    // } 
+                    .autocomplete_coustom_wrapper {
+                        .MuiOutlinedInput-root .MuiAutocomplete-input {
+                            // padding: 7.5px 4px 7.5px 5px;
+                            font-size: 0.923em !important;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .bussinessEdit_about_Modal_v2 {
+        .modal-dialog {
+            .modal-content {
+                width: 100% !important;
+            }
+        }
+    }
+}

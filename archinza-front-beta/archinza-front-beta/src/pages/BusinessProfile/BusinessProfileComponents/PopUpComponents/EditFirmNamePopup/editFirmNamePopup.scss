@@ -1,0 +1,121 @@
+.FirmName_image_wrapper_modal {
+    height: 2.444em;
+    width: 2.444em;
+    background-color: #111111;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 0.222em;
+    -webkit-border-radius: 0.222em;
+    -moz-border-radius: 0.222em;
+    -ms-border-radius: 0.222em;
+    -o-border-radius: 0.222em;
+    font-size: 2.813em;
+    border: 0;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 767px) {
+    .edit_firm_modal--name {
+        .modal-content {
+            width: 60.875em;
+            margin: 0 auto;
+        }
+.modal-body{
+     max-width: 60.875em !important;
+}
+        .custom-cancel-btn {
+            max-width: 3.25em !important;
+            position: absolute !important;
+            right: 1% !important;
+            top: 4% !important;
+            z-index: 1;
+        }
+
+    }
+}
+
+
+.error_text {
+    color: red;
+    font-size: 1.125em;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    line-height: 1.08;
+    left: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.Firm_name_image_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.Firm_image_add_popup {
+    text-align: center;
+    font-size: 1.25em;
+    margin-top: 1em;
+    color: #014FE0;
+    width: 100%;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.4);
+    padding-bottom: 2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Firm_name_edit_input {
+    margin-top: 3.188em;
+}
+
+
+@media screen and (max-width:992px) {
+    .edit_firm_name_modal {
+        .modal-body {
+            max-width: 50vw;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .firm_image_edit {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .edit_firm_name_modal {
+        .modal-body {
+            max-width: 100%;
+
+            .about_modal_bussines_heading.fw-semibold {
+                margin-bottom: 1em;
+            }
+
+            .FirmName_image_wrapper_modal {
+                font-size: 3.2em;
+                height: 2.063em;
+                width: 2.063em;
+                border-radius: 0.156em;
+                -webkit-border-radius: 0.156em;
+                -moz-border-radius: 0.156em;
+                -ms-border-radius: 0.156em;
+                -o-border-radius: 0.156em;
+            }
+
+            .Firm_image_add_popup {
+                font-size: 1.2em;
+                margin-top: 0.833em;
+                padding-bottom: 1.333em;
+            }
+
+            .Firm_name_edit_input {
+                margin-top: 2em;
+                margin-bottom: 4em;
+            }
+        }
+    }
+}

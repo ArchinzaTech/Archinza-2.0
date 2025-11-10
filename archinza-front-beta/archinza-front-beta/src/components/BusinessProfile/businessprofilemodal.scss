@@ -1,0 +1,76 @@
+@import "../../common.scss";
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+.define_modal {
+  .modal-dialog {
+    max-width: 67.063em;
+  }
+  .modal-content {
+    background: transparent;
+
+    .modal-body {
+      background: rgba($color: $color-FFFFFF, $alpha: 0.15);
+      border: 1px solid #014fe0;
+      border-radius: 22px;
+      opacity: 1;
+      backdrop-filter: blur(11px);
+      -webkit-backdrop-filter: blur(11px);
+      padding: 2.5em;
+      .icon {
+        @include textStyles(3em, 1em, 0.36px);
+        font-weight: 300;
+        opacity: 0.8;
+      }
+      .define_list {
+        .list_item {
+          @include textStyles(1.125em, 1.344em, 0.36px);
+          font-weight: 300;
+          padding: 2em 0 0;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.white_theme {
+  background: rgba($color: $color-FFFFFF, $alpha: 0.15);
+  .modal-content {
+    background: transparent;
+
+    .modal-body {
+      background: rgba($color: $color-FFFFFF, $alpha: 1);
+      border: 1px solid #014fe0;
+      border-radius: 22px;
+      opacity: 1;
+      backdrop-filter: blur(11px);
+      -webkit-backdrop-filter: blur(11px);
+      padding: 2.5em;
+      .icon {
+        @include textStyles(3em, 1em, 0.36px);
+        font-weight: 300;
+        opacity: 0.8;
+      }
+      .define_list {
+        .list_item {
+          @include textStyles(1.125em, 1.344em, 0.36px);
+          font-weight: 300;
+          padding: 2em 0 0;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .define_modal {
+    .modal-content {
+      .modal-body {
+        padding: 2.5em 1.5em;
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+@import "../../common.scss";
+
+.network_section {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  color: #111827;
+  position: relative;
+  overflow: hidden;
+  transition: colors 0.3s;
+
+  .background_grid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.05;
+
+    .grid_pattern {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .network_container {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+
+    .network_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+
+      .globe_section {
+        flex: 1;
+        position: relative;
+        order: 1;
+
+        .globe_container {
+          position: relative;
+          margin: 0 auto;
+          width: 20rem;
+          height: 20rem;
+
+          .globe_image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .content_section {
+        flex: 1;
+        order: 2;
+        text-align: center;
+
+        .content_wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
+          .header_section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .community_label {
+              font-size: 0.875rem;
+              // font-family: sans-serif;
+              font-family: ui-sans-serif, system-ui, sans-serif;
+              font-weight: 600;
+              letter-spacing: 0.2em;
+              color: #9ca3af;
+              text-transform: uppercase;
+            }
+
+            .main_heading {
+              font-size: 1.5rem;
+              // font-family: sans-serif;
+              font-family: ui-sans-serif, system-ui, sans-serif;
+              font-weight: 700;
+              line-height: 1.25;
+            }
+
+            .main_description {
+              font-size: 1.125rem;
+              // font-family: sans-serif;
+              font-family: ui-sans-serif, system-ui, sans-serif;
+              color: #374151;
+              line-height: 1.625;
+              max-width: 32rem;
+            }
+          }
+
+          .stats_grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding-top: 2rem;
+
+            .stat_item {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+
+              .stat_number {
+                font-size: 1.875rem;
+                font-weight: 700;
+                color: #374151;
+
+                .stat_plus {
+                  color: #60a5fa;
+                }
+              }
+
+              .stat_label {
+                font-size: 0.875rem;
+                color: #9ca3af;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Dark theme styles
+.dark {
+  .network_section {
+    background-color: #111827;
+    color: #ffffff;
+
+    .background_grid {
+      opacity: 0.1;
+    }
+
+    .network_container {
+      .network_wrapper {
+        .content_section {
+          .content_wrapper {
+            .header_section {
+              .main_description {
+                color: #e5e7eb;
+              }
+            }
+
+            .stats_grid {
+              .stat_item {
+                .stat_number {
+                  color: #e5e7eb;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive breakpoints
+@media (min-width: 1024px) {
+  .network_section {
+    .network_container {
+      padding: 6rem 1.5rem;
+
+      .network_wrapper {
+        flex-direction: row;
+        gap: 4rem;
+
+        .globe_section {
+          order: 1;
+
+          .globe_container {
+            width: 32rem;
+            height: 32rem;
+          }
+        }
+
+        .content_section {
+          order: 2;
+          text-align: left;
+
+          .content_wrapper {
+            .header_section {
+              .main_heading {
+                font-size: 1.875rem;
+              }
+
+              .main_description {
+                font-size: 1.125rem;
+              }
+            }
+
+            .stats_grid {
+              gap: 3rem;
+
+              .stat_item {
+                .stat_number {
+                  font-size: 2.25rem;
+                }
+
+                .stat_label {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .network_section {
+    .network_container {
+      .network_wrapper {
+        .content_section {
+          .content_wrapper {
+            .header_section {
+              .main_heading {
+                font-size: 2.25rem;
+              }
+            }
+
+            .stats_grid {
+              .stat_item {
+                .stat_number {
+                  font-size: 3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

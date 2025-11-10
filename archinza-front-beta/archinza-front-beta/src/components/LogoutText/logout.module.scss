@@ -1,0 +1,20 @@
+@import "../../common.scss";
+.notice {
+  @include textStyles(1.125em, 1.607em, 0.56px);
+  font-weight: 400;
+  margin: 1em auto 0;
+  display: inline;
+  .anchor {
+    display: inline;
+    color: $color-F77B00;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .notice {
+    @include textStyles(1.4em, 1.428, 0.28px);
+    margin: 1.571428571428571em auto 0;
+  }
+}

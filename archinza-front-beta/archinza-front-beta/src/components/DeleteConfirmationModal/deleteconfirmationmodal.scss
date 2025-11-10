@@ -1,0 +1,108 @@
+@import "../../common.scss";
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+.delete_confirmation_modal {
+  background: rgba($color: $color-FFFFFF, $alpha: 0.9);
+  .modal-dialog {
+    max-width: 67.063em;
+  }
+
+  .modal-content {
+    background: transparent;
+
+    .modal-body {
+      position: relative;
+      background: rgba($color: $color-FFFFFF, $alpha: 1);
+      border: 2px solid #014FE0;
+      border-radius: 22px;
+      opacity: 1;
+      backdrop-filter: blur(11px);
+      -webkit-backdrop-filter: blur(11px);
+      padding: 2.5em 9.063em 3.75em;
+
+      .close_icon {
+        width: 100%;
+        height: 100%;
+        max-height: fit-content;
+        max-width: 1.875em;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+      }
+
+      .delete_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $color-111111;
+
+        .delete_icon {
+          width: 100%;
+          height: 100%;
+          max-width: 10.625em;
+          max-height: fit-content;
+          margin: 0 auto
+        }
+
+        .notice {
+          @include textStyles(2.5em, 1.45em, 0.8px);
+          text-align: center;
+          font-weight: 600;
+          margin: 0.5em 0 1.5em
+        }
+
+        .cta_wrapper {
+          display: flex;
+          justify-content: center;
+
+          .solid_cta {
+            margin: 0 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.white_theme {
+  background: rgba($color: $color-FFFFFF, $alpha: 0.15);
+
+  .modal-content {
+    background: transparent;
+
+    .modal-body {
+      background: rgba($color: $color-FFFFFF, $alpha: 1);
+      border: 1px solid #014fe0;
+      border-radius: 22px;
+      opacity: 1;
+      backdrop-filter: blur(11px);
+      -webkit-backdrop-filter: blur(11px);
+      padding: 2.5em;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .delete_confirmation_modal {
+    .modal-content {
+      .modal-body {
+        padding: 2.5em 1.5em;
+
+        .delete_content {
+
+          .delete_icon {
+            max-width: 7.5em;
+          }
+
+          .notice {
+            @include textStyles(1.8em, 1.45em, 0.8px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../common.scss";
+
+.floating_sec1 {
+  // position: absolute;
+  position: fixed;
+  bottom: 5em;
+  right: 3.75em;
+    z-index: 1000;
+
+  .img_wrapper {
+    position: relative;
+  }
+
+  .floating_icon1 {
+    width: 100%;
+    max-width: 5em;
+  }
+
+  .floating_icon2 {
+    width: 100%;
+    max-width: 3.28625em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .floating_sec1 {
+    // bottom: 2.5em;
+    bottom: 6.5em;
+
+    right: 1.5em;
+
+    .floating_icon1 {
+      max-width: 4em;
+    }
+
+    .floating_icon2 {
+      max-width: 2.363em;
+    }
+  }
+}
