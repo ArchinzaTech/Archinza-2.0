@@ -232,6 +232,8 @@ const schema = new mongoose.Schema(
     scraped_pincode: { type: String },
     isDeleted: { type: Boolean, default: false },
     deletedAt: { type: Date, default: null },
+    view_count: { type: Number, default: 0 },
+    share_count: { type: Number, default: 0 },
   },
   {
     timestamps: true,

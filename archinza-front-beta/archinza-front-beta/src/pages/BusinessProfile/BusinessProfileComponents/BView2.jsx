@@ -244,6 +244,14 @@ const BView2 = () => {
             !response?.data?.isDeleted
           ) {
             setProfileData(response?.data);
+            // Track page view for non-owner views
+            try {
+              await http.post(
+                `${config.api_url}/business/profile/${username}/track-view`
+              );
+            } catch (trackError) {
+              console.error("Failed to track view:", trackError);
+            }
           } else {
             setError({ message: "No User Found" });
             return;
@@ -262,6 +270,16 @@ const BView2 = () => {
   if (isLoading) return <div>Loading...</div>;
   if (error) return <Navigate to="/404" replace />;
   if (!profileData) return <div>No profile data found</div>;
+
+  const trackShare = async () => {
+    try {
+      await http.post(
+        `${config.api_url}/business/profile/${username}/track-share`
+      );
+    } catch (error) {
+      console.error("Failed to track share:", error);
+    }
+  };
 
   const truncateText = (arr, maxLength = 35) => {
     if (!arr || arr.length === 0) return "";
@@ -592,6 +610,7 @@ const BView2 = () => {
                           rel="noopener noreferrer"
                           className="share_top_header_menu_item"
                           onClick={() => {
+                            trackShare();
                             window.open(
                               `https://api.whatsapp.com/send?text=${encodeURIComponent(
                                 shareTitle + " " + shareUrl
@@ -614,6 +633,7 @@ const BView2 = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={() => {
+                            trackShare();
                             window.open(
                               `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
                                 shareUrl
@@ -636,6 +656,7 @@ const BView2 = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={() => {
+                            trackShare();
                             window.open(
                               `https://twitter.com/intent/tweet?text=${encodeURIComponent(
                                 shareTitle
@@ -659,6 +680,7 @@ const BView2 = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={() => {
+                            trackShare();
                             window.open(
                               `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
                                 shareUrl
@@ -676,6 +698,7 @@ const BView2 = () => {
                         </a>
                         <div
                           onClick={() => {
+                            trackShare();
                             if (navigator.clipboard && window.isSecureContext) {
                               navigator.clipboard
                                 .writeText(shareUrl)

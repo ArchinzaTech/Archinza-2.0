@@ -382,6 +382,48 @@ router.get(
   })
 );
 
+//track profile view
+router.post(
+  "/profile/:username/track-view",
+  asyncHandler(async (req, res) => {
+    const { username } = req.params;
+    const business = await BusinessAccount.findOne({ username });
+
+    if (!business) {
+      return res.send(sendError("Business not found", 404));
+    }
+
+    // Increment view count
+    await BusinessAccount.updateOne(
+      { username },
+      { $inc: { view_count: 1 } }
+    );
+
+    return res.send(sendResponse({ view_count: business.view_count + 1 }, "View tracked successfully"));
+  })
+);
+
+//track profile share
+router.post(
+  "/profile/:username/track-share",
+  asyncHandler(async (req, res) => {
+    const { username } = req.params;
+    const business = await BusinessAccount.findOne({ username });
+
+    if (!business) {
+      return res.send(sendError("Business not found", 404));
+    }
+
+    // Increment share count
+    await BusinessAccount.updateOne(
+      { username },
+      { $inc: { share_count: 1 } }
+    );
+
+    return res.send(sendResponse({ share_count: business.share_count + 1 }, "Share tracked successfully"));
+  })
+);
+
 //get meta tags for busiess by username
 router.get(
   "/meta-data/:username",
